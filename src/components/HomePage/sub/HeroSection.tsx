@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import heroImg from "@/pictures/homepage/hero-img-desktop.svg";
-import heroImgMob from "@/pictures/homepage/Mask group.png";
+import heroImg from "../../../../public/homepage/hero-img-desktop.svg";
+import heroImgMob from "../../../../public/homepage/Mask group.png";
 import Button from "../../Elements/Button";
 import NavBar from "../../Elements/NavBar";
 

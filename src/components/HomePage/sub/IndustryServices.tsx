@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import servicesImg1 from "@/pictures/homepage/service-img1.png";
-import servicesImg2 from "@/pictures/homepage/service-img2.png";
-import servicesImg3 from "@/pictures/homepage/service-img3.png";
-import servicesImg4 from "@/pictures/homepage/service-img4.png";
-import servicesImg5 from "@/pictures/homepage/service-img5.png";
-import servicesImg6 from "@/pictures/homepage/service-img6.png";
-import chevronRightIcon from "@/pictures/homepage/right-chevron-icon.svg";
+import servicesImg1 from "../../../../public/homepage/service-img1.png";
+import servicesImg2 from "../../../../public/homepage/service-img2.png";
+import servicesImg3 from "../../../../public/homepage/service-img3.png";
+import servicesImg4 from "../../../../public/homepage/service-img4.png";
+import servicesImg5 from "../../../../public/homepage/service-img5.png";
+import servicesImg6 from "../../../../public/homepage/service-img6.png";
+import chevronRightIcon from "../../../../public/homepage/right-chevron-icon.svg";
 
 const IndustryServices = () => {
   return (

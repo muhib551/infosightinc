@@ -1,10 +1,10 @@
 import React from "react";
-import serviceIcon1 from "@/pictures/homepage/service-icon1.svg";
-import serviceIcon2 from "@/pictures/homepage/service-icon2.svg";
-import serviceIcon3 from "@/pictures/homepage/service-icon3.svg";
-import serviceIcon4 from "@/pictures/homepage/service-icon4.svg";
-import serviceIcon5 from "@/pictures/homepage/service-icon5.svg";
-import serviceIcon6 from "@/pictures/homepage/service-icon6.svg";
+import serviceIcon1 from "../../../../public/homepage/service-icon1.svg";
+import serviceIcon2 from "../../../../public/homepage/service-icon2.svg";
+import serviceIcon3 from "../../../../public/homepage/service-icon3.svg";
+import serviceIcon4 from "../../../../public/homepage/service-icon4.svg";
+import serviceIcon5 from "../../../../public/homepage/service-icon5.svg";
+import serviceIcon6 from "../../../../public/homepage/service-icon6.svg";
 import Image from "next/image";
 
 const OurServices = () => {
