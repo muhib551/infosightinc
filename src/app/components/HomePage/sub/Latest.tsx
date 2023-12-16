@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import docIcon from "../../../../../public/homepage/document-icon.svg";
-import videoIcon from "../../../../../public/homepage/video-icon.svg";
+import docIcon from "@/pictures/homepage/document-icon.svg";
+import videoIcon from "@/pictures/homepage/video-icon.svg";
 
 const Latest = () => {
   return (

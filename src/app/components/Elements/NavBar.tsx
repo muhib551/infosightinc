@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import logoImg from "../../../../public/logo.svg";
-import DDIcon from "../../../../public/DDIcon.svg";
+import logoImg from "@/pictures/logo.svg";
+import DDIcon from "@/pictures/DDIcon.svg";
 
 const NavBar = () => {
   return (
