@@ -7,7 +7,7 @@ import Button from "@/components/Elements/Button";
 
 const Tesimonials = () => {
   return (
-    <div className="p-5 lg:p-20 mb-96">
+    <div className="p-5 lg:p-20">
       <h1 className=" text-2xl lg:text-4xl font-semibold">
         Infosights Testimonials
       </h1>
@@ -40,7 +40,7 @@ const Tesimonials = () => {
           <p className="">IT Manager at T-Devs</p>
         </div>
       </div>
-      <div className="lg:flex items-center justify-center mt-10 gap-10 hidden">
+      <div className="lg:flex items-center justify-center mt-16 gap-10 hidden">
         <Image
           src={chevronLeftIcon}
           alt="Chevron Icon"

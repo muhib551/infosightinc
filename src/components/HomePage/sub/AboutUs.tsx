@@ -4,7 +4,7 @@ import aboutImg from "../../../../public/homepage/homepage-about-us-img.png";
 
 const AboutUs = () => {
   return (
-    <div className="bg-[#3B719F] p-10 lg:p-20">
+    <div className="bg-[#3B719F] p-8 lg:p-20">
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="text-white">
           <h1 className="text-2xl lg:text-4xl font-semibold">Who are we?</h1>

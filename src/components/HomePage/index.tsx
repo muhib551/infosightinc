@@ -8,6 +8,7 @@ import AboutUs from "./sub/AboutUs";
 import OurServices from "./sub/OurServices";
 import IndustryServices from "./sub/IndustryServices";
 import Tesimonials from "./sub/Tesimonials";
+import Future from "./sub/Future";
 
 const HomePage = () => {
   const [open, setOpen] = React.useState(false);
@@ -20,6 +21,7 @@ const HomePage = () => {
       <OurServices />
       <IndustryServices />
       <Tesimonials />
+      <Future />
     </>
   );
 };
