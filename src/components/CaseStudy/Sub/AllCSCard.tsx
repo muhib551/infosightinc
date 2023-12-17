@@ -7,7 +7,7 @@ import judgeIcon from "../../../../public/casestudy/judge-icon.svg";
 
 const AllCSCard = () => {
   return (
-    <div className="grid lg:grid-cols-4 gap-5 w-full">
+    <div className="grid lg:grid-cols-4 gap-5">
       <div className="p-5 border border-gray-300 rounded-lg w-max">
         <Image src={walletIcon} alt="All Case Studies Icon" className="" />
         <h1 className="text-xl text-gray-900 font-medium mt-10">

@@ -9,6 +9,7 @@ import OurServices from "./sub/OurServices";
 import IndustryServices from "./sub/IndustryServices";
 import Tesimonials from "./sub/Tesimonials";
 import Future from "./sub/Future";
+import Footer from "../Elements/Footer";
 
 const HomePage = () => {
   const [open, setOpen] = React.useState(false);
@@ -22,6 +23,7 @@ const HomePage = () => {
       <IndustryServices />
       <Tesimonials />
       <Future />
+      <Footer />
     </>
   );
 };
