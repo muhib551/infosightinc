@@ -4,9 +4,8 @@ import CSHeroSection from "./Sub/CSHeroSection";
 import AllCaseStudies from "./Sub/AllCaseStudies";
 import WeProvide from "./Sub/WeProvide";
 import InfoSight from "./Sub/InfoSight";
-import Future from "../HomePage/sub/Future";
-import CaseStudyFuture from "./Sub/CaseStudyFuture";
 import Footer from "../Elements/Footer";
+import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const CaseStudy = () => {
   return (
@@ -17,7 +16,7 @@ const CaseStudy = () => {
       <AllCaseStudies />
       <WeProvide />
       <InfoSight />
-      <CaseStudyFuture />
+      <FutureBlackButtons />
       <Footer />
     </div>
   );

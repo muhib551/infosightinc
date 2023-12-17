@@ -5,7 +5,7 @@ import logoImg from "../../../public/logo.svg";
 const Footer = () => {
   return (
     <div>
-      <div className="p-8 lg:p-10 flex flex-col lg:flex-row items-start justify-between w-full">
+      <div className="p-8 lg:p-20 flex flex-col lg:flex-row items-start justify-between w-full">
         <div className="hidden lg:flex flex-col gap-5">
           <Image src={logoImg} alt="Logo" className="w-32" />
           <div>
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-gray-500 -mt-5 px-8 pb-5 lg:pb-5 lg:px-10">
+      <p className="text-gray-500 -mt-5 lg:-mt-10 px-8 pb-5 lg:pb-5 lg:px-20">
         © 2023 InfoSight. All rights reserved.
       </p>
     </div>

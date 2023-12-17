@@ -1,7 +1,7 @@
 import Button from "@/components/Elements/Button";
 import React from "react";
 
-const Future = () => {
+const FutureBlackButtons = () => {
   return (
     <div className="bg-[#3B719F] py-10 px-8 lg:p-20">
       <div className="flex flex-col lg:flex-row">
@@ -18,7 +18,7 @@ const Future = () => {
           <Button
             text="Get Details"
             style={{
-              color: "#EC6A30",
+              color: "black",
               backgroundColor: "white",
               padding: "10px 25px",
               borderRadius: "10px",
@@ -27,6 +27,8 @@ const Future = () => {
           <Button
             text="Contact Us"
             style={{
+              color: "white",
+              backgroundColor: "black",
               padding: "10px 25px",
               borderRadius: "10px",
             }}
@@ -37,4 +39,4 @@ const Future = () => {
   );
 };
 
-export default Future;
+export default FutureBlackButtons;
