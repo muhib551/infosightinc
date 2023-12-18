@@ -65,14 +65,16 @@ const Form = () => {
           <span className="w-full"></span>
         </div>
         <span className="flex flex-col w-full gap-1">
-          <label htmlFor="">Your Message</label>
+          <label htmlFor="" className="text-gray-700 ">
+            Your Message
+          </label>
           <textarea
             className="lg:w-9/12 border border-gray-400 p-3 rounded-lg focus:outline-gray-400"
             name="Messages"
             placeholder="Type here..."
             id=""
-            cols={30}
-            rows={10}
+            cols={10}
+            rows={4}
           ></textarea>
         </span>
       </form>

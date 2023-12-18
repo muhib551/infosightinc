@@ -10,7 +10,7 @@ import featuredIcon6 from "../../../../public/casestudy/Featured-icon-6.svg";
 const InfoSight = () => {
   return (
     <div className="p-5 lg:p-20">
-      <h1 className="text-2xl text-white lg:text-4xl font-semibold">
+      <h1 className="text-2xl lg:text-4xl mb-5 font-semibold">
         Why InfoSight?
       </h1>
       <p>
