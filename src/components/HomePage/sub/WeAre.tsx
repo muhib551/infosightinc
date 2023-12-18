@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import aboutImg from "../../../../public/homepage/homepage-about-us-img.png";
 
-const AboutUs = () => {
+const WeAre = () => {
   return (
     <div className="bg-[#3B719F] p-8 lg:p-20">
       <div className="flex flex-col lg:flex-row gap-10">
@@ -28,4 +28,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default WeAre;

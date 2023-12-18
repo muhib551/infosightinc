@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import NavBar from "../Elements/NavBar";
 import Footer from "../Elements/Footer";
@@ -6,6 +7,9 @@ import Form from "./Sub/Form";
 import ContactInfo from "./Sub/ContactInfo";
 
 const ContactUs = () => {
+  React.useEffect(() => {
+    document.title = "InfoSight | Contact Us";
+  }, []);
   return (
     <div>
       <NavBar />

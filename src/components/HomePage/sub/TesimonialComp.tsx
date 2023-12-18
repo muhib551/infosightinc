@@ -5,7 +5,7 @@ import chevronRightIcon from "../../../../public/homepage/right-chevron-black-ic
 import chevronLeftIcon from "../../../../public/homepage/left-chevron-black-icon.svg";
 import Button from "@/components/Elements/Button";
 
-const Tesimonials = () => {
+const TesimonialsComp = () => {
   return (
     <div className="p-5 lg:p-20">
       <h1 className=" text-2xl lg:text-4xl font-semibold">
@@ -59,4 +59,4 @@ const Tesimonials = () => {
   );
 };
 
-export default Tesimonials;
+export default TesimonialsComp;

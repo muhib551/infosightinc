@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import NavBar from "../Elements/NavBar";
 import Footer from "../Elements/Footer";
@@ -9,6 +10,10 @@ import callingIcon from "../../../public/call-calling.svg";
 import smsddIcon from "../../../public/sms-dd.svg";
 
 const Query = () => {
+  React.useEffect(() => {
+    document.title = "InfoSight | Queries";
+  }, []);
+
   return (
     <div>
       <NavBar />

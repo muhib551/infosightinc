@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import NavBar from "../Elements/NavBar";
 import CSHeroSection from "./Sub/CSHeroSection";
@@ -8,6 +9,10 @@ import Footer from "../Elements/Footer";
 import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const CaseStudy = () => {
+  React.useEffect(() => {
+    document.title = "InfoSight | Case Study";
+  }, []);
+
   return (
     <div>
       <NavBar />
