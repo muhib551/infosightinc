@@ -7,7 +7,7 @@ const AboutUsHero = () => {
     <div className="relative">
       <Image
         src={heroImg}
-        alt="Case study image"
+        alt="About us image"
         className="w-full scale-110 lg:scale-100"
       />
       <div className="text-white bg-[#0a1f33d8] lg:bg-transparent px-5 py-5 lg:py-0 lg:p-0 lg:absolute lg:top-[35%] lg:left-[6.5%]">

@@ -20,7 +20,9 @@ const CaseStudy = () => {
       <p className="mt-5 p-5 lg:px-20">Here will the path</p>
       <AllCaseStudies />
       <WeProvide />
-      <InfoSight />
+      <div className="lg:py-10">
+        <InfoSight />
+      </div>
       <FutureBlackButtons />
       <Footer />
     </div>

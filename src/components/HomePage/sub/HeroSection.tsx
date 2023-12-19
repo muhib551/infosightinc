@@ -14,7 +14,7 @@ const HeroSection = () => {
       <div className="">
         <Image
           src={heroImg}
-          alt="hero image"
+          alt="Home page image"
           className="w-full md:block hidden"
         />
         <div className="absolute top-[24%] left-32 text-white hidden md:block">
@@ -47,7 +47,7 @@ const HeroSection = () => {
         </div>
         <Image
           src={heroImgMob}
-          alt="hero image mobile"
+          alt="Home page image mobile"
           className="w-full md:hidden block"
         />
       </div>

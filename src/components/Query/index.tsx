@@ -3,7 +3,6 @@ import React from "react";
 import NavBar from "../Elements/NavBar";
 import Footer from "../Elements/Footer";
 import Button from "../Elements/Button";
-import ContactInfo from "../ContactUs/Sub/ContactInfo";
 import Image from "next/image";
 import locationIcon from "../../../public/location.svg";
 import callingIcon from "../../../public/call-calling.svg";
@@ -19,9 +18,6 @@ const Query = () => {
       <NavBar />
       <p className="p-5 lg:px-20">Here will be path</p>
       <div className="p-5 lg:px-20 flex flex-col gap-5 lg:gap-10 lg:flex-row lg:items-start w-full">
-        {/* <span className="lg:hidden">
-          <ContactInfo />
-        </span> */}
         <div className="w-full">
           <h1 className="text-gray-900 text-2xl font-semibold">
             Send Us Your Query
