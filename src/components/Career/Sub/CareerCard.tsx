@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutUsCard = () => {
+const CareerCard = () => {
   return (
     <div className="bg-[#3B719F] py-10 px-8 lg:p-20">
       <div className="flex flex-col lg:flex-row">
@@ -24,4 +24,4 @@ const AboutUsCard = () => {
   );
 };
 
-export default AboutUsCard;
+export default CareerCard;

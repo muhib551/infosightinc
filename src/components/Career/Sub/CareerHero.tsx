@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import heroImg from "../../../../public/aboutUs/about-us-hero-img.png";
 
-const AboutUsHero = () => {
+const CareerHero = () => {
   return (
     <div className="relative">
       <Image
@@ -22,4 +22,4 @@ const AboutUsHero = () => {
   );
 };
 
-export default AboutUsHero;
+export default CareerHero;

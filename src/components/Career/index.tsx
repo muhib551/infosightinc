@@ -2,24 +2,24 @@
 import React from "react";
 import NavBar from "../Elements/NavBar";
 import Footer from "../Elements/Footer";
-import AboutUsHero from "./Sub/AboutUsHero";
 import CultureSection from "./Sub/CultureSection";
-import AboutUsCard from "./Sub/AboutUsCard";
 import PositionCard from "./Sub/PositionCard";
 import FutureBlackButtons from "../Elements/FutureBlackButtons";
+import CareerHero from "./Sub/CareerHero";
+import CareerCard from "./Sub/CareerCard";
 
-const AboutUs = () => {
+const Career = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | About Us";
+    document.title = "InfoSight | Career";
   }, []);
 
   return (
     <div>
       <NavBar />
-      <AboutUsHero />
+      <CareerHero />
       <p className="p-5 lg:px-20">Here will be path</p>
       <CultureSection />
-      <AboutUsCard />
+      <CareerCard />
       <PositionCard />
       <FutureBlackButtons />
       <Footer />
@@ -27,4 +27,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default Career;
