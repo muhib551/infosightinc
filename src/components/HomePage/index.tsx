@@ -24,7 +24,7 @@ const HomePage = () => {
       <HeroSection />
       <Latest />
       <WeAre />
-      <OurServices />
+      <OurServices heading="What we Provide" />
       <IndustryServices />
       <TesimonialsComp />
       <FutureOrangeButtons />

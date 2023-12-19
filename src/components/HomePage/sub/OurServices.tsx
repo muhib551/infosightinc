@@ -7,11 +7,11 @@ import serviceIcon5 from "../../../../public/homepage/service-icon5.svg";
 import serviceIcon6 from "../../../../public/homepage/service-icon6.svg";
 import Image from "next/image";
 
-const OurServices = () => {
+const OurServices = ({ heading }: { heading?: string }) => {
   return (
     <div className="p-5 lg:p-20">
       <div>
-        <h1 className="text-2xl lg:text-4xl font-semibold">What we Provide</h1>
+        <h1 className="text-2xl lg:text-4xl font-semibold">{heading}</h1>
         <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 mt-8">
           <div className="flex items-start gap-4 p-3 border border-gray-300 rounded-md">
             <Image
