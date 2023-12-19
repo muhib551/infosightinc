@@ -2,14 +2,13 @@
 import React from "react";
 import NavBar from "../Elements/NavBar";
 import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
 import FutureBlackButtons from "../Elements/FutureBlackButtons";
-import FollowUsCard from "../Webinars/Sub/FollowUsCard";
 import IndustriesHero from "./Sub/IndustriesHero";
 import OurServices from "../HomePage/sub/OurServices";
-import FinancialCard from "../HomePage/sub/FinancialCard";
-import ClientStory from "../HomePage/sub/ClientStory";
-import IndustryProvide from "./Sub/IndustryProvide";
+import FinancialCard from "./Sub/FinancialCard";
+import EnergyElectric from "./Sub/EnergyElectric";
+import Government from "./Sub/Govnment";
+import OilGas from "./Sub/OilGas";
 
 const Industries = () => {
   React.useEffect(() => {
@@ -50,8 +49,10 @@ const Industries = () => {
           Healthcare
         </button>
       </div>
-      <FinancialCard />
-      <IndustryProvide />
+      {/* <FinancialCard /> */}
+      {/* <EnergyElectric /> */}
+      {/* <Government /> */}
+      <OilGas />
       <OurServices heading="What We also Provide" />
       <FutureBlackButtons />
       <Footer />
