@@ -10,9 +10,9 @@ const Government = () => {
       <div className="p-5 lg:px-20">
         <div className="flex flex-col gap-3">
           <Image src={buildingImg} alt="Building Image" className="w-full" />
-          <div className="flex lg:items-center items-start">
+          <div className="flex items-start">
             <span className="pr-2">&bull;</span>
-            <p className="text-[#222222] py-1 px-2 text-sm lg:text-base">
+            <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
               InfoSight understands that{" "}
               <span className="font-semibold">Government agencies</span> are
               increasingly targeted every day, and that{" "}

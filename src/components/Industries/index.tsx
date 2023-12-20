@@ -9,6 +9,9 @@ import FinancialCard from "./Sub/FinancialCard";
 import EnergyElectric from "./Sub/EnergyElectric";
 import Government from "./Sub/Govnment";
 import OilGas from "./Sub/OilGas";
+import Manufacturing from "./Sub/Manufacturing";
+import Water from "./Sub/Water";
+import Entertainment from "./Sub/Entertainment";
 
 const Industries = () => {
   React.useEffect(() => {
@@ -52,7 +55,10 @@ const Industries = () => {
       {/* <FinancialCard /> */}
       {/* <EnergyElectric /> */}
       {/* <Government /> */}
-      <OilGas />
+      {/* <OilGas /> */}
+      {/* <Manufacturing /> */}
+      {/* <Water /> */}
+      <Entertainment />
       <OurServices heading="What We also Provide" />
       <FutureBlackButtons />
       <Footer />

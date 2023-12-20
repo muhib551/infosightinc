@@ -14,9 +14,9 @@ const FinancialCard = () => {
             alt="Financial Card Image"
             className="w-full"
           />
-          <div className="flex lg:items-center items-start">
+          <div className="flex items-start">
             <span className="pr-2">&bull;</span>
-            <p className="text-[#222222] py-1 px-2 text-sm lg:text-base">
+            <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
               InfoSight provides solutions for{" "}
               <span className="font-semibold">financial industries</span> to
               improve overall{" "}
@@ -25,9 +25,9 @@ const FinancialCard = () => {
               </span>
             </p>
           </div>
-          <div className="flex lg:items-center items-start">
+          <div className="flex items-start">
             <span className="pr-2">&bull;</span>
-            <p className="text-[#222222] py-1 px-2 text-sm lg:text-base">
+            <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
               InfoSight provides{" "}
               <span className="font-semibold">
                 24x7x365 Managed Security and Advisory Services

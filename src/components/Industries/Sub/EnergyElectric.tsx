@@ -14,18 +14,18 @@ const EnergyElectric = () => {
             alt="Energy and Electric Card Image"
             className="w-full"
           />
-          <div className="flex lg:items-center items-start">
+          <div className="flex items-start">
             <span className="pr-2">&bull;</span>
-            <p className="text-[#222222] py-1 px-2 text-sm lg:text-base">
+            <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
               With <span className="font-semibold">cyber attacks</span> on the
               rise, energy providers and electric cooperatives need to have{" "}
               <span className="font-semibold">layered security controls</span>
               in place to defend against or identify an attack in seconds.
             </p>
           </div>
-          <div className="flex lg:items-center items-start">
+          <div className="flex items-start">
             <span className="pr-2">&bull;</span>
-            <p className="text-[#222222] py-1 px-2 text-sm lg:text-base">
+            <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
               It is imperative for those with{" "}
               <span className="font-semibold">
                 BES (Bulk Electric Systems) and ICS (Information Control
