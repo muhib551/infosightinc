@@ -12,6 +12,7 @@ import OilGas from "./Sub/OilGas";
 import Manufacturing from "./Sub/Manufacturing";
 import Water from "./Sub/Water";
 import Entertainment from "./Sub/Entertainment";
+import Healthcare from "./Sub/HealthCare";
 
 const Industries = () => {
   React.useEffect(() => {
@@ -58,7 +59,8 @@ const Industries = () => {
       {/* <OilGas /> */}
       {/* <Manufacturing /> */}
       {/* <Water /> */}
-      <Entertainment />
+      {/* <Entertainment /> */}
+      <Healthcare />
       <OurServices heading="What We also Provide" />
       <FutureBlackButtons />
       <Footer />
