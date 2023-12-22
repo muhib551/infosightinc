@@ -53,13 +53,13 @@ const Industries = () => {
           Healthcare
         </button>
       </div>
-      {/* <FinancialCard /> */}
-      {/* <EnergyElectric /> */}
-      {/* <Government /> */}
-      {/* <OilGas /> */}
-      {/* <Manufacturing /> */}
-      {/* <Water /> */}
-      {/* <Entertainment /> */}
+      <FinancialCard />
+      <EnergyElectric />
+      <Government />
+      <OilGas />
+      <Manufacturing />
+      <Water />
+      <Entertainment />
       <Healthcare />
       <OurServices heading="What We also Provide" />
       <FutureBlackButtons />
