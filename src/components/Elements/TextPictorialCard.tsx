@@ -4,7 +4,11 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 
-const TextPictorialCard = () => {
+interface Props {
+  text?: string;
+}
+
+const TextPictorialCard = ({ text }: Props) => {
   return (
     <div className="p-5 lg:px-20">
       <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
