@@ -14,6 +14,13 @@ import CloudLMSHero from "./Sub/CloudLMSHero";
 import CloudLMSFeatures from "./Sub/CloudLMSFeatures";
 
 const CloudLMS = () => {
+  const suggestedKeys = [
+    "React",
+    "JavaScript",
+    "Tailwind CSS",
+    "Web Development",
+  ];
+
   React.useEffect(() => {
     document.title = "InfoSight | Cloud LMS";
   }, []);
@@ -70,7 +77,7 @@ const CloudLMS = () => {
             className="w-full rounded-lg"
           />
         </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
+        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-y-2 border-gray-300">
           <Image
             src={infoImg2}
             alt="Info image"
