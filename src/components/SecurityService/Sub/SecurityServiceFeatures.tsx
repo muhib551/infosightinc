@@ -2,6 +2,22 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const SS_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "SOCaaS",
+      "Managed MDR",
+      "Managed EDR",
+      "Managed XDR & SIEM",
+      "VISO and VCISO",
+      "DLP Solutions",
+      "Access and Identity Management",
+      "And more…",
+    ],
+  },
+];
+
 const SecurityServiceFeatures = () => {
   return (
     <div className="bg-[#132534]">

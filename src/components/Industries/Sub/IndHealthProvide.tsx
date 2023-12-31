@@ -2,6 +2,21 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const HEALTH_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Proactive HIPAA compliant IT services networks",
+      "Multi-layered HIPAA compliant cybersecurity framework",
+      "Ensure customers follow HITECH regulatory standards",
+      "Provide support on various EHR systems",
+      "Perform HIPAA Risk & Security Assessments",
+      "Cloud Solutions & Office 365",
+      "24x7x365 Network & Security Monitoring",
+    ],
+  },
+];
+
 const IndHealthProvide = () => {
   return (
     <div className="bg-[#132534]">

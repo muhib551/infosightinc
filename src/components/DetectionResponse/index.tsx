@@ -13,6 +13,27 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 
+const DETECTION_RESPONSE_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Most organizations have limited IT staffing and tight cybersecurity budgets, making holistic information security seem impossible. The requirement for threat monitoring and incident response is a 24x7x365 job with extended security needed. For most companies this is a lot to ask for on top of keeping a successful up and running organization.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight brings a co-managed approach to security monitoring by becoming an extension to your IT team to monitor your most critical assets and data sources24x7x365. We deliver enterprise threat management through a layered security model where all assets in the datacenter or the Cloud can be viewed in a “single pane of glass” by both your IT team and our SOC simultaneously. This allows your team to focus on day-to-day concerns thereby improving overall efficiency and operational effectiveness.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "Our goal is to work with your team to ensure 24x7 security, incident response and remediation to improve your overall security posture and minimize cyber risk. We help your organization:",
+  },
+];
+
 const DetectionResponse = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Detection Response";

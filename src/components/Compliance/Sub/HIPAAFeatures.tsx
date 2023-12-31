@@ -2,6 +2,25 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const HIPAA_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Risk Analysis and Management (administrative, physical, technical & organizational)",
+      "Security and privacy training",
+      "Storage of ePHI on portable devices and media",
+      "Off-site access and use of ePHI from remote locations",
+      "Disposal of equipment containing ePHI",
+      " Business associates and contracts",
+      "Data encryption",
+      "Virus protection",
+      "Technical safeguards in place to protect ePHI",
+      "Network vulnerability scan",
+      "Policies, procedures and practices regarding security, privacy and information technology",
+    ],
+  },
+];
+
 const HIPAAFeatures = () => {
   return (
     <div className="bg-[#132534]">

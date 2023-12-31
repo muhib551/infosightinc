@@ -2,6 +2,21 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const MOBILE_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "SAuthentication",
+      "Authorization",
+      "Session management",
+      "Data validation",
+      "Error handling",
+      "Logging",
+      "Encryption",
+    ],
+  },
+];
+
 const MobileAPIFeatures = () => {
   return (
     <div className="bg-[#132534]">

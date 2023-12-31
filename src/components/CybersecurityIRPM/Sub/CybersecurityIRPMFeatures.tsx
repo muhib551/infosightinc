@@ -2,6 +2,18 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const CYBERSECURITYIRPM_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Understand your system and environment",
+      "Identify the response procedures the CERT will take to investigate, contain, eradicate, and recover from a variety of different incidents",
+      "Develop strategic communication procedures for cyber incidents.",
+      "Define response procedures and responsibilities of the utility's legal team during cyber incident investigation and response.",
+    ],
+  },
+];
+
 const CybersecurityIRPMFeatures = () => {
   return (
     <div className="bg-[#132534]">

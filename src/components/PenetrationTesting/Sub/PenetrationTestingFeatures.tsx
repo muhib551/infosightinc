@@ -2,6 +2,22 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const PENETRATION_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Evaluate environments for real-world readiness",
+      "Reduce the risk of a successful attack before it occurs",
+      "Identify security issues beyond the capability of automated tools & assessments",
+      "Exit interviews to provide both executive level and detailed reports",
+      "Reduce the risk of a successful attack before it occurs",
+      "Goes beyond typical penetration testing to involve mission-oriented Red Teaming operations",
+      "Prioritize your risks and quickly take the right preventative measures",
+      "Vulnerability Management",
+    ],
+  },
+];
+
 const PenetrationTestingFeatures = () => {
   return (
     <div className="bg-[#132534]">

@@ -2,6 +2,21 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const ITAUDIT_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "IT Audit Testing",
+      "IT Audit Support",
+      "IT Audit Deficiency Remediation",
+      "IT Audit Program Design & Review",
+      "IT Audit Training",
+      "Audit Automation Software Implementation & Configuration",
+      "Compliance Standards based on Industry",
+    ],
+  },
+];
+
 const ITAuditFeatures = () => {
   return (
     <div className="bg-[#132534]">

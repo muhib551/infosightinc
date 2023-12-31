@@ -36,19 +36,19 @@ const PositionCard = () => {
           />
         </div>
         <JobCard
-          heading="SNOC Analyst"
-          subHeading="Full-time"
-          type="Cybersecurity"
+          title="SNOC Analyst"
+          description="Full-time"
+          tag="Cybersecurity"
         />
         <JobCard
-          heading="Sales Professional"
-          subHeading="Part-time"
-          type="Sales"
+          title="Sales Professional"
+          description="Part-time"
+          tag="Sales"
         />
         <JobCard
-          heading="Penetration Tester"
-          subHeading="Full-time/Remote"
-          type="Testing & QA"
+          title="Penetration Tester"
+          description="Full-time/Remote"
+          tag="Testing & QA"
         />
       </div>
     </div>

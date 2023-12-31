@@ -13,7 +13,28 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import SecurityAwarFeatures from "./Sub/SecurityAwarFeartures";
 import SecurityAwarHero from "./Sub/SecurityAwarHero";
 
-const SecurityOperations = () => {
+const SECURITY_AWARENESS_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Today financial services providers are extremely busy and don't have the time to train employees on the importance of security awareness. This could lead to accidental internal leaks, clicking on links that they shouldn't and giving out confidential information. All of these instances could hurt your banks overall security posture and cost your company thousands to fix.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      " InfoSight's CSAP (Cybersecurity Awareness Program) helps you educate your online banking customers about the dangers from bad actors that create ACH & wire fraud, malware, phishing and more. Our convenient web portal makes it easy to create awareness and train your online banking customers with a complete library of ready-to-use content and materials.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "InfoSight's security experts refresh the content on our portal weekly to ensure you are getting the latest and greatest information. We offer a hands-on approach and a hands-off approach where your organization can pick and choose where you need our assistance or if you want to take the reins yourself! Our CSAP portal will leave your employees with the knowledge they need to be able to spot a cybercriminal and learn key tactics on how to avoid breaches.",
+  },
+];
+
+const SecurityAwareness = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Security Awareness";
   }, []);
@@ -130,4 +151,4 @@ const SecurityOperations = () => {
   );
 };
 
-export default SecurityOperations;
+export default SecurityAwareness;

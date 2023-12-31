@@ -2,6 +2,22 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const MANUFACTURING_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "SCADA & ICS Vulnerability Asessments",
+      "Disaster Recovery Planning",
+      "Social Engineering",
+      "Security Compliances, Policy & Procedure Updates",
+      "Industrial Control & IoT Services Security Compliances",
+      "Risk Management",
+      "24x7x365 Managed Security Services & SEIM",
+      "Employee Security Awareness Training",
+    ],
+  },
+];
+
 const IndManfProvide = () => {
   return (
     <div className="bg-[#132534]">

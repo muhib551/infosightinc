@@ -13,14 +13,28 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import ManagedXDRHero from "./Sub/ManagedXDRHero";
 import ManagedXDRFeatures from "./Sub/ManagedXDRFeatures";
 
-const ManagedXDR = () => {
-  const suggestedKeys = [
-    "React",
-    "JavaScript",
-    "Tailwind CSS",
-    "Web Development",
-  ];
+const MANAGED_XDR_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Having many different types of devices and data sources to monitor can put your organization at higher risk for a security incident. It can be overwhelming to monitor, analyze and respond to thousands of alerts each day. The threat analysis is a full-time job within itself and InfoSight wants to make it easier on you.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight's Managed XDR services, er take your data sources where our experts to monitor them from a “single pane of glass” 24x7x365. Additionally, Security Orchestration and Automation (SOAR) helps automate and speed up incident response and recovery in the instance of a breach. When data sources are normalized and no threats are apparent, our SOC analyst conduct threat hunting exercises to proactive look for threats.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      " You can be at ease 24x7x365 that InfoSight&apos;s Managed XDR services are at work even when you're not! Our Managed XDR can make response times quicker, smarter, more efficient, and more cost effective. Leveraging our XDR resources will allow you to experience better cybersecurity and act quickly on any threats that come your way!",
+  },
+];
 
+const ManagedXDR = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Managed XDR";
   }, []);

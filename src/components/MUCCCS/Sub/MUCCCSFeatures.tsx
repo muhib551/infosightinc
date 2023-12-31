@@ -2,6 +2,23 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const MUCCCS_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "24x7x365 UCC infrastructure monitoring covering IP Telephony, Messaging, Multi-media Video Conferencing, and Contact Center that leverages Artificial Intelligence (AI).",
+      "On-demand implementation of new technologies to remain agile",
+      "Support for multi-vendor connectivity platforms, SOHO integration, and business analytics and reporting",
+      "Multi-vendor case management",
+      "AWS Connect, AWS Chime, AWS Workspaces",
+      "Technical Human Capital with multi-vendor experience to satisfy any level of network operations and management complexity",
+      "A flexible support and services model to complement any size in-house IT team",
+      "Run/Playbook creation and maintenance",
+      "Shoretel/Mitel, Cisco",
+    ],
+  },
+];
+
 const MUCCCSFeatuers = () => {
   return (
     <div className="bg-[#132534]">

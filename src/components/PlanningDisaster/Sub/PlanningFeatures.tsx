@@ -2,6 +2,19 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const PLANNING_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Step 1: Risk Assessment",
+      "Step 2: Business Impact Analysis",
+      "Step 3: Technology Strategy",
+      "Step 4: Documentation",
+      "Step 5: Testing",
+    ],
+  },
+];
+
 const PlanningFeatures = () => {
   return (
     <div className="bg-[#132534]">

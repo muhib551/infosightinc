@@ -4,6 +4,21 @@ import energyImg from "../../../../public/industries/industries-energy-img.png";
 import energyIcon from "../../../../public/casestudy/flash-icon.svg";
 import IndEnergyPr from "./IndEnergyPr";
 
+const ENERGY_ELECTRIC_DATA = [
+  {
+    img: energyImg,
+    title: "Prarie Land Electric",
+    description: "Client success story",
+    tag: "Energy & Electric",
+  },
+  {
+    img: energyImg,
+    title: " Pioneer Electric",
+    description: "Client success story",
+    tag: "Energy & Electric",
+  },
+];
+
 const EnergyElectric = () => {
   return (
     <div>

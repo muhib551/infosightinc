@@ -2,6 +2,21 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const PCI_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Penetration Testing",
+      "Remediation Assistance",
+      "PCI DSS GAP Analysis",
+      "Readiness Assessments",
+      "Security Awareness Training",
+      "Security Network & Segmentation Design",
+      "Self-Assessment Questionnaire Assistance",
+    ],
+  },
+];
+
 const PCIFeatures = () => {
   return (
     <div className="bg-[#132534]">

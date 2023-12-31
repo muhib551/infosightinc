@@ -4,6 +4,27 @@ import walletIcon from "../../../../public/casestudy/walle-icon.svg";
 import financialImg from "../../../../public/industries/industries-financial-img.png";
 import IndFinancialPr from "./IndustryProvide";
 
+const FINANCIAL_DATA = [
+  {
+    img: walletIcon,
+    title: "South Georgia Bank",
+    description: "Client success story",
+    tag: "Financial",
+  },
+  {
+    img: walletIcon,
+    title: "Banco de Brasil",
+    description: "Client success story",
+    tag: "Financial",
+  },
+  {
+    img: walletIcon,
+    title: "FWCCU",
+    description: "Client success story",
+    tag: "Financial",
+  },
+];
+
 const FinancialCard = () => {
   return (
     <div>

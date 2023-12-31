@@ -2,6 +2,30 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const RISK_MANAGEMENT_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Risk Management Framework & Program Development",
+      "GLBA Risk Assessments",
+      "Cyber Risk Gap Analysis",
+      "eBanking Risk Assessments",
+      "IT Risk Assessments",
+      "BSA/AML Risk Assessments",
+      "Enterprise Risk Assessments",
+      "PCI Compliance Review",
+      "COBIT Compliance Review",
+      "SOX 404 Compliance Review",
+      "GLBA 501(b) Compliance Review",
+      "BSA Compliance Review",
+      "HIPAA Data Security Compliance Review",
+      "Business Continuity & Disaster Recovery",
+      "Multi-Factor Authentication in an eBanking Environment",
+      "Red Flag Identity Theft Review",
+    ],
+  },
+];
+
 const RiskManagementFeatures = () => {
   return (
     <div className="bg-[#132534]">

@@ -27,7 +27,6 @@ const Industries = () => {
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
         Explore our Industrial Coverage
       </h1>
-      {/* <div className="p-5 lg:px-20 flex flex-col lg:flex-row gap-2"> */}
       <div className="p-5 lg:px-20 lg:flex gap-2 grid grid-cols-2">
         <button className="px-2 py-1 border text-[#274A68] font-semibold bg-gray-100 hover:bg-gray-200 border-gray-300 rounded-md">
           Financial

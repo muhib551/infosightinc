@@ -2,7 +2,23 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
-const IndEntertProvide = () => {
+const WATER_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "SCADA & ICS Vulnerability Asessments",
+      "Disaster Recovery Planning",
+      "Social Engineering",
+      "Security Compliances, Policy & Procedure Updates",
+      "Industrial Control & IoT Services Security Compliances",
+      "Risk Management",
+      "24x7x365 Managed Security Services & SEIM",
+      "Employee Security Awareness Training",
+    ],
+  },
+];
+
+const IndWaterProvide = () => {
   return (
     <div className="bg-[#132534]">
       <div className="p-5 lg:px-20 lg:py-20 py-10">
@@ -60,4 +76,4 @@ const IndEntertProvide = () => {
   );
 };
 
-export default IndEntertProvide;
+export default IndWaterProvide;

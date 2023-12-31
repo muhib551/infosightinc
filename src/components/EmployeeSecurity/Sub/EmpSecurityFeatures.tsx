@@ -2,6 +2,20 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const EMPLOYEE_SECURITY_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Reduce Security Breaches",
+      "Increase Knowledge Retention",
+      "Close Awareness Gaps",
+      "Increate Competitive Advantages",
+      "Enhance Reputation",
+      "Reduce Potential of Lawsuits, Fines & Mandatory Audits",
+    ],
+  },
+];
+
 const EmpSecurityFeatures = () => {
   return (
     <div className="bg-[#132534]">

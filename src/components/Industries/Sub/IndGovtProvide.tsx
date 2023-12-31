@@ -2,6 +2,31 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const GOVERNMENT_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "SIEM Solutions",
+      "Penetration Testing",
+      "cybersecurity Awareness Training",
+      "IT Audits",
+      "Cyber Risk Assessments",
+      "Data Loss Prevention",
+      "Regulatory Compliance Reviews",
+      "24x7x365 Managed Security and Monitoring",
+      "Cloud Migration and Management",
+      "The My Florida Marketplace",
+      "The Florida Bid System",
+      "WebProcure",
+      "WEBS/ WSCA",
+      "TIPS",
+      "USAC",
+      "SCEIS",
+      "AEPA",
+    ],
+  },
+];
+
 const IndGovtProvide = () => {
   return (
     <div className="bg-[#132534]">

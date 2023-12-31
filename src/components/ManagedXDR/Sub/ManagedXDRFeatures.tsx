@@ -2,6 +2,20 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const MANAGED_XDR_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "24x7 Threat Monitoring",
+      "Cyber Incident Response",
+      "Threat Intelligence",
+      "Behavior Monitoring",
+      "Policy Creation & Management",
+      "Full scope services on any type of software, firewall or device",
+    ],
+  },
+];
+
 const ManagedXDRFeatures = () => {
   return (
     <div className="bg-[#132534]">

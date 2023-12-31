@@ -7,6 +7,45 @@ import featuredIcon4 from "../../../../public/casestudy/Featured-icon-4.svg";
 import featuredIcon5 from "../../../../public/casestudy/Featured-icon-5.svg";
 import featuredIcon6 from "../../../../public/casestudy/Featured-icon-6.svg";
 
+const WHYINFOSIGHT_DATA = [
+  {
+    img: featuredIcon1,
+    title: "Us Based SOC/NOC",
+    description:
+      "Our service allows systems and their staff to secure and build businesses with ease due their trust in Certified SOC/NOC from the top level of this country.",
+  },
+  {
+    img: featuredIcon2,
+    title: "25+ Years Regulatory Compliance",
+    description:
+      "Our service allows systems and their staff to secure and build businesses with ease due to 25+ years of regulatory compliance experience.",
+  },
+  {
+    img: featuredIcon3,
+    title: "Certified SOC/NOC",
+    description:
+      "Our service allows systems and their staff to secure and build  businesses with ease due their trust in Certified SOC/NOC from the  top level of this country.",
+  },
+  {
+    img: featuredIcon4,
+    title: "MSSP Services",
+    description:
+      "Our service allows systems and their staff to secure and build businesses with ease due their trust in MSSP services from the top level of this country.",
+  },
+  {
+    img: featuredIcon5,
+    title: "Cybersecurity Trainings",
+    description:
+      " Our service allows systems and their staff to secure and build businesses with ease as we provide cybersecurity trainings to the management and resources.",
+  },
+  {
+    img: featuredIcon6,
+    title: "Flexible Pricing Models",
+    description:
+      "Our service allows systems and their staff to secure and build businesses with ease due flexible pricing models.",
+  },
+];
+
 const InfoSight = () => {
   return (
     <div className="p-5 lg:px-20">
@@ -18,6 +57,23 @@ const InfoSight = () => {
         clients. Trusted by over 4,000+ Clients.
       </p>
       <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 mt-8">
+        {/* {WHYINFOSIGHT_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300"
+              key={title + i}
+            >
+              <Image src={img} alt="" className="" />
+              <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
+                {title}
+              </h1>
+              <p className="text-[#3B719F] text-sm lg:text-base">
+                {description}
+              </p>
+            </div>
+          );
+        })} */}
+
         <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
           <Image src={featuredIcon1} alt="Service icon" className="" />
           <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">

@@ -13,6 +13,27 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import MobileAPIHero from "./Sub/MobileAPIHero";
 import MobileAPIFeatures from "./Sub/MobileAPIFeatures";
 
+const MOBILE_api_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Today, Applications have become a tremendous target for cybercriminals because of their heightened value of stored information. Weaknesses and flaws in an application's source code or APIs can result in exploits compromising confidential data.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight's API and Code Reviews, which can include Mobile, assist in identifying any underlying security issues with the application by providing a comprehensive review of Application code and API's. This will identify vulnerabilities and ensure your applications meet the latest security standards needed.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "Recommendations for remedial action will be made at the conclusion of the testing procedure, with the option of additional security testing following post-change. Following the reports, we suggest maintaining a change management log of all code changes and/or architectural changes. We can also provide follow up services upon further discussion with your IT team.",
+  },
+];
+
 const MobileAPI = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Mobile, API & Code Review";

@@ -8,6 +8,45 @@ import servicesImg5 from "../../../../public/homepage/service-img5.png";
 import servicesImg6 from "../../../../public/homepage/service-img6.png";
 import chevronRightIcon from "../../../../public/homepage/right-chevron-icon.svg";
 
+const INDUSTRY_SERVICE_DATA = [
+  {
+    img: servicesImg1,
+    title: "Government",
+    description:
+      "InfoSight understands that Government agencies are increasingly targeted every day. We can help you protect sensitive data.",
+  },
+  {
+    img: servicesImg2,
+    title: "Financial",
+    description:
+      "InfoSight provides solutions for financial industries to improve overall compliance, security and financial infrastructure.",
+  },
+  {
+    img: servicesImg3,
+    title: "Energy/Electrical",
+    description:
+      "Cyberattacks leading to ICS failures can be catastrophic. InfoSight can provide solutions to reduce the risk of a successful attack.",
+  },
+  {
+    img: servicesImg4,
+    title: "Oil & Gas",
+    description:
+      "Protecting your SCADA & ICS are crucial to running your business. InfoSight can provide the security services you need.",
+  },
+  {
+    img: servicesImg5,
+    title: "Healthcare",
+    description:
+      "Our HIPAA compliant solutions can optimize how your networks perform & ensure patient information security.",
+  },
+  {
+    img: servicesImg6,
+    title: "Manufacturing & Indusstries",
+    description:
+      "InfoSight's SCADA strategies and services can reduce the risk of compromised data from your information control systems.",
+  },
+];
+
 const IndustryServices = () => {
   return (
     <div className="bg-[#3B719F] p-5 lg:p-20">

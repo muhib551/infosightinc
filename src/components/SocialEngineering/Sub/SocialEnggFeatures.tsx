@@ -2,6 +2,25 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const SE_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Email Phishing",
+      "FTelephone Impersonation",
+      "Trojan & Virus Testing",
+      "Onsite Impersonation",
+      "Website Subversion",
+      "Camera Placement Testing",
+      "Key Control Testing",
+      "Clean Desktop Testing",
+      "Suspicious Activity Testing",
+      "Physical Penetration Testing",
+      "Dumpster Diving & Shred Testing",
+    ],
+  },
+];
+
 const SocialEngineeringFeatures = () => {
   return (
     <div className="bg-[#132534]">

@@ -12,6 +12,28 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import EmpSecurityHero from "./Sub/EmplSecurityHero";
 import EmpSecurityFeatures from "./Sub/EmpSecurityFeatures";
+
+const EMPLOYEE_SECURITY_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "If your staff can&apos;t recognize a scam, they won&apos;t be able to take the right defensive actions against it. Wrong or no action can lead to breaches and fraud which could leave your company open to a costly resolution and loss of data.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight solves the strenuous problems of employee security awareness training and ensures employees are well-equipped to defend against cyberattacks. Our experts help you build security awareness through our Learn Cloud LMS Platformand specialized courseware for your industry and environment.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "InfoSight's courseware catalog allows you pick from over 150 courses to meet your goals and industry compliance requirements. InfoSight&apos;s courses are designed for all knowledge levels to train your staff on how to recognize suspicious activity and take preventative measures to help your organization avoid a costly breach or accidental data leak.",
+  },
+];
+
 const SecurityOperations = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Employee Security Awareness";

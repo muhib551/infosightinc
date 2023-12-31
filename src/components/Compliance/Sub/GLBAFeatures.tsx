@@ -2,6 +2,20 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const GLBA_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Evaluating the processes by which the institution monitors and tests the effectiveness of the institution's information security-related controls and their relationship with its Institution's information security risk assessment",
+      "Meeting GLBA requirements",
+      "Reviewing current policies and procedures regarding privacy disclosures",
+      "Evaluating the Board of Directors approval and oversight of the institution's ISP and supervision of its development, implementation and maintenance, including a review of management reports concerning the effectiveness of the ISP",
+      "Building security & compliance reports in a language your C-Suite and Board will understand",
+      "Addressing the protection of NPI and notification to the institution of any information security breaches.",
+    ],
+  },
+];
+
 const GLBAFeatures = () => {
   return (
     <div className="bg-[#132534]">

@@ -2,6 +2,23 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const CLOUD_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Enforced Compliance",
+      "One Centralized Location for Important Company Documents",
+      "Quick, Efficient & Easy-to-Navigate Design",
+      "Signature Tracking & Acquiring",
+      " Tracking & Reporting for Trainings",
+      "Flexible Packaging Options",
+      "New & Up to Date Content",
+      "Custom Dynamic Messages & Alerts",
+      "Customer Notifications & Reminders",
+    ],
+  },
+];
+
 const CloudLMSFeatures = () => {
   return (
     <div className="bg-[#132534]">

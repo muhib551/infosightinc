@@ -10,7 +10,7 @@ import auditInfoImg2 from "../../../public/audit/Audit-info-img2.png";
 import ITAuditHero from "./Sub/ITAuditHero";
 import ITAuditFeatures from "./Sub/ITAuditFeatures";
 
-const ITGeneralControl = () => {
+const ITAudit = () => {
   React.useEffect(() => {
     document.title = "IT Audit";
   }, []);
@@ -77,4 +77,4 @@ const ITGeneralControl = () => {
   );
 };
 
-export default ITGeneralControl;
+export default ITAudit;

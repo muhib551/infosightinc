@@ -1,7 +1,36 @@
 import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
-import NetworkCloud from "..";
+
+const NETWORK_CLOUD_FEATURES_DATA_1 = [
+  {
+    img: tickImg,
+    title: [
+      "Monitoring for both on-premise and cloud estates to include all LAN/WAN devices",
+      "On-demand implementation of new technologies to remain agile",
+      "Tooling to obtain granular levels of visibility into your network and cloud environments",
+      "Run/Playbook creation and maintenance",
+      "Technical Human Capital with multi-vendor experience",
+      "Multi-vendor case management",
+      "A flexible support services model to compliment any size in-house IT Team",
+    ],
+  },
+];
+
+const NETWORK_CLOUD_FEATURES_DATA_2 = [
+  {
+    img: tickImg,
+    title: [
+      "Health & Performance Monitoring",
+      "Vulnerability & Patch Management",
+      "AD Management & Monitoring",
+      "NIDS/HIDS",
+      "Hosted SIEM",
+      "Endpoint Security",
+      "SOC Threat Detection & Incident Response",
+    ],
+  },
+];
 
 const NetworkCloudFeatures = () => {
   return (

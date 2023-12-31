@@ -18,10 +18,10 @@ const CultureSection = () => {
         InfoSight has been improving security and network performance for
         federally regulated organizations since 1998.
       </p>
-      <div className="flex justify-between flex-col lg:flex-row gap-5 my-5">
-        <Image src={aboutUsImg1} alt="Culture Image" className="rounded-lg" />
-        <Image src={aboutUsImg2} alt="Culture Image" className="rounded-lg" />
-        <Image src={aboutUsImg3} alt="Culture Image" className="rounded-lg" />
+      <div className="flex justify-between items-center flex-col lg:flex-row gap-5 my-5">
+        <Image src={aboutUsImg1} alt="" className="rounded-lg w-full" />
+        <Image src={aboutUsImg2} alt="" className="rounded-lg w-full" />
+        <Image src={aboutUsImg3} alt="" className="rounded-lg w-full" />
       </div>
     </div>
   );

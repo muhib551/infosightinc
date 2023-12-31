@@ -7,6 +7,33 @@ import linkedinIcon from "../../../../public/webinars/linkedin-icon.svg";
 import chevronRight from "../../../../public/webinars/chevron-right-white.png";
 import Link from "next/link";
 
+const FOLLOW_US_DATA = [
+  {
+    icon: youtubeIcon,
+    title: "Youtube",
+    chevron: chevronRight,
+    link: "https://www.youtube.com/",
+  },
+  {
+    icon: instagramIcon,
+    title: "Instagram",
+    chevron: chevronRight,
+    link: "https://www.instagram.com/",
+  },
+  {
+    icon: xIcon,
+    title: "X",
+    chevron: chevronRight,
+    link: "https://www.twitter.com/",
+  },
+  {
+    icon: linkedinIcon,
+    title: "Linkedin",
+    chevron: chevronRight,
+    link: "https://www.linkedin.com/",
+  },
+];
+
 const FollowUsCard = () => {
   return (
     <div className="bg-gray-900">
@@ -15,7 +42,24 @@ const FollowUsCard = () => {
           Follow Us on Social Media
         </h1>
         <div className="py-5 grid lg:grid-cols-4 grid-cols-1 gap-5">
-          <Link href="#">
+          {FOLLOW_US_DATA.map(({ icon, title, chevron, link }, i) => {
+            return (
+              <Link href={link} key={i}>
+                <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
+                  <Image src={icon} alt="Youtube Icon" className="" />
+                  <p className="text-white font-semibold flex items-center lg:gap-1">
+                    {title}{" "}
+                    <span>
+                      {" "}
+                      <Image src={chevron} alt="Chevron Icon" className="" />
+                    </span>
+                  </p>
+                </div>
+              </Link>
+            );
+          })}
+
+          {/* <Link href="#">
             <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
               <Image src={youtubeIcon} alt="Youtube Icon" className="" />
               <p className="text-white font-semibold flex items-center lg:gap-1">
@@ -62,7 +106,7 @@ const FollowUsCard = () => {
                 </span>
               </p>
             </div>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

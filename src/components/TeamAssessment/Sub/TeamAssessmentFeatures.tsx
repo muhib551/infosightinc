@@ -2,6 +2,18 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const TA_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Reduce the risk of a successful attack before it occurs",
+      "Identify security issues beyond the capability of automated tools",
+      "Prioritize your risks and quickly take the right preventative measures",
+      "Help meet compliance requirements before deadlines",
+    ],
+  },
+];
+
 const TeamAssessmentFeatures = () => {
   return (
     <div className="bg-[#132534]">

@@ -14,6 +14,24 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 
+const SECURITY_OPERATIONS_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description: "",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description: "",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description: "",
+  },
+];
+
 const SecurityOperations = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Security Operations";

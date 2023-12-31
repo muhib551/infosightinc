@@ -2,6 +2,22 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const WEBAPP_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "SQL / Code Injection",
+      "File & Directory Analysis",
+      "Web Server Vulnerabilities",
+      "3rd Party Package Vulnerabilities",
+      "Server-Side Template Injection",
+      "Cross-Site Scripting",
+      "OWASP Top 10",
+      "Parameter Tampering",
+    ],
+  },
+];
+
 const WebAppFeatures = () => {
   return (
     <div className="bg-[#132534]">

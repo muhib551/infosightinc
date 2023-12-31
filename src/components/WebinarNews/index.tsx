@@ -8,6 +8,7 @@ import WebNewsHero from "./Sub/WebNewsHero";
 import FollowUsCard from "../Webinars/Sub/FollowUsCard";
 import WebCard from "../Webinars/Sub/WebCard";
 import TopNews from "./Sub/TopNews";
+import MainComponent from "./Sub/MainComp";
 
 const WebinarNews = () => {
   React.useEffect(() => {

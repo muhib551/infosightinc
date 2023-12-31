@@ -2,6 +2,24 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const SA_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Cybercrime Defense Strategies",
+      " Cybersecurity Tools & Checklists for Business Customers",
+      "Webinars & Training Presentations",
+      "Newsletters",
+      "Quick Clip Videos",
+      "Social Media Posts",
+      "Email Campaigns",
+      "Posters and Statement Stuffers",
+      "Website Content",
+      "Website Security Templates & more!",
+    ],
+  },
+];
+
 const SecurityAwarFeatures = () => {
   return (
     <div className="bg-[#132534]">

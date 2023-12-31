@@ -2,6 +2,18 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const CYBERSECURITY_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Reduce the risk of a successful attack before it occurs",
+      "Identify security issues beyond the capability of automated tools & assessments/tests",
+      "Go beyond typical penetration testing and target mission critical applications and operations",
+      " Prioritize your risk and quickly take the right remedial and preventative measures",
+    ],
+  },
+];
+
 const CyberSecurityFeatures = () => {
   return (
     <div className="bg-[#132534]">

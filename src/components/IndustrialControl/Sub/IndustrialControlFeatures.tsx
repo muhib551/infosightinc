@@ -2,6 +2,21 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const INDUSTRIAL_CONTROL_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Cyber Incident Response Plan Development",
+      " PCI DSS Penetration Testing",
+      "Web, Mobile & API Testing",
+      "Regulatory Compliance",
+      "Social Engineering",
+      "Red Team/Blue Team",
+      "Physical Security Reviews",
+    ],
+  },
+];
+
 const IndustrialControlFeatures = () => {
   return (
     <div className="bg-[#132534]">

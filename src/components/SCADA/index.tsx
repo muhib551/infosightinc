@@ -13,6 +13,27 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import SCADAFeatures from "./Sub/SCADAFeatures";
 import SCADAHero from "./Sub/SCADAHero";
 
+const SCADA_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Today all organizations face the risk of cyberattacks. Being prepared prior to an attack is critical to minimize impact and quickly recover. When unprepared, hackers are nearly 100% successful. By regularly testing systems and controls an attacker's success rate plumets! This is where we come in.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight's experienced engineers test your network manually to identify the extent your system could currently be compromised by a real-life attacker. Our SCADA ICS risk and vulnerability assessments can be used to test your security policy compliance, the effectiveness of your employee security awareness training and your organization's ability to identify and respond to security incidents. InfoSight provides remediation reports going in-depth on steps to take your overall security to the next level. Our team can act as an extension of your team to assist in the remediation process to ensure cybersecurity right away.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "InfoSight's security experts conduct real-world attacks to determine your security weaknesses. Our extensive knowledge of the most current attack vectors, along with our expertise on network types including on-premise Data Centers, Cloud or Hybrid environments will provide the assurance and confidence you need. Throughout the process, our team will work closely with your company's information security and technical teams to provide the most concise view your overall security posture and to provide technical recommendations for dealing with risks appropriately.",
+  },
+];
+
 const SocialEngineering = () => {
   React.useEffect(() => {
     document.title = "InfoSight | SCADA/ICS Risk & Vulnerability Assessments";

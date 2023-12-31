@@ -2,20 +2,20 @@ import Button from "@/components/Elements/Button";
 import React from "react";
 
 interface Prop {
-  heading: string;
-  subHeading: string;
-  type: string;
+  title: string;
+  description: string;
+  tag: string;
 }
 
-const JobCard = ({ heading, subHeading, type }: Prop) => {
+const JobCard = ({ title, description, tag }: Prop) => {
   return (
     <div className="py-5 ">
       <div className="flex flex-col lg:flex-row border border-gray-300 p-5 rounded-xl">
         <div className="flex flex-col gap-1 items-center w-full lg:items-start">
-          <h1 className="text-xl font-semibold">{heading}</h1>
-          <p className="text-gray-500">{subHeading}</p>
+          <h1 className="text-xl font-semibold">{title}</h1>
+          <p className="text-gray-500">{description}</p>
           <p className="text-[#274A68] text-[10px] bg-[#E9F0F7] px-2 py-1 rounded-md w-max">
-            {type}
+            {tag}
           </p>
         </div>
         <div className="flex flex-col lg:flex-row justify-between gap-5 mt-8 lg:mt-0 items-center lg:justify-end w-full">

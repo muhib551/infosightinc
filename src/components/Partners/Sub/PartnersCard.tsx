@@ -25,6 +25,106 @@ import partnerIcon22 from "../../../../public/partners/sumo-icon.png";
 import partnerIcon23 from "../../../../public/partners/ruckus-icon.png";
 import partnerIcon24 from "../../../../public/partners/brocade-2-icon.png";
 import Link from "next/link";
+import { link } from "fs";
+
+const PARTNERS_DATA = [
+  {
+    img: partnerIcon1,
+    link: "https://www.microsoft.com",
+  },
+  {
+    img: partnerIcon2,
+    link: "https://www.dell.com/",
+  },
+  {
+    img: partnerIcon3,
+    link: "https://www.amazon.com/",
+  },
+  {
+    img: partnerIcon4,
+    link: "https://www.att.com/",
+  },
+  {
+    img: partnerIcon5,
+    link: "#",
+  },
+  {
+    img: partnerIcon6,
+    link: "https://www.checkpoint.com/",
+  },
+  {
+    img: partnerIcon7,
+    link: "https://www.hp.com/",
+  },
+  {
+    img: partnerIcon8,
+    link: "https://www.dell.com/en-us/blog/tags/dell-emc/",
+  },
+  {
+    img: partnerIcon9,
+    link: "https://www.fortinet.com/",
+  },
+  {
+    img: partnerIcon10,
+    link: "https://azure.microsoft.com/en-us",
+  },
+  {
+    img: partnerIcon11,
+    link: "https://www.mitel.com/",
+  },
+  {
+    img: partnerIcon12,
+    link: "https://www.microsoft.com/en/microsoft-365/",
+  },
+  {
+    img: partnerIcon13,
+    link: "https://www.paloaltonetworks.com/",
+  },
+  {
+    img: partnerIcon14,
+    link: "#",
+  },
+  {
+    img: partnerIcon15,
+    link: "https://www.solarwinds.com/",
+  },
+  {
+    img: partnerIcon16,
+    link: "https://www.watchguard.com/",
+  },
+  {
+    img: partnerIcon17,
+    link: "https://www.sumologic.com/",
+  },
+  {
+    img: partnerIcon18,
+    link: "https://www.f5.com/",
+  },
+  {
+    img: partnerIcon19,
+    link: "#",
+  },
+  {
+    img: partnerIcon20,
+    link: "https://www.radiflow.com/",
+  },
+  {
+    img: partnerIcon21,
+    link: "https://www.vmware.com/",
+  },
+  {
+    img: partnerIcon22,
+    link: "#",
+  },
+  {
+    img: partnerIcon23,
+    link: "https://www.ruckusnetworks.com/",
+  },
+  {
+    img: partnerIcon24,
+    link: "#",
+  },
+];
 
 const PartnersCard = () => {
   return (
@@ -36,78 +136,13 @@ const PartnersCard = () => {
         InfoSight proudly partners with below industry leading companies.
       </p>
       <div className="grid lg:grid-cols-11 grid-cols-3 lg:gap-10 gap-6 py-5">
-        <Link href="https://www.microsoft.com">
-          <Image src={partnerIcon1} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.dell.com/">
-          <Image src={partnerIcon2} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.amazon.com/">
-          <Image src={partnerIcon3} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.att.com/">
-          <Image src={partnerIcon4} alt="Parter logo" className="" />
-        </Link>
-        <Link href="#">
-          <Image src={partnerIcon5} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.checkpoint.com/">
-          <Image src={partnerIcon6} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.hp.com/">
-          <Image src={partnerIcon7} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.dell.com/en-us/blog/tags/dell-emc/">
-          <Image src={partnerIcon8} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.fortinet.com/">
-          <Image src={partnerIcon9} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://azure.microsoft.com/en-us">
-          <Image src={partnerIcon10} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.mitel.com/">
-          <Image src={partnerIcon11} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.microsoft.com/en/microsoft-365/">
-          <Image src={partnerIcon12} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.paloaltonetworks.com/">
-          <Image src={partnerIcon13} alt="Parter logo" className="" />
-        </Link>
-        <Link href="#">
-          <Image src={partnerIcon14} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.solarwinds.com/">
-          <Image src={partnerIcon15} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.watchguard.com/">
-          <Image src={partnerIcon16} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.sumologic.com/">
-          <Image src={partnerIcon17} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.f5.com/">
-          <Image src={partnerIcon18} alt="Parter logo" className="" />
-        </Link>
-        <Link href="#">
-          <Image src={partnerIcon19} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.radiflow.com/">
-          <Image src={partnerIcon20} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.vmware.com/">
-          <Image src={partnerIcon21} alt="Parter logo" className="" />
-        </Link>
-        <Link href="#">
-          <Image src={partnerIcon22} alt="Parter logo" className="" />
-        </Link>
-        <Link href="https://www.ruckusnetworks.com/">
-          <Image src={partnerIcon23} alt="Parter logo" className="" />
-        </Link>
-        <Link href="#">
-          <Image src={partnerIcon24} alt="Parter logo" className="" />
-        </Link>
+        {PARTNERS_DATA.map(({ img, link }, i) => {
+          return (
+            <Link href={link} key={i}>
+              <Image src={img} alt="Parter logo" className="" />
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

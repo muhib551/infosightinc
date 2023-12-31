@@ -13,6 +13,27 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import SocialEngineeringHero from "./Sub/SocialEnggHero";
 import SocialEngineeringFeatures from "./Sub/SocialEnggFeatures";
 
+const SOCIAL_ENGG_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Today all organizations across every industry face the risks of cybercriminals and breached networks. Regular penetration testing is crucial to ensure network security against sophisticated attackers. We understand it is difficult to find a trustworthy third party that understands your industry specific compliance as well as your overall security system. That's where we come in.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight's experienced engineers test your network manually to identify the extent your system could currently be compromised by a real-life attacker. Our penetration testing service can be used to test your security policy compliance, the effectiveness of your employee security awareness training and your organization's ability to identify and respond to security incidents. InfoSight provides remediation reports going in-depth on steps to take your overall security to the next level. Our team can act as an extension of your team to assist in the remediation process to ensure cybersecurity right away.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "InfoSight's security experts conduct real-world attacks to determine your security weaknesses. Our extensive knowledge of the most current attack vectors, along with our expertise network types including on-premise Data Centers, Cloud or Hybrid environments will provide the assurance and confidence you need. This enables your team to concentrate on day-to-day business rather than on the discovery of potential network security risks.",
+  },
+];
+
 const SocialEngineering = () => {
   React.useEffect(() => {
     document.title =

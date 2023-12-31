@@ -2,6 +2,20 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const MANAGED_EDR_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "24x7 Comprehensive Security Monitoring",
+      "Containment, Mitigation & Remediation",
+      "Incident Response",
+      "Attack Intelligence",
+      "Behavior Monitoring",
+      "Endpoint Policy Creation & Management",
+    ],
+  },
+];
+
 const ManagedEDRFeatures = () => {
   return (
     <div className="bg-[#132534]">

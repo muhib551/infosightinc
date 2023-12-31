@@ -13,6 +13,27 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import CybersecurityIRPMHero from "./Sub/CybersecurityIRPMHero";
 import CybersecurityIRPMFeatures from "./Sub/CybersecurityIRPMFeatures";
 
+const CYBERSECURITY_IRPM_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Having a safe and secure environment is a must but so is knowing what to do in case a successful cyber breach occurs. A cybersecurity Incident Response Plan provides utilities with practical guidance and critical considerations in preparing for a cyber incident. A cybersecurity Incident Response Plan enables staff to take swift, effective action.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "InfoSight identifies the external response organizations—including law enforcement, information sharing organizations, and cyber mutual assistance groups—the utility might engage during cyber incident response, particularly for severe incidents that outpace utility resources and expertise. Our staff collaborates with your team to outline your incident response requirements as well as timelines in case of an emergency.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "Once your Cybersecurity Incident Response Plan is in place your organization will have a strategic plan in case an attack were to occur.",
+  },
+];
+
 const CybersecurityIRPM = () => {
   React.useEffect(() => {
     document.title =
@@ -33,7 +54,7 @@ const CybersecurityIRPM = () => {
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
           <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
-            <p className=" text-justify text-[#444444]">
+            <p className=" text-[#444444]">
               InfoSight&apos;s cybersecurity Incident Response Planning &
               Management will continuously ensure your environment is protected
               and your organization&apos;s data is secure as well as make sure
@@ -54,7 +75,7 @@ const CybersecurityIRPM = () => {
             <h1 className="lg:text-2xl text-gray-900 font-semibold">
               The Challenge
             </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+            <p className="text-gray-900 text-sm lg:text-base py-1">
               Having a safe and secure environment is a must but so is knowing
               what to do in case a successful cyber breach occurs. A
               cybersecurity Incident Response Plan provides utilities with
@@ -79,7 +100,7 @@ const CybersecurityIRPM = () => {
             <h1 className="lg:text-2xl text-gray-900 font-semibold">
               How We Solve It
             </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+            <p className="text-gray-900 text-sm lg:text-base py-1">
               InfoSight identifies the external response organizations—including
               law enforcement, information sharing organizations, and cyber
               mutual assistance groups—the utility might engage during cyber
@@ -100,7 +121,7 @@ const CybersecurityIRPM = () => {
             <h1 className="lg:text-2xl text-gray-900 font-semibold">
               The Outcome
             </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+            <p className="text-gray-900 text-sm lg:text-base py-1">
               Once your Cybersecurity Incident Response Plan is in place your
               organization will have a strategic plan in case an attack were to
               occur.

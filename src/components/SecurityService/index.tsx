@@ -14,6 +14,21 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 
+const SECURITY_SERVICES_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "In today's cybersecurity environment staffing for quality experts is a constant challenge due to sheer demand. Additionally, sourcing quality tools that are implemented to full feature capacity and keeping them that way requires a large and constant effort. And it's a 24x7x365 job too! Security as a service (SECaaS) allows you to outsource these challenging tasks around the clock to ensure your organizations cybersecurity and incident response plan is as effective as possible against cyberattack and systems compromise.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      " With security as a service (SECaaS), we implement a variety of services and solutions to defend your network and respond to potential incidents 24x7. We also put into place a vulnerability management program that matches your operational risk level. InfoSight's SECaaS offering simplifies your overall cybersecurity effort into an affordable subscription-based “pay as you go” model. It reduces the challenges associated with hiring and retaining cybersecurity experts and managing a 24x7 internal team saving your organization time and money!",
+  },
+];
+
 const SecurityService = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Security Services";

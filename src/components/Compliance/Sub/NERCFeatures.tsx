@@ -2,6 +2,19 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const NERC_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Meeting CIP regulatory compliance requirements",
+      "Assessing your current cybersecurity posture",
+      "Managing, protecting & securing your BES Cyber Assets and Confidential Customer Data",
+      "Penetration testing of your SCADA and corporate networks",
+      "Building security & compliance reports in language your C-Suite and board will understand",
+    ],
+  },
+];
+
 const NERCFeatures = () => {
   return (
     <div className="bg-[#132534]">

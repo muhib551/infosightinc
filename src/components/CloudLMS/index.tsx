@@ -13,14 +13,38 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import CloudLMSHero from "./Sub/CloudLMSHero";
 import CloudLMSFeatures from "./Sub/CloudLMSFeatures";
 
-const CloudLMS = () => {
-  const suggestedKeys = [
-    "React",
-    "JavaScript",
-    "Tailwind CSS",
-    "Web Development",
-  ];
+const CLOUDMS_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Today all organizations across every industry face the risks of cybercriminals and breached networks. If your staff can't recognize a scam, they won't be able to take the right defensive actions against it. Wrong or no action can lead to breaches and fraud which could leave your company open to a costly resolution and loss of data.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "With our LearnCloud platform your organization will have 24x7 access to your training portal and be provided with training courseware and mentoring services depending on the subscription purchases. Our experts provide your administrators with special training so you get the full scope of LearnCloud and how it can be used from an admin standpoint as well as from an employee standpoint.",
+  },
+  {
+    img: infoImg3,
+    title: "The Outcome",
+    description:
+      "InfoSight's LearnCloud is intended to educate employees on important areas of security and awareness initiatives to prevent fraud. Some courses are designed to meet regulatory requirements, statutory directives, and security best practices under which the organization operates while others can check on their cybersecurity knowledge.",
+    offers: "Our Subscription services offer:",
+    points: [
+      "A Client Branded Portal",
+      "Current News Features",
+      "Online Document Library Modules",
+      "Reporting & Administration Modules",
+      "Policy Digital Signature & Tracking Modules",
+      "Messaging Systems for Courses & Compliance Reminders",
+      "Certificates of Completion",
+    ],
+  },
+];
 
+const CloudLMS = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Cloud LMS";
   }, []);

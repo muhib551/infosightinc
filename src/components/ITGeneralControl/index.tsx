@@ -11,7 +11,22 @@ import generalinfoImg2 from "../../../public/audit/IT-General-Control-Review-img
 import ITGeneralControlHero from "./Sub/ITGeneralControlHero";
 import ITGeneralControlFeatures from "./Sub/ITGeneralControlFeatures";
 
-const ITAudit = () => {
+const IT_GENERAL_CONTROL_DATA = [
+  {
+    img: generalinfoImg1,
+    title: "What is an IT General Controls Review?",
+    description:
+      "ITGC are the basic controls that support an organization's IT infrastructure. ITGC are related to IT systems such as operating systems, databases and applications to make sure that they are working and operating properly. They abide by policies, procedures and compliances related to your specific industry.",
+  },
+  {
+    img: generalinfoImg2,
+    title: "How can InfoSight Help?",
+    description:
+      "InfoSight's goal is to provide management and assurance to assets and safeguard controls against lost and compromised data. Our experts work with your team to assist with IT Management, Information Security, BCP/DRP, outsourcing technology & more. Our team assists your company to continuously improve your security posture, making your organization aware of emerging security threats.",
+  },
+];
+
+const ITGeneralControl = () => {
   React.useEffect(() => {
     document.title = "IT General Control Review";
   }, []);
@@ -100,4 +115,4 @@ const ITAudit = () => {
   );
 };
 
-export default ITAudit;
+export default ITGeneralControl;

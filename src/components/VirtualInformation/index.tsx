@@ -13,6 +13,21 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import VirtualInformationHero from "./Sub/VirtualInformationHero";
 import VirtualInformationFeatures from "./Sub/VirtualInformationFeatures";
 
+const VIRTUAL_INFO_DATA = [
+  {
+    img: infoImg1,
+    title: "The Challenge",
+    description:
+      "Most organizations face budget constraints and/or their corporate structure doesn't support adding a full-time senior executive for information and cyber security management. This leaves many organizations at risk. Cyberattacks stop at nothing and no industry is immune.",
+  },
+  {
+    img: infoImg2,
+    title: "How We Solve It",
+    description:
+      "We provide your organization with a Virtual ISO who serves as an extension of your business and is responsible for making recommendations for the development, implementation and management of your organization's corporate security vision, strategy, and programs. Your appointed VISO is retained on a contractual basis and facilitates conversations that lead to executive critical decision-making related to information security issues. Our Tactical VISO Program offers an ISO in an advisory roe to review organizational security policies, processes and reporting. Whereas our Strategic VISO Program combines our Tactical VISO Program with added organizational oversight, mitigation activity tracking, resource assignments and risk assessment preparation utilizing our GRC (Governance, Risk & Compliance) Platform.",
+  },
+];
+
 const VirtualInformation = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Virtual Information Security Officer (VISO)";

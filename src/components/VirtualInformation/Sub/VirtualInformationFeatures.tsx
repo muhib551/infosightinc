@@ -2,6 +2,21 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const VINFO_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Reduce Costs by Maximizing IT Budget & Strategic Planning",
+      "Provide Independent Oversight of IT Security Controls",
+      "Perform Annual IT Security Risk Assessments",
+      "Leverage the Most Current Threat Mitigation Strategies",
+      "Assist in Security Process Development & Incident Response Planning",
+      "Provide Recommendations & Reporting",
+      "Enhance & Integrate IT/InfoSec Policies & Procedures",
+    ],
+  },
+];
+
 const VirtualInformationFeatures = () => {
   return (
     <div className="bg-[#132534]">

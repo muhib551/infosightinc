@@ -2,6 +2,18 @@ import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
+const IT_GC_FEATURES_DATA = [
+  {
+    img: tickImg,
+    title: [
+      "Review risk reviews for control requirements",
+      "Review management's response to issues raised at, or since the last exam",
+      "Review past reports for outstanding issues or previous problems.",
+      "Interview management pre-examination information requests to identify changes to the technology infrastructure or new products and services that might increase the institution's risk.",
+    ],
+  },
+];
+
 const ITGeneralControlFeatures = () => {
   return (
     <div className="bg-[#132534]">
