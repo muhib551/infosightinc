@@ -3,15 +3,10 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const SCADA_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Reduce the risk of a successful attack before it occurs",
-      "Identify security issues beyond the capability of automated tools",
-      "Prioritize your risks and quickly take the right preventative measures",
-      "Help meet compliance requirements before deadlines",
-    ],
-  },
+  "Reduce the risk of a successful attack before it occurs",
+  "Identify security issues beyond the capability of automated tools",
+  "Prioritize your risks and quickly take the right preventative measures",
+  "Help meet compliance requirements before deadlines",
 ];
 
 const SCADAFeatures = () => {
@@ -22,31 +17,17 @@ const SCADAFeatures = () => {
           Key Benefits
         </h1>
         <div className="grid lg:grid-cols-3 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Reduce the risk of a successful attack before it occurs
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Identify security issues beyond the capability of automated tools
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Prioritize your risks and quickly take the right preventative
-              measures
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Help meet compliance requirements before deadlines
-            </p>
-          </div>
+          {SCADA_FEATURES_DATA.map((sfd, i) => {
+            return (
+              <div
+                key={"SCADA_FEATURES_DATA__" + i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer"
+              >
+                <Image src={tickImg} alt="" />
+                <p className="text-white font-semibold">{sfd}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
