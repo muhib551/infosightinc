@@ -1,27 +1,31 @@
 import Image from "next/image";
 import React from "react";
-import walletIcon from "../../../../public/casestudy/walle-icon.svg";
 import financialImg from "../../../../public/industries/industries-financial-img.png";
 import IndFinancialPr from "./IndustryProvide";
+import Card, { CardProps } from "@/components/Elements/Card";
+import Cards from "@/components/Elements/Cards";
 
-const FINANCIAL_DATA = [
+const FINANCIAL_CARDS_DATA: CardProps[] = [
   {
-    img: walletIcon,
+    imgType: "WLT",
     title: "South Georgia Bank",
     description: "Client success story",
     tag: "Financial",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20South%20GA%20Bank%20Client%20Success%20Story.pdf",
   },
   {
-    img: walletIcon,
+    imgType: "WLT",
     title: "Banco de Brasil",
     description: "Client success story",
     tag: "Financial",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20Banco%20do%20Brasil%20Americas%20Client%20Success%20Story.pdf",
   },
   {
-    img: walletIcon,
+    imgType: "WLT",
     title: "FWCCU",
     description: "Client success story",
     tag: "Financial",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20FWCCU%20Client%20Success%20Story.pdf",
   },
 ];
 
@@ -30,11 +34,7 @@ const FinancialCard = () => {
     <div>
       <div className="p-5 lg:px-20">
         <div className="flex flex-col gap-3">
-          <Image
-            src={financialImg}
-            alt="Financial Card Image"
-            className="w-full"
-          />
+          <Image src={financialImg} alt="" className="w-full" />
           <div className="flex items-start">
             <span className="pr-2">&bull;</span>
             <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
@@ -69,72 +69,7 @@ const FinancialCard = () => {
             security.
           </p>
           <div className="flex flex-col lg:flex-row gap-5 py-5 lg:py-10">
-            <div className="p-5 border border-gray-300 rounded-lg w-max">
-              <Image
-                src={walletIcon}
-                alt="Industries client card Icon"
-                className=""
-              />
-              <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
-                South Georgia Bank
-              </h1>
-              <p className="text-gray-500 mb-1">Client success story</p>
-              <span className="text-[#C94B12] text-xs font-semibold bg-[#FDEEE8] px-2 py-1 rounded">
-                Financial
-              </span>
-              <div className="lg:mt-10 mt-5">
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md mr-3">
-                  View PDF
-                </button>
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md">
-                  Download PDF
-                </button>
-              </div>
-            </div>
-            <div className="p-5 border border-gray-300 rounded-lg w-max">
-              <Image
-                src={walletIcon}
-                alt="Industries client card Icon"
-                className=""
-              />
-              <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
-                Banco de Brasil
-              </h1>
-              <p className="text-gray-500 mb-1">Client success story</p>
-              <span className="text-[#C94B12] text-xs font-semibold bg-[#FDEEE8] px-2 py-1 rounded">
-                Financial
-              </span>
-              <div className="lg:mt-10 mt-5">
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md mr-3">
-                  View PDF
-                </button>
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md">
-                  Download PDF
-                </button>
-              </div>
-            </div>
-            <div className="p-5 border border-gray-300 rounded-lg w-max">
-              <Image
-                src={walletIcon}
-                alt="Industries client card Icon"
-                className=""
-              />
-              <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
-                FWCCU
-              </h1>
-              <p className="text-gray-500 mb-1">Client success story</p>
-              <span className="text-[#C94B12] text-xs font-semibold bg-[#FDEEE8] px-2 py-1 rounded">
-                Financial
-              </span>
-              <div className="lg:mt-10 mt-5">
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md mr-3">
-                  View PDF
-                </button>
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md">
-                  Download PDF
-                </button>
-              </div>
-            </div>
+            <Cards cardsData={FINANCIAL_CARDS_DATA} />
           </div>
         </div>
       </div>

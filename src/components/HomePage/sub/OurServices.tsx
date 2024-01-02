@@ -6,7 +6,6 @@ import serviceIcon4 from "../../../../public/homepage/service-icon4.svg";
 import serviceIcon5 from "../../../../public/homepage/service-icon5.svg";
 import serviceIcon6 from "../../../../public/homepage/service-icon6.svg";
 import Image from "next/image";
-import { title } from "process";
 import Link from "next/link";
 
 const OURSERVICES_DATA = [

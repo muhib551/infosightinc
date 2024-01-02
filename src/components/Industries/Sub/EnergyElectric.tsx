@@ -3,19 +3,23 @@ import React from "react";
 import energyImg from "../../../../public/industries/industries-energy-img.png";
 import energyIcon from "../../../../public/casestudy/flash-icon.svg";
 import IndEnergyPr from "./IndEnergyPr";
+import { CardProps } from "@/components/Elements/Card";
+import Cards from "@/components/Elements/Cards";
 
-const ENERGY_ELECTRIC_DATA = [
+const ELECTRIC_CARDS_DATA: CardProps[] = [
   {
-    img: energyImg,
-    title: "Prarie Land Electric",
+    imgType: "FLASH",
+    title: "Prarieland",
     description: "Client success story",
     tag: "Energy & Electric",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20Prairie%20Land%20Electric%20Client%20Success%20Story.pdf",
   },
   {
-    img: energyImg,
-    title: " Pioneer Electric",
+    imgType: "FLASH",
+    title: "Pioneer",
     description: "Client success story",
     tag: "Energy & Electric",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20Pioneer%20Electric%20Client%20Success%20Story.pdf",
   },
 ];
 
@@ -73,50 +77,7 @@ const EnergyElectric = () => {
             energy & electric security.
           </p>
           <div className="flex flex-col lg:flex-row gap-5 py-5 lg:py-10">
-            <div className="p-5 border border-gray-300 rounded-lg w-max">
-              <Image
-                src={energyIcon}
-                alt="Industries client card Icon"
-                className=""
-              />
-              <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
-                Prarie Land Electric
-              </h1>
-              <p className="text-gray-500 mb-1">Client success story</p>
-              <span className="text-[#274A68] text-xs font-semibold bg-[#E9F0F7] px-2 py-1 rounded">
-                Energy & Electric
-              </span>
-              <div className="lg:mt-10 mt-5">
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md mr-3">
-                  View PDF
-                </button>
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md">
-                  Download PDF
-                </button>
-              </div>
-            </div>
-            <div className="p-5 border border-gray-300 rounded-lg w-max">
-              <Image
-                src={energyIcon}
-                alt="Industries client card Icon"
-                className=""
-              />
-              <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
-                Pioneer Electric
-              </h1>
-              <p className="text-gray-500 mb-1">Client success story</p>
-              <span className="text-[#274A68] text-xs font-semibold bg-[#E9F0F7] px-2 py-1 rounded">
-                Energy & Electric
-              </span>
-              <div className="lg:mt-10 mt-5">
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md mr-3">
-                  View PDF
-                </button>
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md">
-                  Download PDF
-                </button>
-              </div>
-            </div>
+            <Cards cardsData={ELECTRIC_CARDS_DATA} />
           </div>
         </div>
       </div>

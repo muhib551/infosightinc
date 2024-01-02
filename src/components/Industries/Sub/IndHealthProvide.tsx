@@ -3,18 +3,13 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const HEALTH_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Proactive HIPAA compliant IT services networks",
-      "Multi-layered HIPAA compliant cybersecurity framework",
-      "Ensure customers follow HITECH regulatory standards",
-      "Provide support on various EHR systems",
-      "Perform HIPAA Risk & Security Assessments",
-      "Cloud Solutions & Office 365",
-      "24x7x365 Network & Security Monitoring",
-    ],
-  },
+  "Proactive HIPAA compliant IT services networks",
+  "Multi-layered HIPAA compliant cybersecurity framework",
+  "Ensure customers follow HITECH regulatory standards",
+  "Provide support on various EHR systems",
+  "Perform HIPAA Risk & Security Assessments",
+  "Cloud Solutions & Office 365",
+  "24x7x365 Network & Security Monitoring",
 ];
 
 const IndHealthProvide = () => {
@@ -25,48 +20,17 @@ const IndHealthProvide = () => {
           For Healthcare Industry We Provide
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Proactive HIPAA compliant IT services networks
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Multi-layered HIPAA compliant cybersecurity framework
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Ensure customers follow HITECH regulatory standards
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Provide support on various EHR systems
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Perform HIPAA Risk & Security Assessments
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Cloud Solutions & Office 365
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              24x7x365 Network & Security Monitoring
-            </p>
-          </div>
+          {HEALTH_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

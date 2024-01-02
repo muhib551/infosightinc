@@ -1,19 +1,26 @@
 import Image from "next/image";
 import React from "react";
 import energyImg from "../../../../public/industries/industries-water-img.png";
-import dropIcon from "../../../../public/casestudy/drop-icon.svg";
 import IndWaterProvide from "./IndWaterProvide";
+import { CardProps } from "@/components/Elements/Card";
+import Cards from "@/components/Elements/Cards";
+
+const WATER_CARDS_DATA: CardProps[] = [
+  {
+    imgType: "DRP",
+    title: "Greensboro",
+    description: "Client success story",
+    tag: "Water & Wastewater",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20City%20of%20Greensboro%20Water%20Resources%20Client%20Success%20Story.pdf",
+  },
+];
 
 const Water = () => {
   return (
     <div>
       <div className="p-5 lg:px-20">
         <div className="flex flex-col gap-3">
-          <Image
-            src={energyImg}
-            alt="Water and Wastewater Card Image"
-            className="w-full"
-          />
+          <Image src={energyImg} alt="" className="w-full" />
           <div className="flex items-start">
             <span className="pr-2">&bull;</span>
             <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">
@@ -78,24 +85,7 @@ const Water = () => {
             for maximum financial security.
           </p>
           <div className="flex flex-col lg:flex-row gap-5 py-5 lg:py-10">
-            <div className="p-5 border border-gray-300 rounded-lg w-max">
-              <Image src={dropIcon} alt="All Case Studies Icon" className="" />
-              <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
-                Greensboro
-              </h1>
-              <p className="text-gray-500 mb-1">Client success story</p>
-              <span className="text-[#364BBA] text-xs font-semibold bg-[#E9F0F7] px-2 py-1 rounded">
-                Water & Wastewater
-              </span>
-              <div className="lg:mt-10 mt-5">
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md mr-3">
-                  View PDF
-                </button>
-                <button className="text-gray-700 border hover:bg-gray-100 border-gray-300 px-5 py-2 rounded-md">
-                  Download PDF
-                </button>
-              </div>
-            </div>
+            <Cards cardsData={WATER_CARDS_DATA} />
           </div>
         </div>
       </div>
