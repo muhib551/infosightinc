@@ -59,51 +59,25 @@ const ITGeneralControl = () => {
         />
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              What is an IT General Controls Review?
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 ">
-              ITGC are the basic controls that support an organization&apos;s IT
-              infrastructure. ITGC are related to IT systems such as operating
-              systems, databases and applications to make sure that they are
-              working and operating properly. They abide by policies, procedures
-              and compliances related to your specific industry.
-            </p>
-          </div>
-          <Image
-            src={generalinfoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={generalinfoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How can InfoSight Help?
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight&apos;s goal is to provide management and assurance to
-              assets and safeguard controls against lost and compromised data.
-              Our experts work with your team to assist with IT Management,
-              Information Security, BCP/DRP, outsourcing technology & more. Our
-              team assists your company to continuously improve your security
-              posture, making your organization aware of emerging security
-              threats.
-            </p>
-          </div>
-          <Image
-            src={generalinfoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
+        {IT_GENERAL_CONTROL_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"IT_GENERAL_CONTROL_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <ITGeneralControlFeatures />
       <div className="py-5">

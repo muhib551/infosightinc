@@ -9,7 +9,6 @@ const TopNews = () => {
         <h1 className="text-red-900 text-lg lg:text-4xl font-semibold ">
           Top News
         </h1>
-        <ButtonGrp text="This Month" />
       </div>
       <NewsCard />
     </div>

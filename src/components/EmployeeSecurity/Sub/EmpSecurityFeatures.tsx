@@ -3,19 +3,13 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const EMPLOYEE_SECURITY_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Reduce Security Breaches",
-      "Increase Knowledge Retention",
-      "Close Awareness Gaps",
-      "Increate Competitive Advantages",
-      "Enhance Reputation",
-      "Reduce Potential of Lawsuits, Fines & Mandatory Audits",
-    ],
-  },
+  "Reduce Security Breaches",
+  "Increase Knowledge Retention",
+  "Close Awareness Gaps",
+  "Increate Competitive Advantages",
+  "Enhance Reputation",
+  "Reduce Potential of Lawsuits, Fines & Mandatory Audits",
 ];
-
 const EmpSecurityFeatures = () => {
   return (
     <div className="bg-[#132534]">
@@ -24,36 +18,17 @@ const EmpSecurityFeatures = () => {
           Key Benefits
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Reduce Security Breaches</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Increase Knowledge Retention
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Close Awareness Gaps</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Increate Competitive Advantages
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Enhance Reputation</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Reduce Potential of Lawsuits, Fines & Mandatory Audits
-            </p>
-          </div>
+          {EMPLOYEE_SECURITY_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

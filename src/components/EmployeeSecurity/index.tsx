@@ -18,23 +18,23 @@ const EMPLOYEE_SECURITY_DATA = [
     img: infoImg1,
     title: "The Challenge",
     description:
-      "If your staff can&apos;t recognize a scam, they won&apos;t be able to take the right defensive actions against it. Wrong or no action can lead to breaches and fraud which could leave your company open to a costly resolution and loss of data.",
+      "Today financial services providers are extremely busy and don't have the time to train employees on the importance of security awareness. This could lead to accidental internal leaks, clicking on links that they shouldn't and giving out confidential information. All of these instances could hurt your banks overall security posture and cost your company thousands to fix.",
   },
   {
     img: infoImg2,
     title: "How We Solve It",
     description:
-      "InfoSight solves the strenuous problems of employee security awareness training and ensures employees are well-equipped to defend against cyberattacks. Our experts help you build security awareness through our Learn Cloud LMS Platformand specialized courseware for your industry and environment.",
+      "InfoSight's CSAP (Cybersecurity Awareness Program) helps you educate your online banking customers about the dangers from bad actors that create ACH & wire fraud, malware, phishing and more. Our convenient web portal makes it easy to create awareness and train your online banking customers with a complete library of ready-to-use content and materials.",
   },
   {
     img: infoImg3,
     title: "The Outcome",
     description:
-      "InfoSight's courseware catalog allows you pick from over 150 courses to meet your goals and industry compliance requirements. InfoSight&apos;s courses are designed for all knowledge levels to train your staff on how to recognize suspicious activity and take preventative measures to help your organization avoid a costly breach or accidental data leak.",
+      "InfoSight's security experts refresh the content on our portal weekly to ensure you are getting the latest and greatest information. We offer a hands-on approach and a hands-off approach where your organization can pick and choose where you need our assistance or if you want to take the reins yourself! Our CSAP portal will leave your employees with the knowledge they need to be able to spot a cybercriminal and learn key tactics on how to avoid breaches.",
   },
 ];
 
-const SecurityOperations = () => {
+const EmployeeSecurityAwareness = () => {
   React.useEffect(() => {
     document.title = "InfoSight | Employee Security Awareness";
   }, []);
@@ -71,120 +71,25 @@ const SecurityOperations = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              If your staff can&apos;t recognize a scam, they won&apos;t be able
-              to take the right defensive actions against it. Wrong or no action
-              can lead to breaches and fraud which could leave your company open
-              to a costly resolution and loss of data.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight solves the strenuous problems of employee security
-              awareness training and ensures employees are well-equipped to
-              defend against cyberattacks. Our experts help you build security
-              awareness through our{" "}
-              <span className="font-bold">Learn Cloud LMS Platform</span> and
-              specialized courseware for your industry and environment.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Outcome
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight&apos;s courseware catalog allows you pick from over 150
-              courses to meet your goals and industry compliance requirements.
-              InfoSight&apos;s courses are designed for all knowledge levels to
-              train your staff on how to recognize suspicious activity and take
-              preventative measures to help your organization avoid a costly
-              breach or accidental data leak.
-            </p>
-            <p className="py-1">
-              Some of our LearnCloud LMS systems courses include:
-            </p>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">
-                Cybersecurity Awareness Basics
-              </span>
+        {EMPLOYEE_SECURITY_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"EMPLOYEE_SECURITY_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
             </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">Email Security</span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">
-                Defense Against Online Threats
-              </span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">Password Security</span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">
-                Avoiding Identify Theft
-              </span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">
-                Corporate Account Takeover
-              </span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">
-                Data Records & Retention
-              </span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">Physical Security</span>
-            </div>
-            <div className="px-1 flex">
-              <span className="pr-2">&bull;</span>
-              <span className="font-bold text-gray-700">
-                Essential of Social Engineering & more!
-              </span>
-            </div>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+          );
+        })}
       </div>
       <EmpSecurityFeatures />
       <div className="py-5">
@@ -196,4 +101,4 @@ const SecurityOperations = () => {
   );
 };
 
-export default SecurityOperations;
+export default EmployeeSecurityAwareness;

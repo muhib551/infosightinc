@@ -70,69 +70,25 @@ const CybersecurityIRPM = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1">
-              Having a safe and secure environment is a must but so is knowing
-              what to do in case a successful cyber breach occurs. A
-              cybersecurity Incident Response Plan provides utilities with
-              practical guidance and critical considerations in preparing for a
-              cyber incident. A cybersecurity Incident Response Plan enables
-              staff to take swift, effective action.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1">
-              InfoSight identifies the external response organizations—including
-              law enforcement, information sharing organizations, and cyber
-              mutual assistance groups—the utility might engage during cyber
-              incident response, particularly for severe incidents that outpace
-              utility resources and expertise. Our staff collaborates with your
-              team to outline your incident response requirements as well as
-              timelines in case of an emergency.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Outcome
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1">
-              Once your Cybersecurity Incident Response Plan is in place your
-              organization will have a strategic plan in case an attack were to
-              occur.
-            </p>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+        {CYBERSECURITY_IRPM_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"CYBERSECURITY_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <CybersecurityIRPMFeatures />
       <div className="py-5">

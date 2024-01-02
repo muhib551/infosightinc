@@ -84,71 +84,25 @@ const ManagedXDR = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Having many different types of devices and data sources to monitor
-              can put your organization at higher risk for a security incident.
-              It can be overwhelming to monitor, analyze and respond to
-              thousands of alerts each day. The threat analysis is a full-time
-              job within itself and InfoSight wants to make it easier on you.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-y-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight&apos;s Managed XDR services, er take your data sources
-              where our experts to monitor them from a “single pane of glass”
-              24x7x365. Additionally, Security Orchestration and Automation
-              (SOAR) helps automate and speed up incident response and recovery
-              in the instance of a breach. When data sources are normalized and
-              no threats are apparent, our SOC analyst conduct threat hunting
-              exercises to proactive look for threats.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Outcome
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              You can be at ease 24x7x365 that InfoSight&apos;s Managed XDR
-              services are at work even when you&apos;re not! Our Managed XDR
-              can make response times quicker, smarter, more efficient, and more
-              cost effective. Leveraging our XDR resources will allow you to
-              experience better cybersecurity and act quickly on any threats
-              that come your way!
-            </p>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+        {MANAGED_XDR_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"MANAGED_XDR_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <ManagedXDRFeatures />
       <div className="py-5">

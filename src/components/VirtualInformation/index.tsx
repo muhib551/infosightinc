@@ -72,59 +72,25 @@ const VirtualInformation = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Most organizations face budget constraints and/or their corporate
-              structure doesn&apos;t support adding a full-time senior executive
-              for information and cyber security management. This leaves many
-              organizations at risk. Cyberattacks stop at nothing and no
-              industry is immune.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              We provide your organization with a Virtual ISO who serves as an
-              extension of your business and is responsible for making
-              recommendations for the development, implementation and management
-              of your organization&apos;s corporate security vision, strategy,
-              and programs. Your appointed VISO is retained on a contractual
-              basis and facilitates conversations that lead to executive
-              critical decision-making related to information security issues.
-              <br />
-              <br />
-              Our Tactical VISO Program offers an ISO in an advisory roe to
-              review organizational security policies, processes and reporting.
-              Whereas our Strategic VISO Program combines our Tactical VISO
-              Program with added organizational oversight, mitigation activity
-              tracking, resource assignments and risk assessment preparation
-              utilizing our GRC (Governance, Risk & Compliance) Platform.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
+        {VIRTUAL_INFO_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"VIRTUAL_INFO_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <VirtualInformationFeatures />
       <div className="py-5">

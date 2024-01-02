@@ -77,72 +77,25 @@ const ManagedEDR = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Endpoints represent a significant security risk to all
-              organization&apos;s no matter the industry. Relying solely on
-              alerts to end users and overloaded network administrators is no
-              longer the best and most effective method to protect against
-              threats. Responding to endpoint-focused attacks has never been
-              more challenging and is a 24x7 task that exhausts IT personnel.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight&apos;s EDR Service monitors triages and remediates
-              malware attacks and infections and significantly enhances
-              visibility of attacks targeting endpoint devices. Our trusted
-              professional&apos;s quickly coordinate remediation support and
-              incident response solutions through patterns and repetition as
-              well as new adjustments for immediate endpoint protection saving
-              your organization time and money.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Outcome
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Our goal is to work with your team to ensure 24x7 security,
-              incident response and remediation to improve your overall security
-              posture and minimize cyber risk. InfoSight&apos;s team of expert
-              analysts alleviate resource constrained IT teams by providing the
-              knowledge and EDR expertise needed to defend and respond against
-              any attacks missed at the endpoint.
-            </p>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+        {MANAGED_EDR_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"MANAGED_EDR_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <ManagedEDRFeatures />
       <div className="py-5">

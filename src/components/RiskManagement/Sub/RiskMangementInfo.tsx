@@ -10,7 +10,7 @@ const RiskMangementInfo = () => {
           <h1 className="lg:text-2xl text-gray-900 font-semibold">
             What is Enterprise Risk Management?
           </h1>
-          <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+          <p className="text-gray-900 text-sm lg:text-base py-1">
             Enterprise Risk Management (ERM) is the ongoing process of applied
             strategies across the whole company in order to manage risks and
             grasp opportunities related to the success of the

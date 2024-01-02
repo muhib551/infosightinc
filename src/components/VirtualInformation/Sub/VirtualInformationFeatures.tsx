@@ -3,18 +3,13 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const VINFO_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Reduce Costs by Maximizing IT Budget & Strategic Planning",
-      "Provide Independent Oversight of IT Security Controls",
-      "Perform Annual IT Security Risk Assessments",
-      "Leverage the Most Current Threat Mitigation Strategies",
-      "Assist in Security Process Development & Incident Response Planning",
-      "Provide Recommendations & Reporting",
-      "Enhance & Integrate IT/InfoSec Policies & Procedures",
-    ],
-  },
+  "Reduce Costs by Maximizing IT Budget & Strategic Planning",
+  "Provide Independent Oversight of IT Security Controls",
+  "Perform Annual IT Security Risk Assessments",
+  "Leverage the Most Current Threat Mitigation Strategies",
+  "Assist in Security Process Development & Incident Response Planning",
+  "Provide Recommendations & Reporting",
+  "Enhance & Integrate IT/InfoSec Policies & Procedures",
 ];
 
 const VirtualInformationFeatures = () => {
@@ -25,49 +20,17 @@ const VirtualInformationFeatures = () => {
           Key Benefits
         </h1>
         <div className="grid lg:grid-cols-3 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Reduce Costs by Maximizing IT Budget & Strategic Planning
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Provide Independent Oversight of IT Security Controls
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Perform Annual IT Security Risk Assessments
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Leverage the Most Current Threat Mitigation Strategies
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Assist in Security Process Development & Incident Response
-              Planning
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Provide Recommendations & Reporting
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Enhance & Integrate IT/InfoSec Policies & Procedures
-            </p>
-          </div>
+          {VINFO_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ const TestimonialCard = () => {
           ({ description, rating, user, designation }, i) => {
             return (
               <div
-                key={i}
+                key={"TESINOMIALS_DATA__" + i}
                 className="bg-white shadow-md shadow-gray-300 p-5 rounded-xl"
               >
                 <p className="pb-6">{description}</p>

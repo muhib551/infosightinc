@@ -14,13 +14,6 @@ import NetworkCloudHero from "./Sub/NetworkCloudHero";
 import NetworkCloudFeatures from "./Sub/NetworkCloudFeatures";
 
 const NetworkCloud = () => {
-  const suggestedKeys = [
-    "React",
-    "JavaScript",
-    "Tailwind CSS",
-    "Web Development",
-  ];
-
   React.useEffect(() => {
     document.title = "InfoSight | Managed Network & Cloud Support Services";
   }, []);

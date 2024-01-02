@@ -57,11 +57,11 @@ const InfoSight = () => {
         clients. Trusted by over 4,000+ Clients.
       </p>
       <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 mt-8">
-        {/* {WHYINFOSIGHT_DATA.map(({ img, title, description }, i) => {
+        {WHYINFOSIGHT_DATA.map(({ img, title, description }, i) => {
           return (
             <div
               className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300"
-              key={title + i}
+              key={"WHYINFOSIGHT_DATA__" + i}
             >
               <Image src={img} alt="" className="" />
               <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
@@ -72,73 +72,7 @@ const InfoSight = () => {
               </p>
             </div>
           );
-        })} */}
-
-        <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
-          <Image src={featuredIcon1} alt="Service icon" className="" />
-          <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
-            Us Based SOC/NOC
-          </h1>
-          <p className="text-[#3B719F] text-sm lg:text-base">
-            Our service allows systems and their staff to secure and build
-            businesses with ease due their trust in Certified SOC/NOC from the
-            top level of this country.
-          </p>
-        </div>
-        <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
-          <Image src={featuredIcon2} alt="Service icon" className="" />
-          <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
-            25+ Years Regulatory Compliance
-          </h1>
-          <p className="text-[#3B719F] text-sm lg:text-base">
-            Our service allows systems and their staff to secure and build
-            businesses with ease due to 25+ years of regulatory compliance
-            experience.
-          </p>
-        </div>
-        <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
-          <Image src={featuredIcon3} alt="Service icon" className="" />
-          <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
-            Certified SOC/NOC
-          </h1>
-          <p className="text-[#3B719F] text-sm lg:text-base">
-            Our service allows systems and their staff to secure and build
-            businesses with ease due their trust in Certified SOC/NOC from the
-            top level of this country.
-          </p>
-        </div>
-        <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
-          <Image src={featuredIcon4} alt="Service icon" className="" />
-          <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
-            MSSP Services
-          </h1>
-          <p className="text-[#3B719F] text-sm lg:text-base">
-            Our service allows systems and their staff to secure and build
-            businesses with ease due their trust in MSSP services from the top
-            level of this country.
-          </p>
-        </div>
-        <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
-          <Image src={featuredIcon5} alt="Service icon" className="" />
-          <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
-            Cybersecurity Trainings
-          </h1>
-          <p className="text-[#3B719F] text-sm lg:text-base">
-            Our service allows systems and their staff to secure and build
-            businesses with ease as we provide cybersecurity trainings to the
-            management and resources.
-          </p>
-        </div>
-        <div className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300">
-          <Image src={featuredIcon6} alt="Service icon" className="" />
-          <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
-            Flexible Pricing Models
-          </h1>
-          <p className="text-[#3B719F] text-sm lg:text-base">
-            Our service allows systems and their staff to secure and build
-            businesses with ease due flexible pricing models.
-          </p>
-        </div>
+        })}
       </div>
     </div>
   );

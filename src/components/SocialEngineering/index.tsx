@@ -79,79 +79,25 @@ const SocialEngineering = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Today all organizations across every industry face the risks of
-              cybercriminals and breached networks. Regular penetration testing
-              is crucial to ensure network security against sophisticated
-              attackers. We understand it is difficult to find a trustworthy
-              third party that understands your industry specific compliance as
-              well as your overall security system. That&apos;s where we come
-              in.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight&apos;s experienced engineers test your network manually
-              to identify the extent your system could currently be compromised
-              by a real-life attacker. Our penetration testing service can be
-              used to test your security policy compliance, the effectiveness of
-              your employee security awareness training and your organization's
-              ability to identify and respond to security incidents.
-              <br />
-              <br />
-              InfoSight provides remediation reports going in-depth on steps to
-              take your overall security to the next level. Our team can act as
-              an extension of your team to assist in the remediation process to
-              ensure cybersecurity right away.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Outcome
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight&apos;s security experts conduct real-world attacks to
-              determine your security weaknesses. Our extensive knowledge of the
-              most current attack vectors, along with our expertise network
-              types including on-premise Data Centers, Cloud or Hybrid
-              environments will provide the assurance and confidence you need.
-              This enables your team to concentrate on day-to-day business
-              rather than on the discovery of potential network security risks.
-            </p>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+        {SOCIAL_ENGG_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"SOCIAL_ENGG_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <SocialEngineeringFeatures />
       <div className="py-5">

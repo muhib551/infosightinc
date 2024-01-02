@@ -3,19 +3,14 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const PENETRATION_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Evaluate environments for real-world readiness",
-      "Reduce the risk of a successful attack before it occurs",
-      "Identify security issues beyond the capability of automated tools & assessments",
-      "Exit interviews to provide both executive level and detailed reports",
-      "Reduce the risk of a successful attack before it occurs",
-      "Goes beyond typical penetration testing to involve mission-oriented Red Teaming operations",
-      "Prioritize your risks and quickly take the right preventative measures",
-      "Vulnerability Management",
-    ],
-  },
+  "Evaluate environments for real-world readiness",
+  "Reduce the risk of a successful attack before it occurs",
+  "Identify security issues beyond the capability of automated tools & assessments",
+  "Exit interviews to provide both executive level and detailed reports",
+  "Reduce the risk of a successful attack before it occurs",
+  "Goes beyond typical penetration testing to involve mission-oriented Red Teaming operations",
+  "Prioritize your risks and quickly take the right preventative measures",
+  "Vulnerability Management",
 ];
 
 const PenetrationTestingFeatures = () => {
@@ -26,56 +21,17 @@ const PenetrationTestingFeatures = () => {
           Key Benefits
         </h1>
         <div className="grid lg:grid-cols-3 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Evaluate environments for real-world readiness
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Reduce the risk of a successful attack before it occurs
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Identify security issues beyond the capability of automated tools
-              & assessments
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Exit interviews to provide both executive level and detailed
-              reports
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Reduce the risk of a successful attack before it occurs
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Goes beyond typical penetration testing to involve
-              mission-oriented Red Teaming operations
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Prioritize your risks and quickly take the right preventative
-              measures
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Vulnerability Management</p>
-          </div>
+          {PENETRATION_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -21,7 +21,7 @@ const SCADAFeatures = () => {
             return (
               <div
                 key={"SCADA_FEATURES_DATA__" + i}
-                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer"
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
               >
                 <Image src={tickImg} alt="" />
                 <p className="text-white font-semibold">{sfd}</p>

@@ -3,35 +3,24 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const NETWORK_CLOUD_FEATURES_DATA_1 = [
-  {
-    img: tickImg,
-    title: [
-      "Monitoring for both on-premise and cloud estates to include all LAN/WAN devices",
-      "On-demand implementation of new technologies to remain agile",
-      "Tooling to obtain granular levels of visibility into your network and cloud environments",
-      "Run/Playbook creation and maintenance",
-      "Technical Human Capital with multi-vendor experience",
-      "Multi-vendor case management",
-      "A flexible support services model to compliment any size in-house IT Team",
-    ],
-  },
+  "Monitoring for both on-premise and cloud estates to include all LAN/WAN devices",
+  "On-demand implementation of new technologies to remain agile",
+  "Tooling to obtain granular levels of visibility into your network and cloud environments",
+  "Run/Playbook creation and maintenance",
+  "Technical Human Capital with multi-vendor experience",
+  "Multi-vendor case management",
+  "A flexible support services model to compliment any size in-house IT Team",
 ];
 
 const NETWORK_CLOUD_FEATURES_DATA_2 = [
-  {
-    img: tickImg,
-    title: [
-      "Health & Performance Monitoring",
-      "Vulnerability & Patch Management",
-      "AD Management & Monitoring",
-      "NIDS/HIDS",
-      "Hosted SIEM",
-      "Endpoint Security",
-      "SOC Threat Detection & Incident Response",
-    ],
-  },
+  "Health & Performance Monitoring",
+  "Vulnerability & Patch Management",
+  "AD Management & Monitoring",
+  "NIDS/HIDS",
+  "Hosted SIEM",
+  "Endpoint Security",
+  "SOC Threat Detection & Incident Response",
 ];
-
 const NetworkCloudFeatures = () => {
   return (
     <div className="bg-[#132534]">
@@ -40,92 +29,33 @@ const NetworkCloudFeatures = () => {
           Key Features
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Monitoring for both on-premise and cloud estates to include all
-              LAN/WAN devices
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              On-demand implementation of new technologies to remain agile
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Tooling to obtain granular levels of visibility into your network
-              and cloud environments
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Run/Playbook creation and maintenance
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Technical Human Capital with multi-vendor experience
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Multi-vendor case management
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              A flexible support services model to compliment any size in-house
-              IT Team
-            </p>
-          </div>
+          {NETWORK_CLOUD_FEATURES_DATA_1.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
         <h1 className="text-white text-2xl lg:text-4xl font-semibold py-5">
           Other Features
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Health & Performance Monitoring
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Vulnerability & Patch Management
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              AD Management & Monitoring
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">NIDS/HIDS</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Hosted SIEM</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Endpoint Security</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              SOC Threat Detection & Incident Response
-            </p>
-          </div>
+          {NETWORK_CLOUD_FEATURES_DATA_2.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

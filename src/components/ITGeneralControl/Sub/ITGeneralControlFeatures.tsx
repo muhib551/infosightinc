@@ -3,15 +3,10 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const IT_GC_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Review risk reviews for control requirements",
-      "Review management's response to issues raised at, or since the last exam",
-      "Review past reports for outstanding issues or previous problems.",
-      "Interview management pre-examination information requests to identify changes to the technology infrastructure or new products and services that might increase the institution's risk.",
-    ],
-  },
+  "Review risk reviews for control requirements",
+  "Review management's response to issues raised at, or since the last exam",
+  "Review past reports for outstanding issues or previous problems.",
+  "Interview management pre-examination information requests to identify changes to the technology infrastructure or new products and services that might increase the institution's risk.",
 ];
 
 const ITGeneralControlFeatures = () => {
@@ -22,33 +17,17 @@ const ITGeneralControlFeatures = () => {
           At InfoSight, Our experts:
         </h1>
         <div className="grid lg:grid-cols-2 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Review risk reviews for control requirements
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Review management's response to issues raised at, or since the
-              last exam
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Review past reports for outstanding issues or previous problems.
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Interview management pre-examination information requests to
-              identify changes to the technology infrastructure or new products
-              and services that might increase the institution's risk.
-            </p>
-          </div>
+          {IT_GC_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
         <p className="text-white lg:text-xl lg:w-10/12 px-2 lg:px-0">
           <span className="text-[#EC6A30] hover:text-[#9e4c26] font-bold">

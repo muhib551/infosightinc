@@ -78,92 +78,25 @@ const TeamAssessment = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              Red Team Testing
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 ">
-              Red Team Testing services utilize a strategic approach towards an
-              organization to test the resilience of the target using custom
-              sophisticated attacks. InfoSight imitates persistent, motivated,
-              and heavily resourced attackers by using advanced tactics,
-              techniques, and procedures to penetrate the organization and
-              achieve realistic goals.
-              <br />
-              <br />
-              This method of assessment is geared towards clients with a mature
-              and highly evolved security posture. This is the highest
-              capability testing level from an assailant and resistance maturity
-              standpoint, which classifies methodological, technical, and
-              behavioral security control weaknesses. Red Team testing elevates
-              an already mature security-aware organization by exercising all
-              aspects of their prevention, detection, and response capabilities
-              and demonstrates the return on their investment in security.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              Blue Team Testing
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 ">
-              InfoSight&apos;s security experts conduct real-world attacks to
-              determine your security weaknesses. Our extensive knowledge of the
-              most current attack vectors, along with our expertise network
-              types including on-premise Data Centers, Cloud or Hybrid
-              environments will provide the assurance and confidence you need.
-              This enables your team to concentrate on day-to-day business
-              rather than on the discovery of potential network security risks.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              Purple Team Testing
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1">
-              Purple Team Testing services combine red and blue teams and allow
-              both teams to work closely together to maximize cyber capabilities
-              through continuous feedback and knowledge transfer. Some
-              organizations perform purple teaming as one-off focused
-              engagements, whereby security goals, timelines, and key
-              deliverables are clearly defined, and there is a formal process
-              for evaluating lessons learned over the course of an operation.
-              <br />
-              <br />
-              This includes recognizing offensive and defensive shortcomings and
-              outlining future training and technological requirements. An
-              alternative approach gaining traction in the security market is to
-              view purple teaming as a conceptual framework that runs throughout
-              an organization, establishing permanent communication channels and
-              fostering a collaborative and transparent culture that promotes
-              continuous cybersecurity improvement.
-            </p>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+        {TEAM_ASSESSMENT_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"TEAM_ASSESSMENT_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <TeamAssessmentFeatures />
       <div className="py-5">

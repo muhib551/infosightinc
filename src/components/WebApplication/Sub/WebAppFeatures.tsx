@@ -3,19 +3,14 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const WEBAPP_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "SQL / Code Injection",
-      "File & Directory Analysis",
-      "Web Server Vulnerabilities",
-      "3rd Party Package Vulnerabilities",
-      "Server-Side Template Injection",
-      "Cross-Site Scripting",
-      "OWASP Top 10",
-      "Parameter Tampering",
-    ],
-  },
+  "SQL / Code Injection",
+  "File & Directory Analysis",
+  "Web Server Vulnerabilities",
+  "3rd Party Package Vulnerabilities",
+  "Server-Side Template Injection",
+  "Cross-Site Scripting",
+  "OWASP Top 10",
+  "Parameter Tampering",
 ];
 
 const WebAppFeatures = () => {
@@ -26,46 +21,17 @@ const WebAppFeatures = () => {
           Key Security Features
         </h1>
         <div className="grid lg:grid-cols-3 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">SQL / Code Injection</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              File & Directory Analysis
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Web Server Vulnerabilities
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              3rd Party Package Vulnerabilities
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Server-Side Template Injection
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Cross-Site Scripting</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">OWASP Top 10</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Parameter Tampering</p>
-          </div>
+          {WEBAPP_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

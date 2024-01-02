@@ -3,15 +3,10 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const CYBERSECURITYIRPM_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Understand your system and environment",
-      "Identify the response procedures the CERT will take to investigate, contain, eradicate, and recover from a variety of different incidents",
-      "Develop strategic communication procedures for cyber incidents.",
-      "Define response procedures and responsibilities of the utility's legal team during cyber incident investigation and response.",
-    ],
-  },
+  "Understand your system and environment",
+  "Identify the response procedures the CERT will take to investigate, contain, eradicate, and recover from a variety of different incidents",
+  "Develop strategic communication procedures for cyber incidents.",
+  "Define response procedures and responsibilities of the utility's legal team during cyber incident investigation and response.",
 ];
 
 const CybersecurityIRPMFeatures = () => {
@@ -22,34 +17,17 @@ const CybersecurityIRPMFeatures = () => {
           Key Services
         </h1>
         <div className="grid lg:grid-cols-2 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Understand your system and environment
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Identify the response procedures the CERT will take to
-              investigate, contain, eradicate, and recover from a variety of
-              different incidents
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Develop strategic communication procedures for cyber incidents.
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 lg:h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Define response procedures and responsibilities of the
-              utility&apos;s legal team during cyber incident investigation and
-              response.
-            </p>
-          </div>
+          {CYBERSECURITYIRPM_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

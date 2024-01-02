@@ -3,20 +3,15 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const CLOUD_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Enforced Compliance",
-      "One Centralized Location for Important Company Documents",
-      "Quick, Efficient & Easy-to-Navigate Design",
-      "Signature Tracking & Acquiring",
-      " Tracking & Reporting for Trainings",
-      "Flexible Packaging Options",
-      "New & Up to Date Content",
-      "Custom Dynamic Messages & Alerts",
-      "Customer Notifications & Reminders",
-    ],
-  },
+  "Enforced Compliance",
+  "One Centralized Location for Important Company Documents",
+  "Quick, Efficient & Easy-to-Navigate Design",
+  "Signature Tracking & Acquiring",
+  " Tracking & Reporting for Trainings",
+  "Flexible Packaging Options",
+  "New & Up to Date Content",
+  "Custom Dynamic Messages & Alerts",
+  "Customer Notifications & Reminders",
 ];
 
 const CloudLMSFeatures = () => {
@@ -27,56 +22,17 @@ const CloudLMSFeatures = () => {
           Key Features
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Enforced Compliance</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              One Centralized Location for Important Company Documents
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Quick, Efficient & Easy-to-Navigate Design
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Signature Tracking & Acquiring
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Tracking & Reporting for Trainings
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Flexible Packaging Options
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">New & Up to Date Content</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Custom Dynamic Messages & Alerts
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Customer Notifications & Reminders
-            </p>
-          </div>
+          {CLOUD_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

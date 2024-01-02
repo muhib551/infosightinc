@@ -9,7 +9,6 @@ const WebDemand = () => {
         <h1 className="text-gray-900 text-lg lg:text-4xl font-semibold ">
           Webinars on Demand
         </h1>
-        <ButtonGrp text="Select Month" />
       </div>
       <WebCard />
     </div>
