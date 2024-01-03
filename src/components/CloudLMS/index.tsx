@@ -89,7 +89,7 @@ const CLOUDMS_DATA = [
 
 const CloudLMS = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Cloud LMS";
+    document.title = "Learn Cloud LMS | InfoSight";
   }, []);
 
   return (

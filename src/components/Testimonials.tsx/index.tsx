@@ -9,13 +9,13 @@ import TestHeroSection from "./Sub/TestHeroSection";
 
 const Testimonials = () => {
   React.useEffect(() => {
-    document.title = "Testimonials";
+    document.title = "InfoSight Testimonials";
   }, []);
 
   return (
     <div>
       <NavBar />
-      <TestHeroSection />
+      <TestHeroSection />s
       <p className="p-5 lg:px-20">Home / About Us / Testimonials</p>
       <div className="p-5 lg:px-20">
         <h1 className=" text-2xl lg:text-4xl font-semibold">

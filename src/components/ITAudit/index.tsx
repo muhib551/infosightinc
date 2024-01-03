@@ -12,7 +12,7 @@ import ITAuditFeatures from "./Sub/ITAuditFeatures";
 
 const ITAudit = () => {
   React.useEffect(() => {
-    document.title = "IT Audit";
+    document.title = "IT Audits under ISACA | Infosight";
   }, []);
 
   return (

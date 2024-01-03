@@ -8,7 +8,7 @@ import ContactInfo from "./Sub/ContactInfo";
 
 const ContactUs = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Contact Us";
+    document.title = "Contact Infosight Cybersecurity Solutions | InfoSight";
   }, []);
   return (
     <div>

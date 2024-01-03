@@ -11,8 +11,7 @@ import MUCCCSFeatuers from "./Sub/MUCCCSFeatures";
 
 const NetworkCloud = () => {
   React.useEffect(() => {
-    document.title =
-      "Managed Unified Communications, Collaboration & Connect Services";
+    document.title = "Managed Communications | infoSight";
   }, []);
 
   return (

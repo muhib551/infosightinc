@@ -28,7 +28,7 @@ const IT_GENERAL_CONTROL_DATA = [
 
 const ITGeneralControl = () => {
   React.useEffect(() => {
-    document.title = "IT General Control Review";
+    document.title = "IT General Control Review | Infosight";
   }, []);
 
   return (

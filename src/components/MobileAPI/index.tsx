@@ -36,7 +36,7 @@ const MOBILE_API_DATA = [
 
 const MobileAPI = () => {
   React.useEffect(() => {
-    document.title = "Mobile, API & Code Review";
+    document.title = "Code Review, API & Mobile Testing - Infosight";
   }, []);
 
   return (

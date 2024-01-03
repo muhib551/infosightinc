@@ -12,6 +12,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import VirtualInformationHero from "./Sub/VirtualInformationHero";
 import VirtualInformationFeatures from "./Sub/VirtualInformationFeatures";
+import Link from "next/link";
 
 const VIRTUAL_INFO_DATA = [
   {
@@ -30,7 +31,7 @@ const VIRTUAL_INFO_DATA = [
 
 const VirtualInformation = () => {
   React.useEffect(() => {
-    document.title = "Virtual Information Security Officer (VISO)";
+    document.title = "Virtual ISO | InfoSight";
   }, []);
 
   return (
@@ -47,7 +48,7 @@ const VirtualInformation = () => {
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
           <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
-            <p className=" text-justify text-[#444444]">
+            <p className="lg:w-11/12 text-[#444444]">
               Today, Information Security Officer (ISO) resources are stretched
               thin due to limited staff and tight cybersecurity budgets. The
               need for an ISO is critical but can be overlooked because of
@@ -56,17 +57,27 @@ const VirtualInformation = () => {
               organization at risk of breached, data stolen or worse held for
               ransom. You need a trained expert around full-time.
             </p>
-            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="Document icon" />
-                <p className=" text-[#8C340D] font-semibold">
-                  Download Overview
-                </p>
-              </div>
-              <div className="flex gap-5 items-center">
-                <Image src={videoIcon} alt="Document icon" />
-                <p className=" text-[#8C340D] font-semibold">Learn More</p>
-              </div>
+            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-6/12 cursor-pointer">
+              <Link
+                href="https://www.infosightinc.com/pdf/InfoSight-VISO-2.pdf"
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="Document icon" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Download Overview
+                  </p>
+                </div>
+              </Link>
+              <Link
+                href="https://www.infosightinc.com/viso.html#video"
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={videoIcon} alt="Document icon" />
+                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

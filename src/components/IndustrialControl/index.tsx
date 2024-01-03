@@ -36,8 +36,7 @@ const INDUSTRIAL_CONTROL_DATA = [
 
 const IndustrialControl = () => {
   React.useEffect(() => {
-    document.title =
-      "InfoSight | Industrial Control & IoT Security Assessments";
+    document.title = "IoT Security Assessments";
   }, []);
 
   return (

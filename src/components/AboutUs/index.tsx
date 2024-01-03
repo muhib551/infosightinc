@@ -9,7 +9,7 @@ import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const AboutUs = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | About Us and Company History";
+    document.title = "About InfoSight";
   }, []);
 
   return (

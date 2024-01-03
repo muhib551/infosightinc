@@ -12,6 +12,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import TeamAssessmentHero from "./Sub/TeamAssessmentHero";
 import TeamAssessmentFeatures from "./Sub/TeamAssessmentFeatures";
+import Link from "next/link";
 
 const TEAM_ASSESSMENT_DATA = [
   {
@@ -36,7 +37,7 @@ const TEAM_ASSESSMENT_DATA = [
 
 const TeamAssessment = () => {
   React.useEffect(() => {
-    document.title = "Red, Blue & Purple Team Assessments";
+    document.title = "Red, Blue & Purple Team Testing - InfoSight";
   }, []);
 
   return (
@@ -53,7 +54,7 @@ const TeamAssessment = () => {
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
           <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
-            <p className=" text-justify text-[#444444]">
+            <p className=" lg:w-10/12 text-[#444444]">
               InfoSight performs Red Team, Blue Team, and/or Purple Team Testing
               for organizations to assist in vulnerability detection, threat
               hunting, and network monitoring by accurately simulating common
@@ -66,14 +67,18 @@ const TeamAssessment = () => {
               <br />
               <span className="font-bold">So, what&apos;s the difference?</span>
             </p>
-            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
+            <Link
+              href="https://www.infosightinc.com/pdf/InfoSight-Red-Blue-Purple-Team-Testing.pdf"
+              target="_blank"
+              className="lg:w-3/12"
+            >
               <div className="flex gap-5 items-center">
                 <Image src={documentIcon} alt="Document icon" />
                 <p className=" text-[#8C340D] font-semibold">
                   Download Overview
                 </p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

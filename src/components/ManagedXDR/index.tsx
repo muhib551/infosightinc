@@ -36,7 +36,7 @@ const MANAGED_XDR_DATA = [
 
 const ManagedXDR = () => {
   React.useEffect(() => {
-    document.title = "Managed XDR";
+    document.title = "Managed XDR | Infosight";
   }, []);
 
   return (

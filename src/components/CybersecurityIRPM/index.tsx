@@ -12,6 +12,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import CybersecurityIRPMHero from "./Sub/CybersecurityIRPMHero";
 import CybersecurityIRPMFeatures from "./Sub/CybersecurityIRPMFeatures";
+import Link from "next/link";
 
 const CYBERSECURITY_IRPM_DATA = [
   {
@@ -36,8 +37,7 @@ const CYBERSECURITY_IRPM_DATA = [
 
 const CybersecurityIRPM = () => {
   React.useEffect(() => {
-    document.title =
-      "InfoSight | Cybersecurity Incident Response Planning & Management";
+    document.title = "Cybersecurity Planning & Management | InfoSight";
   }, []);
 
   return (
@@ -60,11 +60,13 @@ const CybersecurityIRPM = () => {
               and your organization&apos;s data is secure as well as make sure
               you are up to date on industry compliance.
             </p>
-            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={videoIcon} alt="Document icon" />
-                <p className=" text-[#8C340D] font-semibold">Learn More</p>
-              </div>
+            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-6/12 cursor-pointer">
+              <Link href="#">
+                <div className="flex gap-5 items-center">
+                  <Image src={videoIcon} alt="Document icon" />
+                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

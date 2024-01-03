@@ -36,7 +36,7 @@ const SECURITY_AWARENESS_DATA = [
 
 const SecurityAwareness = () => {
   React.useEffect(() => {
-    document.title = "Security Awareness";
+    document.title = "Bank Security Awareness Training | (877) 557-9703";
   }, []);
 
   return (

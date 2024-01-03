@@ -10,7 +10,8 @@ import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const CaseStudy = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Case Study";
+    document.title =
+      "Infosight Case Studies Cybersecurity Solutions | InfoSight ";
   }, []);
 
   return (

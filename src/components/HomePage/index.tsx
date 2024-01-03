@@ -15,7 +15,7 @@ const HomePage = () => {
   const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
-    document.title = "InfoSight | Home Page";
+    document.title = "InfoSight Network & Cybersecurity & Training Solutions";
   }, []);
 
   return (

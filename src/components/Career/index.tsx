@@ -10,7 +10,7 @@ import CareerCard from "./Sub/CareerCard";
 
 const Career = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Career";
+    document.title = "Cybersecurity Career Opportunity | InfoSight ";
   }, []);
 
   return (

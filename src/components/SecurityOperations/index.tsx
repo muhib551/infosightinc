@@ -74,7 +74,7 @@ const SECURITY_OPERATIONS_DATA = [
 
 const SecurityOperations = () => {
   React.useEffect(() => {
-    document.title = "Services & Solutions / SOCaaS";
+    document.title = "Security Operations Center as a Service | InfoSight";
   }, []);
 
   return (

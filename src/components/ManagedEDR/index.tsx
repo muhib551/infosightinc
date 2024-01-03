@@ -36,7 +36,7 @@ const MANAGED_EDR_DATA = [
 
 const ManagedEDR = () => {
   React.useEffect(() => {
-    document.title = "Managed EDR";
+    document.title = "Managed EDR | Infosight";
   }, []);
 
   return (

@@ -97,7 +97,7 @@ const EMPLOYEE_SECURITY_DATA = [
 
 const EmployeeSecurityAwareness = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Employee Security Awareness";
+    document.title = "Employee Security Awareness Training | InfoSight";
   }, []);
 
   return (

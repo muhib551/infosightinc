@@ -73,7 +73,7 @@ const DETECTION_RESPONSE_DATA = [
 
 const DetectionResponse = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | 24x7 Managed Detection & Response";
+    document.title = "24x7 Managed Detection & Response | Infosight";
   }, []);
 
   return (

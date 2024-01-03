@@ -8,7 +8,7 @@ import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const Partners = () => {
   React.useEffect(() => {
-    document.title = "Partners";
+    document.title = "InfoSight Partners | InfoSight";
   }, []);
 
   return (

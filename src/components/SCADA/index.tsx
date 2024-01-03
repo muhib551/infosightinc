@@ -36,7 +36,7 @@ const SCADA_DATA = [
 
 const SocialEngineering = () => {
   React.useEffect(() => {
-    document.title = "SCADA/ICS Risk & Vulnerability Assessments";
+    document.title = "SCADA ICS Risk Assessments - InfoSight";
   }, []);
 
   return (

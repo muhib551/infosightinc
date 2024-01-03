@@ -36,7 +36,7 @@ const PENETRATION_DATA = [
 
 const PenetrationTesting = () => {
   React.useEffect(() => {
-    document.title = "Penetration Testing";
+    document.title = "Penetration Testing | InfoSight";
   }, []);
 
   return (

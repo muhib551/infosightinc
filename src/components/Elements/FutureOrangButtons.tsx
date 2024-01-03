@@ -1,4 +1,5 @@
 import Button from "@/components/Elements/Button";
+import Link from "next/link";
 import React from "react";
 
 const FutureOrangeButtons = () => {
@@ -15,22 +16,26 @@ const FutureOrangeButtons = () => {
           </p>
         </div>
         <div className="flex justify-between gap-5 mt-8 lg:mt-0 items-center lg:justify-end w-full">
-          <Button
-            text="Get Details"
-            style={{
-              color: "#EC6A30",
-              backgroundColor: "white",
-              padding: "10px 25px",
-              borderRadius: "10px",
-            }}
-          />
-          <Button
-            text="Contact Us"
-            style={{
-              padding: "10px 25px",
-              borderRadius: "10px",
-            }}
-          />
+          <Link href="#" target="_blank">
+            <Button
+              text="Get Details"
+              style={{
+                color: "#EC6A30",
+                backgroundColor: "white",
+                padding: "10px 25px",
+                borderRadius: "10px",
+              }}
+            />
+          </Link>
+          <Link href="contact" target="_blank">
+            <Button
+              text="Contact Us"
+              style={{
+                padding: "10px 25px",
+                borderRadius: "10px",
+              }}
+            />
+          </Link>
         </div>
       </div>
     </div>

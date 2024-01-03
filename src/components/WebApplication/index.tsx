@@ -12,7 +12,7 @@ import WebAppFeatures from "./Sub/WebAppFeatures";
 
 const WebApplication = () => {
   React.useEffect(() => {
-    document.title = "Web Application Assessments";
+    document.title = "Web Application Testing - InfoSight";
   }, []);
 
   return (

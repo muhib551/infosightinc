@@ -33,9 +33,9 @@ const PLANNING_DISASTER_DATA = [
   },
 ];
 
-const PlanningDisaster = () => {
+const BusinessContinuity = () => {
   React.useEffect(() => {
-    document.title = "Planning & Disaster";
+    document.title = "Business Continuity | InfoSight";
   }, []);
 
   return (
@@ -97,4 +97,4 @@ const PlanningDisaster = () => {
   );
 };
 
-export default PlanningDisaster;
+export default BusinessContinuity;
