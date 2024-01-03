@@ -3,18 +3,13 @@ import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
 
 const PCI_FEATURES_DATA = [
-  {
-    img: tickImg,
-    title: [
-      "Penetration Testing",
-      "Remediation Assistance",
-      "PCI DSS GAP Analysis",
-      "Readiness Assessments",
-      "Security Awareness Training",
-      "Security Network & Segmentation Design",
-      "Self-Assessment Questionnaire Assistance",
-    ],
-  },
+  "Penetration Testing",
+  "Remediation Assistance",
+  "PCI DSS GAP Analysis",
+  "Readiness Assessments",
+  "Security Awareness Training",
+  "Security Network & Segmentation Design",
+  "Self-Assessment Questionnaire Assistance",
 ];
 
 const PCIFeatures = () => {
@@ -29,40 +24,17 @@ const PCIFeatures = () => {
           meet your specific needs and protect your business.
         </p>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Penetration Testing</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Remediation Assistance</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">PCI DSS GAP Analysis</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">Readiness Assessments</p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Security Awareness Training
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Security Network & Segmentation Design
-            </p>
-          </div>
-          <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
-            <p className="text-white font-semibold">
-              Self-Assessment Questionnaire Assistance
-            </p>
-          </div>
+          {PCI_FEATURES_DATA.map((el, i) => {
+            return (
+              <div
+                key={i}
+                className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
+              >
+                <Image src={tickImg} alt="" className="" />
+                <p className="text-white font-semibold">{el}</p>
+              </div>
+            );
+          })}
         </div>
         <p className=" text-white py-5 text-lg">
           InfoSight provides a variety of tools, guidance, training resources

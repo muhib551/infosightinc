@@ -5,6 +5,21 @@ import infoImg1 from "../../../../public/compliance/pc-dss-info-img1.png";
 import infoImg2 from "../../../../public/compliance/pc-dss-info-img2.png";
 import PCIFeatures from "./PCIFeatures";
 
+const PCIDSS_DADA = [
+  {
+    img: infoImg1,
+    title: "What is PCI DSS?",
+    description:
+      "The Payment Card Industry Data Security Standard (PCI DSS) is a set of security compliances to ensure credit and debit card information is safe from theft.You should be performing PCI Gap Analysis to review your IT infrastructure, network design, application architecture and policies to help you identify any gaps between your current security posture and PCI requirements.",
+  },
+  {
+    img: infoImg2,
+    title: "How can InfoSight help?",
+    description:
+      "As a part of the PCI DSS Compliance Process, most organizations  are wise to assess their readiness prior to an official audit. It  is an extremely valuable exercise that puts your organization in  the best possible position for a successful audit and a sound  security program. But finding vulnerabilities is only the first  step toward addressing associated risks. Addressing these risks  with a sound remediation roadmap is arguably the most critical  step in the process. InfoSight can perform an initial PCI Gap Analysis to review your  IT infrastructure, network design, application architecture and  policies to help you identify any gaps between your current  security posture and PCI requirements. InfoSight provides a  variety of tools, guidance, training resources and other IT  security services to assist organizations seeking to achieve PCI  compliance. We can help you build and maintain a high security  posture, help you understand what is involved in PCI DSS  compliance, and assist in developing policies and practices that  best fit your needs.",
+  },
+];
+
 const PCIDSSCard = () => {
   return (
     <div>
@@ -21,64 +36,25 @@ const PCIDSSCard = () => {
             options that meet your specific needs and protect your business.
           </p>
         </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              What is PCI DSS?
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1">
-              The Payment Card Industry Data Security Standard (PCI DSS) is a
-              set of security compliances to ensure credit and debit card
-              information is safe from theft. <br /> <br />
-              You should be performing PCI Gap Analysis to review your IT
-              infrastructure, network design, application architecture and
-              policies to help you identify any gaps between your current
-              security posture and PCI requirements.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How can InfoSight help?
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1">
-              As a part of the PCI DSS Compliance Process, most organizations
-              are wise to assess their readiness prior to an official audit. It
-              is an extremely valuable exercise that puts your organization in
-              the best possible position for a successful audit and a sound
-              security program. But finding vulnerabilities is only the first
-              step toward addressing associated risks. Addressing these risks
-              with a sound remediation roadmap is arguably the most critical
-              step in the process. <br /> <br />
-              InfoSight can perform an initial PCI Gap Analysis to review your
-              IT infrastructure, network design, application architecture and
-              policies to help you identify any gaps between your current
-              security posture and PCI requirements. InfoSight provides a
-              variety of tools, guidance, training resources and other IT
-              security services to assist organizations seeking to achieve PCI
-              compliance. We can help you build and maintain a high security
-              posture, help you understand what is involved in PCI DSS
-              compliance, and assist in developing policies and practices that
-              best fit your needs.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
+        {PCIDSS_DADA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"PCIDSS_DADA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1">
+                  {description}
+                </p>
+              </div>
+            </div>
+          );
+        })}
       </div>
       <PCIFeatures />
     </div>

@@ -90,7 +90,7 @@ const CyberSecurity = () => {
                 <h1 className="lg:text-2xl text-gray-900 font-semibold">
                   {title}
                 </h1>
-                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                <p className="text-gray-900 text-sm lg:text-base py-1">
                   {description}
                 </p>
               </div>
