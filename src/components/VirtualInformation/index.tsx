@@ -30,7 +30,7 @@ const VIRTUAL_INFO_DATA = [
 
 const VirtualInformation = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Virtual Information Security Officer (VISO)";
+    document.title = "Virtual Information Security Officer (VISO)";
   }, []);
 
   return (

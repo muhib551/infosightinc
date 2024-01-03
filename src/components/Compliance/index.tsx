@@ -19,7 +19,9 @@ const Compliance = () => {
     <div>
       <NavBar />
       <ComplianceHero />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">
+        Home / Services & Solutions / Advisory Services / Compliance
+      </p>
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
         Explore our Different types of Compliances
       </h1>

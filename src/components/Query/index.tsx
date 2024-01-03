@@ -10,13 +10,13 @@ import smsddIcon from "../../../public/sms-dd.svg";
 
 const Query = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Queries";
+    document.title = "Contact Us";
   }, []);
 
   return (
     <div>
       <NavBar />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / Contact Us</p>
       <div className="p-5 lg:px-20 flex flex-col gap-5 lg:gap-10 lg:flex-row lg:items-start w-full">
         <div className="w-full">
           <h1 className="text-gray-900 text-2xl font-semibold">

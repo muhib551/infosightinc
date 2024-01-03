@@ -10,14 +10,14 @@ import FollowUsCard from "./Sub/FollowUsCard";
 
 const Webinars = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Webinars";
+    document.title = "Webinars";
   }, []);
 
   return (
     <div>
       <NavBar />
       <WebinarHeroSection />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / Insights / Webinars</p>
       <WebDemand />
       <FollowUsCard />
       <div className="lg:py-10">

@@ -39,44 +39,46 @@ const CLOUDMS_DATA = [
           organization operates while others can check on their cybersecurity
           knowledge.
         </p>
-        <p className="py-1">Our Subscription services offer:</p>
+        <p className="py-2">Our Subscription services offer:</p>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
             A Client Branded Portal
           </span>
         </div>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">Current News Features</span>
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Current News Features
+          </span>
         </div>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
             Online Document Library Modules
           </span>
         </div>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
             Reporting & Administration Modules
           </span>
         </div>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
             Policy Digital Signature & Tracking Modules
           </span>
         </div>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
             Messaging Systems for Courses & Compliance Reminders
           </span>
         </div>
         <div className="px-1 flex">
-          <span className="pr-2">&bull;</span>
-          <span className="font-bold text-gray-700">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
             Certificates of Completion
           </span>
         </div>

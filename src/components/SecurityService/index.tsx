@@ -31,7 +31,7 @@ const SECURITY_SERVICES_DATA = [
 
 const SecurityService = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Security Services";
+    document.title = "Services & Solutions / SOCaaS";
   }, []);
 
   return (

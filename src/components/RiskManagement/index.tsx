@@ -10,7 +10,7 @@ import RiskMangementInfo from "./Sub/RiskMangementInfo";
 
 const RiskManagement = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Risk Management";
+    document.title = "Enterprise Risk Management";
   }, []);
 
   return (

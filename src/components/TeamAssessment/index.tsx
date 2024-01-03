@@ -36,7 +36,7 @@ const TEAM_ASSESSMENT_DATA = [
 
 const TeamAssessment = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Red, Blue & Purple Team Assessments";
+    document.title = "Red, Blue & Purple Team Assessments";
   }, []);
 
   return (

@@ -15,7 +15,7 @@ import NetworkCloudFeatures from "./Sub/NetworkCloudFeatures";
 
 const NetworkCloud = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Managed Network & Cloud Support Services";
+    document.title = "Managed Network & Cloud Support Services";
   }, []);
 
   return (

@@ -36,8 +36,7 @@ const SOCIAL_ENGG_DATA = [
 
 const SocialEngineering = () => {
   React.useEffect(() => {
-    document.title =
-      "InfoSight | Social Engineering & Physical Security Testing";
+    document.title = "Social Engineering & Physical Security Testing";
   }, []);
 
   return (

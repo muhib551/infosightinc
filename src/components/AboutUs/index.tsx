@@ -9,13 +9,15 @@ import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const AboutUs = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | About Us";
+    document.title = "InfoSight | About Us and Company History";
   }, []);
 
   return (
     <div>
       <NavBar />
-      <p className="p-5 lg:px-20">Home / About Us / Careers</p>
+      <p className="p-5 lg:px-20">
+        Home / About Us / About Us and Company History
+      </p>
       <h1 className="p-5 lg:px-20 text-xl lg:text-4xl font-extrabold ">
         About Us
       </h1>

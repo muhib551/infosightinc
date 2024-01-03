@@ -12,14 +12,14 @@ import MainComponent from "./Sub/MainComp";
 
 const WebinarNews = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Webinars News";
+    document.title = "Webinars";
   }, []);
 
   return (
     <div>
       <NavBar />
       <WebNewsHero />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / Insights / Webinars</p>
       <TopNews />
       <FollowUsCard />
       <div className="lg:py-10">

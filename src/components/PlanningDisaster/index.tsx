@@ -35,7 +35,7 @@ const PLANNING_DISASTER_DATA = [
 
 const PlanningDisaster = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Planning & Disaster";
+    document.title = "Planning & Disaster";
   }, []);
 
   return (

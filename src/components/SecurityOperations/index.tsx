@@ -30,23 +30,58 @@ const SECURITY_OPERATIONS_DATA = [
   {
     img: infoImg3,
     title: "The Outcome",
-    description:
-      "Our goal is to ensure 24x7 security, incident response and remediation to improve your overall security posture and minimize cyber risk. We help your organization: Detect & Analyze: InfoSight believes in a proactive rather than a reactive approach. We analyze and scan your networks 24x7 to ensure security and discover any suspicious activity. Recognize & Respond: InfoSight believes in a proactive rather than a reactive approach. We analyze and scan your networks 24x7 to ensure security and discover any suspicious activity. Remediate & Strengthen: InfoSight believes in a proactive rather than a reactive approach. We analyze and scan your networks 24x7 to ensure security and discover any suspicious activity.",
+    description: (
+      <>
+        <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+          Our goal is to ensure 24x7 security, incident response and remediation
+          to improve your overall security posture and minimize cyber risk. We
+          help your organization:
+        </p>
+        <div className="p-2 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <p>
+            <span className="font-bold text-gray-600">Detect & Analyze:</span>{" "}
+            InfoSight believes in a proactive rather than a reactive approach.
+            We analyze and scan your networks 24x7 to ensure security and
+            discover any suspicious activity.
+          </p>
+        </div>
+        <div className="p-2 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <p>
+            <span className="font-bold text-gray-600">
+              Recognize & Respond:{" "}
+            </span>{" "}
+            InfoSight&apos;s experts quickly investigate suspicious cases
+            leaving your organization with no alert fatigue or false positive
+            outcomes.
+          </p>
+        </div>
+        <div className="p-2 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <p>
+            <span className="font-bold text-gray-600">
+              Remediate & Strengthen Security:{" "}
+            </span>{" "}
+            Our unique understanding and experience allows us to provide
+            remediation solutions regardless of your device or data source
+          </p>
+        </div>
+      </>
+    ),
   },
 ];
 
 const SecurityOperations = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Security Operations";
+    document.title = "Services & Solutions / SOCaaS";
   }, []);
 
   return (
     <div>
       <NavBar />
       <SecurityOperHero />
-      <p className="p-5 lg:px-20">
-        Home / Services & Solutions / 24x7 Managed Detection & Response
-      </p>
+      <p className="p-5 lg:px-20">Home / Services & Solutions / SOCaaS</p>
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
         Overview
       </h1>

@@ -36,7 +36,7 @@ const SECURITY_AWARENESS_DATA = [
 
 const SecurityAwareness = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Security Awareness";
+    document.title = "Security Awareness";
   }, []);
 
   return (

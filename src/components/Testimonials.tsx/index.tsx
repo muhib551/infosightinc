@@ -9,7 +9,7 @@ import TestHeroSection from "./Sub/TestHeroSection";
 
 const Testimonials = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Testimonials";
+    document.title = "Testimonials";
   }, []);
 
   return (

@@ -41,7 +41,7 @@ const SELECTED_BTN_CLASS =
 
 const Industries = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Industries";
+    document.title = "Industries";
   }, []);
 
   const [selected, setSelected] = React.useState(0);
@@ -51,7 +51,7 @@ const Industries = () => {
     <div>
       <NavBar />
       <IndustriesHero />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / Industries</p>
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
         Explore our Industrial Coverage
       </h1>

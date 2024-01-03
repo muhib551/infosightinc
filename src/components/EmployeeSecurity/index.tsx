@@ -18,19 +18,80 @@ const EMPLOYEE_SECURITY_DATA = [
     img: infoImg1,
     title: "The Challenge",
     description:
-      "Today financial services providers are extremely busy and don't have the time to train employees on the importance of security awareness. This could lead to accidental internal leaks, clicking on links that they shouldn't and giving out confidential information. All of these instances could hurt your banks overall security posture and cost your company thousands to fix.",
+      "If your staff can't recognize a scam, they won't be able to take the right defensive actions against it. Wrong or no action can lead to breaches and fraud which could leave your company open to a costly resolution and loss of data.",
   },
   {
     img: infoImg2,
     title: "How We Solve It",
     description:
-      "InfoSight's CSAP (Cybersecurity Awareness Program) helps you educate your online banking customers about the dangers from bad actors that create ACH & wire fraud, malware, phishing and more. Our convenient web portal makes it easy to create awareness and train your online banking customers with a complete library of ready-to-use content and materials.",
+      "InfoSight solves the strenuous problems of employee security awareness training and ensures employees are well-equipped to defend against cyberattacks. Our experts help you build security awareness through our Learn Cloud LMS Platform and specialized courseware for your industry and environment.",
   },
   {
     img: infoImg3,
     title: "The Outcome",
-    description:
-      "InfoSight's security experts refresh the content on our portal weekly to ensure you are getting the latest and greatest information. We offer a hands-on approach and a hands-off approach where your organization can pick and choose where you need our assistance or if you want to take the reins yourself! Our CSAP portal will leave your employees with the knowledge they need to be able to spot a cybercriminal and learn key tactics on how to avoid breaches.",
+    description: (
+      <>
+        <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+          InfoSight&apos;s courseware catalog allows you pick from over 150
+          courses to meet your goals and industry compliance requirements.
+          InfoSight&apos;s courses are designed for all knowledge levels to
+          train your staff on how to recognize suspicious activity and take
+          preventative measures to help your organization avoid a costly breach
+          or accidental data leak.
+        </p>
+        <p className="py-2">
+          Some of our LearnCloud LMS systems courses include:
+        </p>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Cybersecurity Awareness Basics
+          </span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">Email Security</span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Defense Against Online Threats
+          </span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">Password Security</span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Avoiding Identify Theft
+          </span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Corporate Account Takeover
+          </span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Data Records & Retention
+          </span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">Physical Security</span>
+        </div>
+        <div className="px-1 flex">
+          <span className="pr-2 text-gray-600">&bull;</span>
+          <span className="font-semibold text-gray-600">
+            Essential of Social Engineering & more!
+          </span>
+        </div>
+      </>
+    ),
   },
 ];
 

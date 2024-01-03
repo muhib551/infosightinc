@@ -8,7 +8,7 @@ import FutureBlackButtons from "../Elements/FutureBlackButtons";
 
 const WhyUs = () => {
   React.useEffect(() => {
-    document.title = "InfoSight | Why Us";
+    document.title = "Why InfoSight";
   }, []);
 
   return (
