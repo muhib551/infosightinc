@@ -15,7 +15,7 @@ const WhyUs = () => {
     <div>
       <NavBar />
       <WhyHeroSection />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / About Us / Why InfoSight</p>
       <div className="lg:py-10">
         <InfoSight />
       </div>

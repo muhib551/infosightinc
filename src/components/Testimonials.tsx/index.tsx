@@ -16,7 +16,7 @@ const Testimonials = () => {
     <div>
       <NavBar />
       <TestHeroSection />
-      <p className="p-5 lg:px-20">here will be path</p>
+      <p className="p-5 lg:px-20">Home / About Us / Testimonials</p>
       <div className="p-5 lg:px-20">
         <h1 className=" text-2xl lg:text-4xl font-semibold">
           Infosights Testimonials

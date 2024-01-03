@@ -29,8 +29,43 @@ const DETECTION_RESPONSE_DATA = [
   {
     img: infoImg3,
     title: "The Outcome",
-    description:
-      "Our goal is to work with your team to ensure 24x7 security, incident response and remediation to improve your overall security posture and minimize cyber risk. We help your organization:",
+    description: (
+      <>
+        <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+          Our goal is to work with your team to ensure 24x7 security, incident
+          response and remediation to improve your overall security posture and
+          minimize cyber risk. We help your organization:
+        </p>
+        <div className="p-2 flex">
+          <span className="pr-2">&bull;</span>
+          <p>
+            <span className="font-bold ">Detect & Analyze:</span> InfoSight
+            believes in a proactive rather than a reactive approach. We analyze
+            and scan your networks 24x7 to ensure security and discover any
+            suspicious activity.
+          </p>
+        </div>
+        <div className="p-2 flex">
+          <span className="pr-2">&bull;</span>
+          <p>
+            <span className="font-bold ">Recognize & Respond: </span>{" "}
+            InfoSight&apos;s experts quickly investigate suspicious cases
+            leaving your organization with no alert fatigue or false positive
+            outcomes.
+          </p>
+        </div>
+        <div className="p-2 flex">
+          <span className="pr-2">&bull;</span>
+          <p>
+            <span className="font-bold ">
+              Remediate & Strengthen Security:{" "}
+            </span>{" "}
+            Our unique understanding and experience allows us to provide
+            remediation solutions regardless of your device or data source
+          </p>
+        </div>
+      </>
+    ),
   },
 ];
 
@@ -71,98 +106,25 @@ const DetectionResponse = () => {
         </div>
       </div>
       <div className="p-5 lg:px-20">
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Challenge
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Most organizations have limited IT staffing and tight
-              cybersecurity budgets, making holistic information security seem
-              impossible. The requirement for threat monitoring and incident
-              response is a 24x7x365 job with extended security needed. For most
-              companies this is a lot to ask for on top of keeping a successful
-              up and running organization.
-            </p>
-          </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-t-2 border-gray-300">
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:block hidden"
-          />
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              How We Solve It
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              InfoSight brings a co-managed approach to security monitoring by
-              becoming an extension to your IT team to monitor your most
-              critical assets and data sources24x7x365. We deliver enterprise
-              threat management through a layered security model where all
-              assets in the datacenter or the Cloud can be viewed in a “single
-              pane of glass” by both your IT team and our SOC simultaneously.
-              This allows your team to focus on day-to-day concerns thereby
-              improving overall efficiency and operational effectiveness.
-            </p>
-          </div>
-          <Image
-            src={infoImg2}
-            alt="Info image"
-            className="w-full rounded-lg lg:hidden"
-          />
-        </div>
-        <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
-          <div className="flex flex-col justify-between w-full">
-            <h1 className="lg:text-2xl text-gray-900 font-semibold">
-              The Outcome
-            </h1>
-            <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-              Our goal is to work with your team to ensure 24x7 security,
-              incident response and remediation to improve your overall security
-              posture and minimize cyber risk. We help your organization:
-            </p>
-            <div className="p-2 flex">
-              <span className="pr-2">&bull;</span>
-              <p>
-                <span className="font-bold ">Detect & Analyze:</span> InfoSight
-                believes in a proactive rather than a reactive approach. We
-                analyze and scan your networks 24x7 to ensure security and
-                discover any suspicious activity.
-              </p>
+        {DETECTION_RESPONSE_DATA.map(({ img, title, description }, i) => {
+          return (
+            <div
+              key={"DETECTION_RESPONSE_DATA__" + i}
+              className={`py-5 lg:py-10 flex flex-col-reverse lg:flex-row justify-between gap-5 +
+              ${i % 2 === 1 ? " lg:flex-row" : "lg:flex-row-reverse"}`}
+            >
+              <Image src={img} alt="" className="w-full rounded-lg" />
+              <div className="flex flex-col justify-between w-full">
+                <h1 className="lg:text-2xl text-gray-900 font-semibold">
+                  {title}
+                </h1>
+                <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
+                  {description}
+                </p>
+              </div>
             </div>
-            <div className="p-2 flex">
-              <span className="pr-2">&bull;</span>
-              <p>
-                <span className="font-bold ">Recognize & Respond: </span>{" "}
-                InfoSight&apos;s experts quickly investigate suspicious cases
-                leaving your organization with no alert fatigue or false
-                positive outcomes.
-              </p>
-            </div>
-            <div className="p-2 flex">
-              <span className="pr-2">&bull;</span>
-              <p>
-                <span className="font-bold ">
-                  Remediate & Strengthen Security:{" "}
-                </span>{" "}
-                Our unique understanding and experience allows us to provide
-                remediation solutions regardless of your device or data source
-              </p>
-            </div>
-          </div>
-          <Image
-            src={infoImg3}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
-        </div>
+          );
+        })}
       </div>
       <DetectionRespFeatures />
       <div className="py-5">

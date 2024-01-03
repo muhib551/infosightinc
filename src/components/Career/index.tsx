@@ -17,7 +17,7 @@ const Career = () => {
     <div>
       <NavBar />
       <CareerHero />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / About Us / Careers</p>
       <CultureSection />
       <CareerCard />
       <PositionCard />

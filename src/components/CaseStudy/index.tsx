@@ -17,7 +17,7 @@ const CaseStudy = () => {
     <div>
       <NavBar />
       <CSHeroSection />
-      <p className="mt-5 p-5 lg:px-20">Here will the path</p>
+      <p className="mt-5 p-5 lg:px-20">Home / Case Studies</p>
       <AllCaseStudies />
       <WeProvide />
       <div className="lg:py-10">

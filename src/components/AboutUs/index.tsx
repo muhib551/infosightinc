@@ -15,7 +15,7 @@ const AboutUs = () => {
   return (
     <div>
       <NavBar />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / About Us / Careers</p>
       <h1 className="p-5 lg:px-20 text-xl lg:text-4xl font-extrabold ">
         About Us
       </h1>

@@ -15,7 +15,7 @@ const Partners = () => {
     <div>
       <NavBar />
       <PartnersHeroSecton />
-      <p className="p-5 lg:px-20">Here will be path</p>
+      <p className="p-5 lg:px-20">Home / About Us / Partners</p>
       <PartnersCard />
       <FutureBlackButtons />
       <Footer />
