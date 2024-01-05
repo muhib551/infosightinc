@@ -121,6 +121,7 @@ const ADV_SERVICE_SECURITY_DATA_1 = [
   },
   { title: "VISO", link: "viso" },
 ];
+
 const ADV_SERVICE_SECURITY_DATA_2 = [
   {
     title: "Industrial Control & IoT Security Assessments",
@@ -145,10 +146,10 @@ const ADV_SERVICE_SECURITY_DATA_2 = [
 
 const NavBar = () => {
   return (
-    <nav className="py-2 md:py-4 px-4 hidden md:block bg-white">
-      <div className="container mx-auto flex items-center justify-center">
-        <ul className=" flex items-center gap-8 text-[#667085]">
-          <a href="#">
+    <nav className="py-2 md:py-6 px-4 hidden md:block bg-white">
+      <div className="container flex items-center justify-center w-full">
+        <ul className=" flex items-center gap-8 ">
+          <a href="home-page">
             <Image src={logoImg} alt="" className="" />
           </a>
           <li>
@@ -161,145 +162,135 @@ const NavBar = () => {
               Services & Solutions
             </a>
             <Image src={DDIcon} alt="" className="cursor-pointer" />
-            <div className="dropdown__menu absolute top-full text-[#667085] left-0 bg-white z-50 px-5 pb-5 w-max">
-              <div className="py-5">
-                <h1 className="text-gray-800 font-semibold">
+            <div className="dropdown__menu absolute top-full left-0 bg-white z-50 w-[330px]">
+              <div className="p-5">
+                <p className="text-gray-800 font-semibold">
                   Services & Solutions
-                </h1>
-                <p>
+                </p>
+                <p className="text-gray-500">
                   Get started and learn more about our services & solutions.
                 </p>
               </div>
-              <ul className="flex flex-col gap-3 w-7/12">
-                <li className="flex items-center justify-between relative">
+              <ul className="flex flex-col gap-3 w-full pb-5">
+                <li className="flex items-center justify-between relative px-5">
                   <a href="">Advisory Services</a>
                   <Image
                     src={chevronRightIcon}
                     alt=""
                     className="cursor-pointer"
                   />
-                  <div className="dropdown__submenu absolute top-0 text-[#667085] left-full bg-white z-50 px-5 pb-5 w-max">
+                  <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-full">
                     <ul className="flex flex-col gap-3">
-                      <li className="flex items-center justify-between gap-2">
+                      <li className="flex items-center justify-between gap-2 px-5 pt-3">
                         <a href="">Security</a>
                         <Image
                           src={chevronRightIcon}
                           alt=""
                           className="cursor-pointer"
                         />
-                        <div className="DD__submenu absolute top-0 text-[#667085] left-full bg-white z-50 px-10 py-5 w-max">
+                        <div
+                          className="DD__submenu absolute top-0 left-full bg-white z-50 w-max"
+                          // style={{
+                          //   left: "calc(100% + 40px)",
+                          //   top: "-15px",
+                          // }}
+                        >
                           <div className="flex justify-between">
-                            <ul className="flex flex-col gap-3">
-                              {ADV_SERVICE_SECURITY_DATA_1.map(
-                                ({ title, link }, i) => {
-                                  return (
-                                    <li
-                                      key={"ADV_SERVICE_SECURITY_DATA_1__" + i}
-                                      className="w-10/12 mx-auto"
-                                    >
-                                      <a href={link} target="_blank">
-                                        {title}
-                                      </a>
-                                    </li>
-                                  );
-                                }
-                              )}
+                            <ul className="flex flex-col gap-3 px-5 py-3">
+                              {[
+                                ...ADV_SERVICE_SECURITY_DATA_1,
+                                ...ADV_SERVICE_SECURITY_DATA_2,
+                              ].map(({ title, link }, i) => {
+                                return (
+                                  <li
+                                    key={"ADV_SERVICE_SECURITY_DATA_1__" + i}
+                                    className=""
+                                  >
+                                    <a href={link}>{title}</a>
+                                  </li>
+                                );
+                              })}
                             </ul>
-                            <ul className="flex flex-col gap-3">
+                            {/* <ul className="flex flex-col gap-3">
                               {ADV_SERVICE_SECURITY_DATA_2.map(
                                 ({ title, link }, i) => {
                                   return (
                                     <li
                                       key={"ADV_SERVICE_SECURITY_DATA_2__" + i}
-                                      className="w-10/12 ms-auto"
+                                      className="w-11/12 mx-auto"
                                     >
                                       <a href={link}>{title}</a>
                                     </li>
                                   );
                                 }
                               )}
-                            </ul>
+                            </ul> */}
                           </div>
                         </div>
                       </li>
-                      <li>
-                        <a href="business-continuity" target="_blank">
-                          BCR/DR Planning
-                        </a>
+                      <li className="px-5">
+                        <a href="business-continuity">BCR/DR Planning</a>
                       </li>
-                      <li className="flex items-center justify-between gap-2">
+                      <li className="flex items-center justify-between gap-2 px-5">
                         <a href="">Risk Management</a>
                         <Image
                           src={chevronRightIcon}
                           alt=""
                           className="cursor-pointer"
                         />
-                        <div className="DD__submenu absolute bottom-0 text-[#667085] left-full bg-white z-50 px-10 py-5 w-max">
-                          <ul className="flex flex-col gap-3">
+                        <div className="DD__submenu absolute top-0  left-full bg-white z-50 w-max">
+                          <ul className="flex flex-col gap-3 px-5 py-3">
                             <li>
-                              <a
-                                href="enterprise-risk-management"
-                                target="_blank"
-                              ></a>
-                              Enterprise Risk Management
+                              <a href="enterprise-risk-management">
+                                Enterprise Risk Management
+                              </a>
                             </li>
                             <li>
-                              <a
-                                href="scada-ics-risk-assessments"
-                                target="_blank"
-                              ></a>
-                              SCADA/ICS Risk Assessments
+                              <a href="scada-ics-risk-assessments">
+                                SCADA/ICS Risk Assessments
+                              </a>
                             </li>
                           </ul>
                         </div>
                       </li>
-                      <li className="flex items-center justify-between gap-2">
+                      <li className="flex items-center justify-between gap-2 px-5">
                         <a href="">Compliance</a>
                         <Image
                           src={chevronRightIcon}
                           alt=""
                           className="cursor-pointer"
                         />
-                        <div className="DD__submenu absolute -bottom-10 text-[#667085] left-full bg-white z-50 px-10 py-5 w-max">
-                          <ul className="flex flex-col gap-3">
+                        <div className="DD__submenu absolute top-0  left-full bg-white z-50 w-max">
+                          <ul className="flex flex-col gap-3 px-5 py-3">
                             <li>
-                              <a href="compliance" target="_blank"></a>
-                              PCI - DSS
+                              <a href="compliance">PCI - DSS</a>
                             </li>
                             <li>
-                              <a href="compliance" target="_blank"></a>
-                              HIPAA
+                              <a href="compliance">HIPAA</a>
                             </li>
                             <li>
-                              <a href="compliance" target="_blank"></a>
-                              NERC - CIP
+                              <a href="compliance">NERC - CIP</a>
                             </li>
                             <li>
-                              <a href="compliance" target="_blank"></a>
-                              GLBA
+                              <a href="compliance">GLBA</a>
                             </li>
                           </ul>
                         </div>
                       </li>
-                      <li className="flex items-center justify-between gap-2">
+                      <li className="flex items-center justify-between gap-2 px-5 pb-3">
                         <a href="">Audit & Assurance</a>
                         <Image
                           src={chevronRightIcon}
                           alt=""
                           className="cursor-pointer"
                         />
-                        <div className="DD__submenu absolute bottom-[70px] text-[#667085] left-full bg-white z-50 px-10 py-5 w-max">
-                          <ul className="flex flex-col gap-3">
+                        <div className="DD__submenu absolute top-0 left-full bg-white z-50 w-max">
+                          <ul className="flex flex-col gap-3 px-5 py-3">
                             <li>
-                              <a href="IT-audit" target="_blank">
-                                IT Audit
-                              </a>
+                              <a href="IT-audit">IT Audit</a>
                             </li>
                             <li>
-                              <a
-                                href="IT-general-controls-review"
-                                target="_blank"
-                              >
+                              <a href="IT-general-controls-review">
                                 IT General Controls Review
                               </a>
                             </li>
@@ -309,30 +300,24 @@ const NavBar = () => {
                     </ul>
                   </div>
                 </li>
-                <li>
-                  <a href="" target="_blank">
-                    24x7 Managed Detection & Response
-                  </a>
+                <li className="px-5">
+                  <a href="">24x7 Managed Detection & Response</a>
                 </li>
-                <li>
-                  <a href="" target="_blank">
-                    SOCaaS
-                  </a>
+                <li className="px-5">
+                  <a href="">SOCaaS</a>
                 </li>
-                <li>
-                  <a href="" target="_blank">
-                    SECaaS
-                  </a>
+                <li className="px-5">
+                  <a href="">SECaaS</a>
                 </li>
-                <li className="flex items-center justify-between">
+                <li className="flex items-center justify-between px-5">
                   <a href="">Managed Services</a>
                   <Image
                     src={chevronRightIcon}
                     alt=""
                     className="cursor-pointer"
                   />
-                  <div className="dropdown__submenu absolute bottom-1 text-[#667085] left-full bg-white z-50 px-5 pb-5 w-max">
-                    <ul className="flex flex-col gap-3">
+                  <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-max">
+                    <ul className="flex flex-col gap-3 px-5 py-3">
                       <li>
                         <a href="">Managed XDR</a>
                       </li>
@@ -354,15 +339,15 @@ const NavBar = () => {
                     </ul>
                   </div>
                 </li>
-                <li className="flex items-center justify-between">
+                <li className="flex items-center justify-between px-5">
                   <a href="">Training & Education</a>
                   <Image
                     src={chevronRightIcon}
                     alt=""
                     className="cursor-pointer"
                   />
-                  <div className="dropdown__submenu absolute bottom-28 text-[#667085] left-full bg-white z-50 px-5 pb-5 w-max">
-                    <ul className="flex flex-col gap-3">
+                  <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-max">
+                    <ul className="flex flex-col gap-3 px-5 py-3">
                       <li>
                         <a href="">
                           Security Awareness Training for Online Banking
@@ -380,7 +365,7 @@ const NavBar = () => {
                 {/* {SERVICE_SOLUTION_DATA.map(({ title, link }, i) => {
                   return (
                     <li key={"SERVICE_SOLUTION_DATA__" + i} className="">
-                      <a href={link} target="_blank" className="">
+                      <a href={link}  className="">
                         {title}
                       </a>
                     </li>
@@ -394,19 +379,19 @@ const NavBar = () => {
               Industries
             </a>
             <Image src={DDIcon} alt="" className="cursor-pointer" />
-            <div className="dropdown__menu absolute top-full text-[#667085] left-0 bg-white z-50 px-5 pb-5 w-[360px]">
-              <div className="py-5">
-                <h1 className="text-gray-800 font-semibold">Industries</h1>
-                <p>
+            <div className="dropdown__menu absolute top-full  left-0 bg-white z-50 w-[360px]">
+              <div className="p-5">
+                <p className="text-gray-800 font-semibold">Industries</p>
+                <p className="text-gray-500">
                   Learn more about our services & solutions for below
                   industries.
                 </p>
               </div>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 px-5 pb-3">
                 {INDUSTRIES_DATA.map(({ title, link }, i) => {
                   return (
                     <li key={"INDUSTRIES_DATA__" + i} className="">
-                      <a href={link} target="_blank" className="">
+                      <a href={link} className="">
                         {title}
                       </a>
                     </li>
@@ -420,16 +405,18 @@ const NavBar = () => {
               Insights
             </a>
             <Image src={DDIcon} alt="" className="cursor-pointer" />
-            <div className="dropdown__menu absolute top-full text-[#667085] left-0 bg-white z-50 px-5 pb-5 w-[360px]">
-              <div className="py-5">
-                <h1 className="text-gray-800 font-semibold">Insights</h1>
-                <p>Learn more about our company insights.</p>
+            <div className="dropdown__menu absolute top-full left-0 bg-white z-50 w-max">
+              <div className="p-5">
+                <p className="text-gray-800 font-semibold">Insights</p>
+                <p className="text-gray-500">
+                  Learn more about our company insights.
+                </p>
               </div>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 px-5 py-3">
                 {WEBINARS_DATA.map(({ title, link }, i) => {
                   return (
                     <li key={"WEBINARS_DATA__" + i} className="">
-                      <a href={link} target="_blank" className="">
+                      <a href={link} className="">
                         {title}
                       </a>
                     </li>
@@ -443,16 +430,18 @@ const NavBar = () => {
               About Us
             </a>
             <Image src={DDIcon} alt="" className="cursor-pointer" />
-            <div className="dropdown__menu absolute top-full text-[#667085] left-0 bg-white z-50 px-5 pb-5 w-max">
-              <div className="py-5">
-                <h1 className="text-gray-800 font-semibold">About Us</h1>
-                <p>Learn more about our Company & Partners.</p>
+            <div className="dropdown__menu absolute top-full  left-0 bg-white z-50 w-max">
+              <div className="p-5">
+                <p className="text-gray-800 font-semibold">About Us</p>
+                <p className="text-gray-500">
+                  Learn more about our Company & Partners.
+                </p>
               </div>
-              <ul className="flex flex-col gap-3">
+              <ul className="flex flex-col gap-3 py-3">
                 {ABOUT_US_DATA.map(({ title, link }, i) => {
                   return (
-                    <li key={"ABOUT_US_DATA__" + i} className="">
-                      <a href={link} target="_blank" className="">
+                    <li key={"ABOUT_US_DATA__" + i} className=" px-5">
+                      <a href={link} className="">
                         {title}
                       </a>
                     </li>
