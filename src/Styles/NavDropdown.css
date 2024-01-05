@@ -24,11 +24,11 @@
   display: none;
 }
 
-.dropdown__menu,
+/* .dropdown__menu,
 .dropdown__submenu,
 .DD__submenu {
   box-shadow: 0 0 5px #000;
-}
+} */
 
 /* .dropdown__menu a,
 .dropdown__submenu a,
