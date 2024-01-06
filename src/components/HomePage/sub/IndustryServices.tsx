@@ -53,7 +53,7 @@ const IndustryServices = () => {
       <h1 className="text-white text-2xl lg:text-4xl font-semibold">
         Services by Industry
       </h1>
-      <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 mt-5 lg:mt-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-5 lg:mt-10">
         <div className="bg-white rounded-xl">
           <Image src={servicesImg1} alt="" className="w-full" />
           <div className="p-6">

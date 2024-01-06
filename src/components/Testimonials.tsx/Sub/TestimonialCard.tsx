@@ -3,7 +3,7 @@ import React from "react";
 import ratingImg from "../../../../public/homepage/full-starts-img.svg";
 import Button from "@/components/Elements/Button";
 
-const TESINOMIALS_DATA = [
+export const TESINOMIALS_DATA = [
   {
     description:
       "We have been using InfoSight as an Advisory and Managed Services provider for 7+ years now and they have been great! Their employees have performed multiple risk assessments on our network and always provide us with informative feedback keeping our environment safe. They've also upgraded and maintained our infrastructure to insure we have 99.9% uptime. This has ensured our institution is always available to serve our customers. We highly recommend using InfoSight for any security testing needs.",

@@ -58,12 +58,12 @@ const OurServices = ({ heading }: { heading?: string }) => {
     <div className="p-5 lg:p-20">
       <div>
         <h1 className="text-2xl lg:text-4xl font-semibold">{heading}</h1>
-        <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 mt-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-8">
           {OURSERVICES_DATA.map(({ img, title, description, link }, i) => {
             return (
               <Link href={link} target="_blank">
                 <div
-                  className="flex items-start gap-4 p-3 border border-gray-300 rounded-md hover:bg-gray-50 lg:h-[210px]"
+                  className="flex items-start gap-4 p-3 border border-gray-300 rounded-md hover:bg-gray-50 h-[100%]"
                   key={title + i}
                 >
                   <Image src={img} alt="" className="w-10 lg:w-20" />
