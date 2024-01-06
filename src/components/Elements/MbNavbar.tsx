@@ -250,7 +250,7 @@ const MbNavbar = () => {
   }, [selectedMenus]);
 
   return (
-    <div className="mb-nav-container">
+    <div className="mb-nav-container flex md:hidden">
       <button
         onClick={() => {
           setIsNavExpanded(true);
