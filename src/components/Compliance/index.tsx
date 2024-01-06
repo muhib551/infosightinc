@@ -6,6 +6,7 @@ import HIPAACard from "./Sub/HIPAACard";
 import NERCCard from "./Sub/NERCCard";
 import GLBACard from "./Sub/GLBACard";
 import PageLayout from "../PageLayout";
+import { useSearchParams } from "next/navigation";
 
 const COMP_BTNS_TEXTS = ["PCI DSS", "HIPAA", "NERC -CIP", "GLBA"];
 
@@ -21,6 +22,15 @@ const Compliance = () => {
 
   const [selected, setSelected] = React.useState(0);
   const SelectedComponent = COMPLIANCE_COMPS[selected];
+
+  const searchParams = useSearchParams();
+  const selectedFromParam = searchParams.get("s") || "0";
+
+  React.useEffect(() => {
+    const parsedNewVal = Number(selectedFromParam);
+    const newVal = isNaN(parsedNewVal) ? 0 : parsedNewVal;
+    setSelected(newVal);
+  }, [selectedFromParam]);
 
   return (
     <PageLayout hideWeProvide hideOurServices>

@@ -31,8 +31,6 @@ const imgsTable = {
   FUEL: fuelIcon,
 };
 
-
-
 export interface CardProps {
   imgType: CardImgType;
   title: string;
@@ -41,9 +39,15 @@ export interface CardProps {
   link: string;
 }
 
-const Card: React.FC<CardProps> = ({ imgType, title, description, tag, link }) => {
+const Card: React.FC<CardProps> = ({
+  imgType,
+  title,
+  description,
+  tag,
+  link,
+}) => {
   return (
-    <div className="p-5 border border-gray-300 rounded-lg w-max">
+    <div className="p-5 border border-gray-300 rounded-lg w-full">
       <Image src={imgsTable[imgType]} alt="" />
       <h1 className="text-xl text-gray-900 font-medium lg:mt-10 mt-5">
         {title}

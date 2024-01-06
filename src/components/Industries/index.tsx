@@ -11,6 +11,7 @@ import Water from "./Sub/Water";
 import Entertainment from "./Sub/Entertainment";
 import Healthcare from "./Sub/HealthCare";
 import PageLayout from "../PageLayout";
+import { useSearchParams } from "next/navigation";
 
 const BTNS_TEXTS = [
   "Financial",
@@ -44,6 +45,15 @@ const Industries = () => {
 
   const [selected, setSelected] = React.useState(0);
   const SelectedComponent = COMPS[selected];
+
+  const searchParams = useSearchParams();
+  const selectedFromParam = searchParams.get("s") || "0";
+
+  React.useEffect(() => {
+    const parsedNewVal = Number(selectedFromParam);
+    const newVal = isNaN(parsedNewVal) ? 0 : parsedNewVal;
+    setSelected(newVal);
+  }, [selectedFromParam]);
 
   return (
     <PageLayout hideWeProvide hideWhyInfoSight hideOurServices>

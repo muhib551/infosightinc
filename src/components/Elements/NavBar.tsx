@@ -3,69 +3,41 @@ import Image from "next/image";
 import logoImg from "../../../public/logo.svg";
 import DDIcon from "../../../public/DDIcon.svg";
 import chevronRightIcon from "../../../public/Chevron-right-Icon.svg";
-import menuIcon from "../../../public/menuIcon.svg";
-import backIcon from "../../../public/backIcon.svg";
 import "@/Styles/NavDropdown.css";
-
-const SERVICE_SOLUTION_DATA = [
-  {
-    title: "Advisory Services",
-    link: "",
-  },
-  {
-    title: "24x7 Managed Detection & Response",
-    link: "24x7-managed-detection-&-response",
-  },
-  {
-    title: "SOCaaS",
-    link: "SOCaaS",
-  },
-  {
-    title: "SECaaS",
-    link: "SECaaS",
-  },
-  {
-    title: "Managed Services",
-    link: "",
-  },
-  {
-    title: "Training & Education",
-    link: "careers",
-  },
-];
+import MbNavbar from "./MbNavbar";
 
 const INDUSTRIES_DATA = [
   {
     title: "Financial",
-    link: "industries",
+    link: "/industries?s=0",
   },
   {
     title: "Energy & Electric",
-    link: "industries",
+    link: "/industries?s=1",
   },
   {
     title: "Government",
-    link: "industries",
+    link: "/industries?s=2",
   },
   {
     title: "Oil & Gas",
-    link: "industries",
+    link: "/industries?s=3",
   },
   {
     title: "Manufacturing",
-    link: "industries",
+    link: "/industries?s=4",
   },
   {
     title: "Water & Wastewater",
-    link: "industries",
+    link: "/industries?s=5",
   },
   {
     title: "Entertainment",
-    link: "industries",
+    link: "/industries?s=6",
   },
   {
     title: "Healthcare",
-    link: "industries",
+    link: "/industries?s=7",
   },
 ];
 const ABOUT_US_DATA = [
@@ -147,7 +119,9 @@ const ADV_SERVICE_SECURITY_DATA_2 = [
 ];
 
 const NavBar = () => {
-  const [showsMenu, setShowMenu] = React.useState(false);
+  // const [showsMenu, setShowMenu] = React.useState(false);
+
+  return <MbNavbar />;
 
   return (
     <div className="">
@@ -447,15 +421,47 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
-      <nav className="md:hidden">
-        <div className=" px-5 py-3 flex w-7/12 justify-between relative">
-          <Image
-            onClick={() => setShowMenu(!showsMenu)}
-            src={!showsMenu ? menuIcon : backIcon}
-            alt=""
-            className="cursor-pointer"
-          />
-          <a href="home-page">
+      {/* <nav className="md:hidden">
+        <div className="px-3 py-3 flex w-7/12 justify-between relative">
+          <div onClick={() => setShowMenu(!showsMenu)} className="mt-2">
+            {!showsMenu ? (
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#575757"
+                  className="w-7 h-7 ml-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            ) : (
+              <button className="flex items-center gap-1 font-semibold text-gray-800">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="black"
+                  className="w-5 h-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+                Back
+              </button>
+            )}
+          </div>
+          <a href="home-page" className={showsMenu ? "hidden" : "block"}>
             <Image src={logoImg} alt="" className="" />
           </a>
         </div>
@@ -464,7 +470,7 @@ const NavBar = () => {
             !showsMenu ? "hidden" : "block"
           }`}
         >
-          <ul className=" flex flex-col px-5 pr-10 gap-5 ">
+          <ul className="flex flex-col px-5 pr-10 gap-5 pt-6">
             <li>
               <a href="#" className="">
                 Home
@@ -475,7 +481,7 @@ const NavBar = () => {
                 Services & Solutions
               </a>
               <Image src={chevronRightIcon} alt="" className="cursor-pointer" />
-              <div className="dropdown__menu absolute top-full left-0 bg-white z-50 w-[330px]">
+              <div className="absolute top-0 right-0 bg-white z-50 w-[330px]">
                 <div className="p-5">
                   <p className="text-gray-800 font-semibold">
                     Services & Solutions
@@ -492,7 +498,7 @@ const NavBar = () => {
                       alt=""
                       className="cursor-pointer"
                     />
-                    <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-full">
+                    <div className="absolute top-0  right-full bg-white z-50 w-full">
                       <ul className="flex flex-col gap-3">
                         <li className="flex items-center justify-between gap-2 px-5 pt-3">
                           <a href="">Security</a>
@@ -501,13 +507,7 @@ const NavBar = () => {
                             alt=""
                             className="cursor-pointer"
                           />
-                          <div
-                            className="DD__submenu absolute top-0 left-full bg-white z-50 w-max"
-                            // style={{
-                            //   left: "calc(100% + 40px)",
-                            //   top: "-15px",
-                            // }}
-                          >
+                          <div className="absolute top-0 right-full bg-white z-50 w-max">
                             <div className="flex justify-between">
                               <ul className="flex flex-col gap-3 px-5 py-3">
                                 {[
@@ -524,20 +524,6 @@ const NavBar = () => {
                                   );
                                 })}
                               </ul>
-                              {/* <ul className="flex flex-col gap-3">
-                              {ADV_SERVICE_SECURITY_DATA_2.map(
-                                ({ title, link }, i) => {
-                                  return (
-                                    <li
-                                      key={"ADV_SERVICE_SECURITY_DATA_2__" + i}
-                                      className="w-11/12 mx-auto"
-                                    >
-                                      <a href={link}>{title}</a>
-                                    </li>
-                                  );
-                                }
-                              )}
-                            </ul> */}
                             </div>
                           </div>
                         </li>
@@ -551,7 +537,7 @@ const NavBar = () => {
                             alt=""
                             className="cursor-pointer"
                           />
-                          <div className="DD__submenu absolute top-0  left-full bg-white z-50 w-max">
+                          <div className="DD__submenu absolute top-0  right-full bg-white z-50 w-max">
                             <ul className="flex flex-col gap-3 px-5 py-3">
                               <li>
                                 <a href="enterprise-risk-management">
@@ -573,7 +559,7 @@ const NavBar = () => {
                             alt=""
                             className="cursor-pointer"
                           />
-                          <div className="DD__submenu absolute top-0  left-full bg-white z-50 w-max">
+                          <div className="DD__submenu absolute top-0  right-full bg-white z-50 w-max">
                             <ul className="flex flex-col gap-3 px-5 py-3">
                               <li>
                                 <a href="compliance">PCI - DSS</a>
@@ -597,7 +583,7 @@ const NavBar = () => {
                             alt=""
                             className="cursor-pointer"
                           />
-                          <div className="DD__submenu absolute top-0 left-full bg-white z-50 w-max">
+                          <div className="DD__submenu absolute top-0 right-full bg-white z-50 w-max">
                             <ul className="flex flex-col gap-3 px-5 py-3">
                               <li>
                                 <a href="IT-audit">IT Audit</a>
@@ -629,7 +615,7 @@ const NavBar = () => {
                       alt=""
                       className="cursor-pointer"
                     />
-                    <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-max">
+                    <div className="dropdown__submenu absolute top-0  right-full bg-white z-50 w-max">
                       <ul className="flex flex-col gap-3 px-5 py-3">
                         <li>
                           <a href="">Managed XDR</a>
@@ -659,7 +645,7 @@ const NavBar = () => {
                       alt=""
                       className="cursor-pointer"
                     />
-                    <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-max">
+                    <div className="dropdown__submenu absolute top-0  right-full bg-white z-50 w-max">
                       <ul className="flex flex-col gap-3 px-5 py-3">
                         <li>
                           <a href="">
@@ -675,15 +661,6 @@ const NavBar = () => {
                       </ul>
                     </div>
                   </li>
-                  {/* {SERVICE_SOLUTION_DATA.map(({ title, link }, i) => {
-                  return (
-                    <li key={"SERVICE_SOLUTION_DATA__" + i} className="">
-                      <a href={link}  className="">
-                        {title}
-                      </a>
-                    </li>
-                  );
-                })} */}
                 </ul>
               </div>
             </li>
@@ -692,7 +669,7 @@ const NavBar = () => {
                 Industries
               </a>
               <Image src={chevronRightIcon} alt="" className="cursor-pointer" />
-              <div className="dropdown__menu absolute top-full  left-0 bg-white z-50 w-[360px]">
+              <div className="absolute top-0 right-0 bg-white z-50 w-[360px]">
                 <div className="p-5">
                   <p className="text-gray-800 font-semibold">Industries</p>
                   <p className="text-gray-500">
@@ -718,7 +695,7 @@ const NavBar = () => {
                 Insights
               </a>
               <Image src={chevronRightIcon} alt="" className="cursor-pointer" />
-              <div className="dropdown__menu absolute top-full left-0 bg-white z-50 w-max">
+              <div className="absolute top-0 right-0 bg-white z-50 w-max">
                 <div className="p-5">
                   <p className="text-gray-800 font-semibold">Insights</p>
                   <p className="text-gray-500">
@@ -743,7 +720,7 @@ const NavBar = () => {
                 About Us
               </a>
               <Image src={chevronRightIcon} alt="" className="cursor-pointer" />
-              <div className="dropdown__menu absolute top-full  left-0 bg-white z-50 w-max">
+              <div className="absolute top-0  right-0 bg-white z-50 w-max">
                 <div className="p-5">
                   <p className="text-gray-800 font-semibold">About Us</p>
                   <p className="text-gray-500">
@@ -775,7 +752,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </div>
   );
 };

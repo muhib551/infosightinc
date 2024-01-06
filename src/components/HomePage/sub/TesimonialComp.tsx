@@ -51,33 +51,6 @@ const TesimonialsComp = () => {
             );
           }
         )}
-        {/* <div className="bg-white shadow-md shadow-gray-300 p-5 rounded-xl">
-          <p className="pb-6">
-            The Infosight platform is accessible from anywhere and this has
-            greatly simplified things for us.
-          </p>
-          <Image src={ratingImg} alt="Rating" className="" />
-          <p className="mt-2">Marie Ann</p>
-          <p className="">IT Manager at T-Devs</p>
-        </div>
-        <div className="bg-white shadow-md shadow-gray-300 p-5 rounded-xl">
-          <p className="pb-6">
-            The Infosight platform is accessible from anywhere and this has
-            greatly simplified things for us.
-          </p>
-          <Image src={ratingImg} alt="Rating" className="" />
-          <p className="mt-2">Marie Ann</p>
-          <p className="">IT Manager at T-Devs</p>
-        </div>
-        <div className="bg-white shadow-md shadow-gray-300 p-5 rounded-xl">
-          <p className="pb-6">
-            The Infosight platform is accessible from anywhere and this has
-            greatly simplified things for us.
-          </p>
-          <Image src={ratingImg} alt="Rating" className="" />
-          <p className="mt-2">Marie Ann</p>
-          <p className="">IT Manager at T-Devs</p>
-        </div> */}
       </div>
       <div className="lg:flex items-center justify-center mt-16 gap-10 hidden">
         <Image

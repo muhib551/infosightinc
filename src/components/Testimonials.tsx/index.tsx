@@ -19,9 +19,6 @@ const Testimonials = () => {
           Infosights Testimonials
         </h1>
         <TestimonialCard />
-        <div className="my-10 text-center">
-          <Button text="Load More" style={{ backgroundColor: "black" }} />
-        </div>
       </div>
     </PageLayout>
   );
