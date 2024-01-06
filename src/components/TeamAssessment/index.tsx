@@ -68,7 +68,7 @@ const TeamAssessment = () => {
               className="lg:w-3/12"
             >
               <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="Document icon" />
+                <Image src={documentIcon} alt="" />
                 <p className=" text-[#8C340D] font-semibold">
                   Download Overview
                 </p>

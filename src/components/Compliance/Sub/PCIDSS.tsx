@@ -25,7 +25,7 @@ const PCIDSSCard = () => {
     <div>
       <div className="p-5 lg:px-20">
         <div className="flex flex-col gap-3">
-          <Image src={PCIImg} alt="PCI DSS Card Image" className="w-full" />
+          <Image src={PCIImg} alt="" className="w-full" />
 
           <p className="text-[#222222] py-1 px-2 text-xs lg:text-base border-b-2 border-gray-300 pb-5">
             InfoSight&apos;s comprehensive enterprise security solutions provide

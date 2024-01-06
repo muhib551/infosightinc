@@ -34,11 +34,7 @@ const ITAudit = () => {
           best practices to provide you with a one stop shop in planning,
           testing and reporting activities.
         </p>
-        <Image
-          src={auditInfoImg1}
-          alt="Audit Info Image"
-          className="w-full pt-3"
-        />
+        <Image src={auditInfoImg1} alt="" className="w-full pt-3" />
       </div>
       <div className="p-5 lg:px-20">
         <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
@@ -56,11 +52,7 @@ const ITAudit = () => {
               a key element of monitoring and governance oversight.
             </p>
           </div>
-          <Image
-            src={auditInfoImg2}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
+          <Image src={auditInfoImg2} alt="" className="w-full rounded-lg" />
         </div>
       </div>
       <ITAuditFeatures />

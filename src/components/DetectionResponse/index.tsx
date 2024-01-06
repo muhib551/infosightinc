@@ -96,7 +96,7 @@ const DetectionResponse = () => {
               fatigue ever!
             </p>
             <div className="flex gap-5 items-center lg:w-1/2 cursor-pointer">
-              <Image src={documentIcon} alt="Document icon" />
+              <Image src={documentIcon} alt="" />
               <p className=" text-[#8C340D] font-semibold">Download Overview</p>
             </div>
           </div>

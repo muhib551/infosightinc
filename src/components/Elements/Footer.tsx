@@ -49,7 +49,7 @@ const Footer = () => {
       <div className="px-5 pt-5 lg:px-20 lg:pt-20 flex flex-col-reverse lg:flex-row items-start justify-between w-full">
         <div className="flex flex-col gap-5 pt-6 md:py-0">
           <a href="home-page">
-            <Image src={logoImg} alt="Logo" className="w-32" />
+            <Image src={logoImg} alt="" className="w-32" />
           </a>
           <div>
             <h1 className="text-[#EC6A30] text-lg">InfoSight</h1>

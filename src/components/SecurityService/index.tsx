@@ -51,7 +51,7 @@ const SecurityService = () => {
               className="lg:w-5/12"
             >
               <div className="flex gap-5 items-center cursor-pointer">
-                <Image src={documentIcon} alt="Document icon" />
+                <Image src={documentIcon} alt="" />
                 <p className=" text-[#8C340D] font-semibold">
                   Download Overview
                 </p>

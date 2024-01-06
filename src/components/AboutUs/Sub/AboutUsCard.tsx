@@ -7,7 +7,7 @@ const AboutUsCard = () => {
     <div className="p-5 lg:px-20 lg:pb-20 pb-10">
       <div className="p-5 border border-gray-300 rounded-2xl">
         <div className="flex items-center lg:items-start lg:flex-col gap-5">
-          <Image src={storyIcon} alt="About us history icon" className="" />
+          <Image src={storyIcon} alt="" className="" />
           <p className="text-[30px]">Since 1988</p>
         </div>
         <p className="py-5">

@@ -119,7 +119,7 @@ const EmployeeSecurityAwareness = () => {
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
               <div className="flex gap-5 items-center">
-                <Image src={videoIcon} alt="Document icon" />
+                <Image src={videoIcon} alt="" />
                 <p className=" text-[#8C340D] font-semibold">Book a Demo Now</p>
               </div>
             </div>

@@ -44,7 +44,7 @@ const TesimonialsComp = () => {
                 className="bg-white shadow-md shadow-gray-300 p-5 rounded-xl"
               >
                 <p className="pb-6">{description}</p>
-                <Image src={rating} alt="Rating" className="" />
+                <Image src={rating} alt="" className="" />
                 <p className="mt-2">{user}</p>
                 <p className="">{designation}</p>
               </div>
@@ -55,12 +55,12 @@ const TesimonialsComp = () => {
       <div className="lg:flex items-center justify-center mt-16 gap-10 hidden">
         <Image
           src={chevronLeftIcon}
-          alt="Chevron Icon"
+          alt=""
           className="cursor-pointer hover:scale-110 transition-all"
         />
         <Image
           src={chevronRightIcon}
-          alt="Chevron Icon"
+          alt=""
           className="cursor-pointer hover:scale-110 transition-all"
         />
       </div>

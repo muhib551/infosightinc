@@ -24,12 +24,12 @@ const TextPictorialCard = ({ text }: Props) => {
             is critical to success!
           </p>
         </div>
-        <Image src={infoImg1} alt="Info image" className="w-full rounded-lg" />
+        <Image src={infoImg1} alt="" className="w-full rounded-lg" />
       </div>
       <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5 border-y-2 border-gray-300">
         <Image
           src={infoImg2}
-          alt="Info image"
+          alt=""
           className="w-full rounded-lg lg:block hidden"
         />
         <div className="flex flex-col justify-between w-full">
@@ -48,11 +48,7 @@ const TextPictorialCard = ({ text }: Props) => {
             attacks.
           </p>
         </div>
-        <Image
-          src={infoImg2}
-          alt="Info image"
-          className="w-full rounded-lg lg:hidden"
-        />
+        <Image src={infoImg2} alt="" className="w-full rounded-lg lg:hidden" />
       </div>
       <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
         <div className="flex flex-col justify-between w-full">
@@ -68,7 +64,7 @@ const TextPictorialCard = ({ text }: Props) => {
             date plan to restore operations quickly.
           </p>
         </div>
-        <Image src={infoImg3} alt="Info image" className="w-full rounded-lg" />
+        <Image src={infoImg3} alt="" className="w-full rounded-lg" />
       </div>
     </div>
   );

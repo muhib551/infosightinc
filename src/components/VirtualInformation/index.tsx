@@ -58,7 +58,7 @@ const VirtualInformation = () => {
                 target="_blank"
               >
                 <div className="flex gap-5 items-center">
-                  <Image src={documentIcon} alt="Document icon" />
+                  <Image src={documentIcon} alt="" />
                   <p className=" text-[#8C340D] font-semibold">
                     Download Overview
                   </p>
@@ -69,7 +69,7 @@ const VirtualInformation = () => {
                 target="_blank"
               >
                 <div className="flex gap-5 items-center">
-                  <Image src={videoIcon} alt="Document icon" />
+                  <Image src={videoIcon} alt="" />
                   <p className=" text-[#8C340D] font-semibold">Learn More</p>
                 </div>
               </Link>

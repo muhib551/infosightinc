@@ -52,11 +52,7 @@ const ITGeneralControl = () => {
           as a tool for managing risk levels as your company moves forward with
           future growth strategies.
         </p>
-        <Image
-          src={auditInfoImg1}
-          alt="Audit Info Image"
-          className="w-full pt-3"
-        />
+        <Image src={auditInfoImg1} alt="" className="w-full pt-3" />
       </div>
       <div className="p-5 lg:px-20">
         {IT_GENERAL_CONTROL_DATA.map(({ img, title, description }, i) => {

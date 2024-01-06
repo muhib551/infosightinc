@@ -21,7 +21,7 @@ const OilGas = () => {
     <div>
       <div className="p-5 lg:px-20">
         <div className="flex flex-col gap-3">
-          <Image src={oilGasImg} alt="Building Image" className="w-full" />
+          <Image src={oilGasImg} alt="" className="w-full" />
           <div className="flex items-start">
             <span className="pr-2">&bull;</span>
             <p className="text-[#222222] py-1 px-2 text-xs lg:text-base">

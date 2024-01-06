@@ -55,11 +55,7 @@ const NetworkCloud = () => {
               program for your business to achieve the best possible outcome.
             </p>
           </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
+          <Image src={infoImg1} alt="" className="w-full rounded-lg" />
         </div>
       </div>
       <MUCCCSFeatuers />

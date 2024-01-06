@@ -46,67 +46,18 @@ const FollowUsCard = () => {
             return (
               <Link href={link} key={i}>
                 <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
-                  <Image src={icon} alt="Youtube Icon" className="" />
+                  <Image src={icon} alt="" className="" />
                   <p className="text-white font-semibold flex items-center lg:gap-1">
                     {title}{" "}
                     <span>
                       {" "}
-                      <Image src={chevron} alt="Chevron Icon" className="" />
+                      <Image src={chevron} alt="" className="" />
                     </span>
                   </p>
                 </div>
               </Link>
             );
           })}
-
-          {/* <Link href="#">
-            <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
-              <Image src={youtubeIcon} alt="Youtube Icon" className="" />
-              <p className="text-white font-semibold flex items-center lg:gap-1">
-                Youtube{" "}
-                <span>
-                  {" "}
-                  <Image src={chevronRight} alt="Chevron Icon" className="" />
-                </span>
-              </p>
-            </div>
-          </Link>
-          <Link href="#">
-            <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
-              <Image src={instagramIcon} alt="Instagram Icon" className="" />
-              <p className="text-white font-semibold flex items-center lg:gap-1">
-                Instagram{" "}
-                <span>
-                  {" "}
-                  <Image src={chevronRight} alt="Chevron Icon" className="" />
-                </span>
-              </p>
-            </div>
-          </Link>
-          <Link href="#">
-            <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
-              <Image src={xIcon} alt="X Icon" className="" />
-              <p className="text-white font-semibold flex items-center lg:gap-1">
-                X{" "}
-                <span>
-                  {" "}
-                  <Image src={chevronRight} alt="Chevron Icon" className="" />
-                </span>
-              </p>
-            </div>
-          </Link>
-          <Link href="#">
-            <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
-              <Image src={linkedinIcon} alt="Linkedin Icon" className="" />
-              <p className="text-white font-semibold flex items-center lg:gap-1">
-                Linkedin{" "}
-                <span>
-                  {" "}
-                  <Image src={chevronRight} alt="Chevron Icon" className="" />
-                </span>
-              </p>
-            </div>
-          </Link> */}
         </div>
       </div>
     </div>

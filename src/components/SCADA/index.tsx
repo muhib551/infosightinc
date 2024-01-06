@@ -60,7 +60,7 @@ const SocialEngineering = () => {
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
               <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="Document icon" />
+                <Image src={documentIcon} alt="" />
                 <p className=" text-[#8C340D] font-semibold">
                   Download Overview
                 </p>

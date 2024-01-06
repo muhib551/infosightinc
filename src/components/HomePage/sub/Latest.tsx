@@ -24,11 +24,11 @@ const Latest = () => {
           </div>
           <div className="flex items-start lg:flex-row flex-col lg:gap-10 gap-4 mb-6 lg:w-8/12">
             <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={docIcon} alt="Document Icon" className="w-8" />
+              <Image src={docIcon} alt="" className="w-8" />
               <p className="text-orange-500 font-semibold">Download Overview</p>
             </div>
             <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={videoIcon} alt="Video Icon" className="w-8" />
+              <Image src={videoIcon} alt="" className="w-8" />
               <p className="text-orange-500 font-semibold">Watch Video</p>
             </div>
           </div>
@@ -45,11 +45,11 @@ const Latest = () => {
           </div>
           <div className="flex items-start lg:flex-row flex-col lg:gap-10 gap-4 mt-6 lg:w-8/12">
             <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={docIcon} alt="Document Icon" className="" />
+              <Image src={docIcon} alt="" className="" />
               <p className="text-orange-500 font-semibold">Download Overview</p>
             </div>
             <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={videoIcon} alt="Video Icon" className="" />
+              <Image src={videoIcon} alt="" className="" />
               <p className="text-orange-500 font-semibold">Watch Video</p>
             </div>
           </div>

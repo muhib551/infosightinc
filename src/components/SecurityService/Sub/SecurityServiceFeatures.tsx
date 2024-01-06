@@ -27,37 +27,37 @@ const SecurityServiceFeatures = () => {
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 py-5 lg:py-10">
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">SOCaaS</p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">Managed MDR</p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">Managed EDR</p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">Managed XDR & SIEM</p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">VISO and VCISO</p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">DLP Solutions</p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">
               Access and Identity Management
             </p>
           </div>
           <div className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md hover:bg-[#193146] cursor-pointer">
-            <Image src={tickImg} alt="tick icon" className="" />
+            <Image src={tickImg} alt="" className="" />
             <p className="text-white font-semibold">And more…</p>
           </div>
         </div>

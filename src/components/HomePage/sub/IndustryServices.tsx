@@ -55,7 +55,7 @@ const IndustryServices = () => {
       </h1>
       <div className="grid lg:grid-cols-3 gap-5 lg:gap-10 mt-5 lg:mt-10">
         <div className="bg-white rounded-xl">
-          <Image src={servicesImg1} alt="Services Picture" className="w-full" />
+          <Image src={servicesImg1} alt="" className="w-full" />
           <div className="p-6">
             <h1 className="text-xl text-[#2F5A7E] font-medium">Government</h1>
             <p className="text-gray-500 mt-2">
@@ -65,17 +65,13 @@ const IndustryServices = () => {
             <button className="text-[#EC6A30] py-4 font-medium flex items-center gap-1">
               Learn More
               <span>
-                <Image
-                  src={chevronRightIcon}
-                  alt="Right Chevron Icon"
-                  className="w-5"
-                />
+                <Image src={chevronRightIcon} alt="" className="w-5" />
               </span>
             </button>
           </div>
         </div>
         <div className="bg-white rounded-xl">
-          <Image src={servicesImg2} alt="Services Picture" className="w-full" />
+          <Image src={servicesImg2} alt="" className="w-full" />
           <div className="p-6">
             <h1 className="text-xl text-[#2F5A7E] font-medium">Financial</h1>
             <p className="text-gray-500 mt-2">
@@ -85,17 +81,13 @@ const IndustryServices = () => {
             <button className="text-[#EC6A30] py-4 font-medium flex items-center gap-1">
               Learn More
               <span>
-                <Image
-                  src={chevronRightIcon}
-                  alt="Right Chevron Icon"
-                  className="w-5"
-                />
+                <Image src={chevronRightIcon} alt="" className="w-5" />
               </span>
             </button>
           </div>
         </div>
         <div className="bg-white rounded-xl">
-          <Image src={servicesImg3} alt="Services Picture" className="w-full" />
+          <Image src={servicesImg3} alt="" className="w-full" />
           <div className="p-6">
             <h1 className="text-xl text-[#2F5A7E] font-medium">
               Energy/Electrical
@@ -108,17 +100,13 @@ const IndustryServices = () => {
             <button className="text-[#EC6A30] py-4 font-medium flex items-center gap-1">
               Learn More
               <span>
-                <Image
-                  src={chevronRightIcon}
-                  alt="Right Chevron Icon"
-                  className="w-5"
-                />
+                <Image src={chevronRightIcon} alt="" className="w-5" />
               </span>
             </button>
           </div>
         </div>
         <div className="bg-white rounded-xl">
-          <Image src={servicesImg4} alt="Services Picture" className="w-full" />
+          <Image src={servicesImg4} alt="" className="w-full" />
           <div className="p-6">
             <h1 className="text-xl text-[#2F5A7E] font-medium">Oil & Gas</h1>
             <p className="text-gray-500 mt-2">
@@ -128,17 +116,13 @@ const IndustryServices = () => {
             <button className="text-[#EC6A30] py-4 font-medium flex items-center gap-1">
               Learn More
               <span>
-                <Image
-                  src={chevronRightIcon}
-                  alt="Right Chevron Icon"
-                  className="w-5"
-                />
+                <Image src={chevronRightIcon} alt="" className="w-5" />
               </span>
             </button>
           </div>
         </div>
         <div className="bg-white rounded-xl">
-          <Image src={servicesImg5} alt="Services Picture" className="w-full" />
+          <Image src={servicesImg5} alt="" className="w-full" />
           <div className="p-6">
             <h1 className="text-xl text-[#2F5A7E] font-medium">Healthcare</h1>
             <p className="text-gray-500 mt-2">
@@ -148,17 +132,13 @@ const IndustryServices = () => {
             <button className="text-[#EC6A30] py-4 font-medium flex items-center gap-1">
               Learn More
               <span>
-                <Image
-                  src={chevronRightIcon}
-                  alt="Right Chevron Icon"
-                  className="w-5"
-                />
+                <Image src={chevronRightIcon} alt="" className="w-5" />
               </span>
             </button>
           </div>
         </div>
         <div className="bg-white rounded-xl">
-          <Image src={servicesImg6} alt="Services Picture" className="w-full" />
+          <Image src={servicesImg6} alt="" className="w-full" />
           <div className="p-6">
             <h1 className="text-xl text-[#2F5A7E] font-medium">
               Manufacturing & Indusstries
@@ -170,11 +150,7 @@ const IndustryServices = () => {
             <button className="text-[#EC6A30] py-4 font-medium flex items-center gap-1">
               Learn More
               <span>
-                <Image
-                  src={chevronRightIcon}
-                  alt="Right Chevron Icon"
-                  className="w-5"
-                />
+                <Image src={chevronRightIcon} alt="" className="w-5" />
               </span>
             </button>
           </div>

@@ -12,11 +12,7 @@ const HeroSection = () => {
         <NavBar />
       </div> */}
       <div className="">
-        <Image
-          src={heroImg}
-          alt="Home page image"
-          className="w-full md:block hidden"
-        />
+        <Image src={heroImg} alt="" className="w-full md:block hidden" />
         <div className="absolute top-[24%] left-32 text-white hidden md:block">
           <h1 className="  text-[60px] font-semibold leading-tight">
             InfoSight Network & <br /> Cyber Security <br /> Training
@@ -45,11 +41,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <Image
-          src={heroImgMob}
-          alt="Home page image mobile"
-          className="w-full md:hidden block"
-        />
+        <Image src={heroImgMob} alt="" className="w-full md:hidden block" />
       </div>
     </div>
   );

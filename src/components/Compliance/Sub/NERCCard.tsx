@@ -10,7 +10,7 @@ const NERCCard = () => {
     <div>
       <div className="p-5 lg:px-20">
         <div className="flex flex-col gap-3 border-b-2 border-gray-300 pb-5">
-          <Image src={NERCImg} alt="NERC Card Image" className="w-full" />
+          <Image src={NERCImg} alt="" className="w-full" />
           <p className="text-[#222222] py-1 px-2 text-xs lg:text-base ">
             No enterprise is completely immune to cyber-attacks or breaches, but
             a proactive, all-encompassing strategy can eliminate many of these
@@ -29,11 +29,7 @@ const NERCCard = () => {
             adequately address risks with a &#x201C;Remediation Roadmap&#x201D;.
           </p>
           <div className="flex items-start gap-3 lg:py-5">
-            <Image
-              src={documentIcon}
-              alt="Document icon"
-              className=" cursor-pointer"
-            />
+            <Image src={documentIcon} alt="" className=" cursor-pointer" />
             <div>
               <h1 className="text-[#8C340D] font-semibold pb-1 cursor-pointer">
                 Download Now
@@ -67,11 +63,7 @@ const NERCCard = () => {
               under federal law.
             </p>
           </div>
-          <Image
-            src={infoImg1}
-            alt="Info image"
-            className="w-full rounded-lg"
-          />
+          <Image src={infoImg1} alt="" className="w-full rounded-lg" />
         </div>
       </div>
       <NERCFeatures />

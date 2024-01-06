@@ -13,11 +13,7 @@ const WebCard = () => {
           target="_blank"
         >
           <div className="rounded-lg  border border-gray-300">
-            <Image
-              src={webCardImg}
-              alt="Webinar card image"
-              className="rounded-lg w-full"
-            />
+            <Image src={webCardImg} alt="" className="rounded-lg w-full" />
             <div className="pt-2 pb-5">
               <h1 className="text-[#2F5A7E] mt-2 px-4 text-xl ">
                 Cyber Risk Security
@@ -28,7 +24,7 @@ const WebCard = () => {
               </p>
               <button className="text-[#EA5715] font-semibold flex items-center gap-2 mt-5 px-4">
                 <span>
-                  <Image src={youtubeIcon} alt="Youtube Icon" />
+                  <Image src={youtubeIcon} alt="" />
                 </span>
                 Watch Now
               </button>
@@ -40,11 +36,7 @@ const WebCard = () => {
           target="_blank"
         >
           <div className="rounded-lg  border border-gray-300">
-            <Image
-              src={webCardImg}
-              alt="Webinar card image"
-              className="rounded-lg w-full"
-            />
+            <Image src={webCardImg} alt="" className="rounded-lg w-full" />
             <div className="pt-2 pb-5">
               <h1 className="text-[#2F5A7E] mt-2 px-4 text-xl ">
                 IoT Security
@@ -55,7 +47,7 @@ const WebCard = () => {
               </p>
               <button className="text-[#EA5715] font-semibold flex items-center gap-2 mt-5 px-4">
                 <span>
-                  <Image src={youtubeIcon} alt="Youtube Icon" />
+                  <Image src={youtubeIcon} alt="" />
                 </span>
                 Watch Now
               </button>
