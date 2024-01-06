@@ -1,9 +1,5 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
 import videoIcon from "../../../public/homepage/video-icon.svg";
@@ -12,6 +8,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import IndustrialControlHero from "./Sub/IndustrialControlHero";
 import IndustrialControlFeatures from "./Sub/IndustrialControlFeatures";
+import PageLayout from "../PageLayout";
 
 const INDUSTRIAL_CONTROL_DATA = [
   {
@@ -40,8 +37,7 @@ const IndustrialControl = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <IndustrialControlHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Security / Industrial
@@ -99,12 +95,7 @@ const IndustrialControl = () => {
         })}
       </div>
       <IndustrialControlFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

@@ -1,10 +1,5 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
-import TextPictorialCard from "../Elements/TextPictorialCard";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
 import SecurityServiceFeatures from "./Sub/SecurityServiceFeatures";
@@ -12,6 +7,7 @@ import SecurityServiceHero from "./Sub/SecurityServiceHero";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import Link from "next/link";
+import PageLayout from "../PageLayout";
 
 const SECURITY_SERVICES_DATA = [
   {
@@ -34,8 +30,7 @@ const SecurityService = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <SecurityServiceHero />
       <p className="p-5 lg:px-20">Home / Services & Solutions / SECaaS</p>
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
@@ -88,12 +83,7 @@ const SecurityService = () => {
         })}
       </div>
       <SecurityServiceFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

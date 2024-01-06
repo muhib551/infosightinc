@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import auditInfoImg1 from "../../../public/audit/Audit-info-img1.png";
 import auditInfoImg2 from "../../../public/audit/Audit-info-img2.png";
 import ITAuditHero from "./Sub/ITAuditHero";
 import ITAuditFeatures from "./Sub/ITAuditFeatures";
+import PageLayout from "../PageLayout";
 
 const ITAudit = () => {
   React.useEffect(() => {
@@ -16,8 +13,7 @@ const ITAudit = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <ITAuditHero />
       <p className="p-5 lg:px-20">
         Home / Advisory Services / Audit & Assurance / IT Audit
@@ -68,12 +64,7 @@ const ITAudit = () => {
         </div>
       </div>
       <ITAuditFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

@@ -10,6 +10,7 @@ import Footer from "../Elements/Footer";
 import FutureOrangeButtons from "../Elements/FutureOrangButtons";
 import TesimonialsComp from "./sub/TesimonialComp";
 import WeAre from "./sub/WeAre";
+import PageLayout from "../PageLayout";
 
 const HomePage = () => {
   const [open, setOpen] = React.useState(false);
@@ -19,8 +20,12 @@ const HomePage = () => {
   }, []);
 
   return (
-    <>
-      <NavBar />
+    <PageLayout
+      hideWeProvide
+      hideOurServices
+      hideWhyInfoSight
+      hideFooterFutureSection
+    >
       <HeroSection />
       <Latest />
       <WeAre />
@@ -28,8 +33,7 @@ const HomePage = () => {
       <IndustryServices />
       <TesimonialsComp />
       <FutureOrangeButtons />
-      <Footer />
-    </>
+    </PageLayout>
   );
 };
 

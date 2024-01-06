@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import PCIDSSCard from "./Sub/PCIDSS";
 import ComplianceHero from "./Sub/ComplianceHero";
 import HIPAACard from "./Sub/HIPAACard";
 import NERCCard from "./Sub/NERCCard";
 import GLBACard from "./Sub/GLBACard";
+import PageLayout from "../PageLayout";
 
 const COMP_BTNS_TEXTS = ["PCI DSS", "HIPAA", "NERC -CIP", "GLBA"];
 
@@ -26,8 +23,7 @@ const Compliance = () => {
   const SelectedComponent = COMPLIANCE_COMPS[selected];
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <ComplianceHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Compliance
@@ -54,12 +50,7 @@ const Compliance = () => {
         })}
       </div>
       <SelectedComponent />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

@@ -2,7 +2,11 @@ import Button from "@/components/Elements/Button";
 import Link from "next/link";
 import React from "react";
 
-const FutureBlackButtons = () => {
+interface Props {
+  hideFutureBtns?: boolean;
+}
+
+const FutureBlackButtons: React.FC<Props> = ({ hideFutureBtns = false }) => {
   return (
     <div className="bg-[#3B719F] py-10 px-8 lg:p-20">
       <div className="flex flex-col lg:flex-row">
@@ -15,30 +19,32 @@ const FutureBlackButtons = () => {
             already securing their business
           </p>
         </div>
-        <div className="flex justify-between gap-5 mt-8 lg:mt-0 items-center lg:justify-end w-full">
-          <Link href="#" target="_blank">
-            <Button
-              text="Get Details"
-              style={{
-                color: "black",
-                backgroundColor: "white",
-                padding: "10px 25px",
-                borderRadius: "10px",
-              }}
-            />
-          </Link>
-          <Link href="contact" target="_blank">
-            <Button
-              text="Contact Us"
-              style={{
-                color: "white",
-                backgroundColor: "black",
-                padding: "10px 25px",
-                borderRadius: "10px",
-              }}
-            />
-          </Link>
-        </div>
+        {!hideFutureBtns && (
+          <div className="flex justify-between gap-5 mt-8 lg:mt-0 items-center lg:justify-end w-full">
+            <Link href="#" target="_blank">
+              <Button
+                text="Get Details"
+                style={{
+                  color: "black",
+                  backgroundColor: "white",
+                  padding: "10px 25px",
+                  borderRadius: "10px",
+                }}
+              />
+            </Link>
+            <Link href="contact" target="_blank">
+              <Button
+                text="Contact Us"
+                style={{
+                  color: "white",
+                  backgroundColor: "black",
+                  padding: "10px 25px",
+                  borderRadius: "10px",
+                }}
+              />
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

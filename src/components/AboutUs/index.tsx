@@ -1,11 +1,7 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
 import AboutUsCard from "./Sub/AboutUsCard";
-import WeProvide from "../CaseStudy/Sub/WeProvide";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
+import PageLayout from "../PageLayout";
 
 const AboutUs = () => {
   React.useEffect(() => {
@@ -13,8 +9,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideOurServices>
       <p className="p-5 lg:px-20">
         Home / About Us / About Us and Company History
       </p>
@@ -22,13 +17,7 @@ const AboutUs = () => {
         About Us
       </h1>
       <AboutUsCard />
-      <WeProvide />
-      <div className="lg:py-10">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

@@ -1,10 +1,5 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
-import TextPictorialCard from "../Elements/TextPictorialCard";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
 import DetectionRespHero from "./Sub/DetectionRespHero";
@@ -12,6 +7,7 @@ import DetectionRespFeatures from "./Sub/DetectionRespFeatures";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
+import PageLayout from "../PageLayout";
 
 const DETECTION_RESPONSE_DATA = [
   {
@@ -77,8 +73,7 @@ const DetectionResponse = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <DetectionRespHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / 24x7 Managed Detection & Response
@@ -129,12 +124,7 @@ const DetectionResponse = () => {
         })}
       </div>
       <DetectionRespFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

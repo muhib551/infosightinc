@@ -1,13 +1,10 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import NetworkCloudHero from "./Sub/NetworkCloudHero";
 import NetworkCloudFeatures from "./Sub/NetworkCloudFeatures";
+import PageLayout from "../PageLayout";
 
 const NetworkCloud = () => {
   React.useEffect(() => {
@@ -15,8 +12,7 @@ const NetworkCloud = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <NetworkCloudHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Managed Services / Managed Network & Cloud
@@ -67,12 +63,7 @@ const NetworkCloud = () => {
         </div>
       </div>
       <NetworkCloudFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

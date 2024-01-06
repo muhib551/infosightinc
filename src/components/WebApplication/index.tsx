@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import WebAppHero from "./Sub/WebAppHero";
 import WebAppFeatures from "./Sub/WebAppFeatures";
+import PageLayout from "../PageLayout";
 
 const WebApplication = () => {
   React.useEffect(() => {
@@ -16,8 +13,7 @@ const WebApplication = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <WebAppHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Security / Web
@@ -92,12 +88,7 @@ const WebApplication = () => {
         </div>
       </div>
       <WebAppFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

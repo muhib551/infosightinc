@@ -12,6 +12,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import SecurityAwarFeatures from "./Sub/SecurityAwarFeartures";
 import SecurityAwarHero from "./Sub/SecurityAwarHero";
+import PageLayout from "../PageLayout";
 
 const SECURITY_AWARENESS_DATA = [
   {
@@ -40,8 +41,7 @@ const SecurityAwareness = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <SecurityAwarHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Training & Education / Security Awareness
@@ -93,12 +93,7 @@ const SecurityAwareness = () => {
         })}
       </div>
       <SecurityAwarFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

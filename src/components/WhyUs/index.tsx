@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
 import WhyHeroSection from "./Sub/WhyHeroSection";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
+import PageLayout from "../PageLayout";
 
 const WhyUs = () => {
   React.useEffect(() => {
@@ -12,16 +10,10 @@ const WhyUs = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <WhyHeroSection />
       <p className="p-5 lg:px-20">Home / About Us / Why InfoSight</p>
-      <div className="lg:py-10">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

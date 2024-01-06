@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
 import PartnersHeroSecton from "./Sub/PartnersHeroSecton";
 import PartnersCard from "./Sub/PartnersCard";
 import FutureBlackButtons from "../Elements/FutureBlackButtons";
+import PageLayout from "../PageLayout";
 
 const Partners = () => {
   React.useEffect(() => {
@@ -12,14 +11,11 @@ const Partners = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices hideWhyInfoSight>
       <PartnersHeroSecton />
       <p className="p-5 lg:px-20">Home / About Us / Partners</p>
       <PartnersCard />
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

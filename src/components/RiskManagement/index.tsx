@@ -1,12 +1,9 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import RiskMangementHero from "./Sub/RiskMangHero";
 import RiskManagementFeatures from "./Sub/RiskManagementFeatures";
 import RiskMangementInfo from "./Sub/RiskMangementInfo";
+import PageLayout from "../PageLayout";
 
 const RiskManagement = () => {
   React.useEffect(() => {
@@ -14,8 +11,7 @@ const RiskManagement = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <RiskMangementHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Risk Management /
@@ -41,12 +37,7 @@ const RiskManagement = () => {
       </div>
       <RiskMangementInfo />
       <RiskManagementFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

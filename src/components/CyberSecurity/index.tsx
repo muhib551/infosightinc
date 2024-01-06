@@ -1,9 +1,5 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
 import videoIcon from "../../../public/homepage/video-icon.svg";
@@ -13,6 +9,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import CyberSecurityyHero from "./Sub/CyberSecurityHero";
 import CyberSecurityFeatures from "./Sub/CyberSecurityFeatures";
 import Link from "next/link";
+import PageLayout from "../PageLayout";
 
 const CYBERSECURITY_DATA = [
   {
@@ -41,8 +38,7 @@ const CyberSecurity = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <CyberSecurityyHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Security /
@@ -110,12 +106,7 @@ const CyberSecurity = () => {
         })}
       </div>
       <CyberSecurityFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

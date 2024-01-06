@@ -2,10 +2,8 @@
 import React from "react";
 import Button from "../Elements/Button";
 import TestimonialCard from "./Sub/TestimonialCard";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import TestHeroSection from "./Sub/TestHeroSection";
+import PageLayout from "../PageLayout";
 
 const Testimonials = () => {
   React.useEffect(() => {
@@ -13,9 +11,8 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
-      <TestHeroSection />s
+    <PageLayout hideWeProvide hideOurServices hideWhyInfoSight>
+      <TestHeroSection />
       <p className="p-5 lg:px-20">Home / About Us / Testimonials</p>
       <div className="p-5 lg:px-20">
         <h1 className=" text-2xl lg:text-4xl font-semibold">
@@ -26,9 +23,7 @@ const Testimonials = () => {
           <Button text="Load More" style={{ backgroundColor: "black" }} />
         </div>
       </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

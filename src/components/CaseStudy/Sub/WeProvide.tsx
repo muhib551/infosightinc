@@ -13,7 +13,7 @@ const WEPROVIDE_DATA = [
   {
     img: serviceIcon1,
     title: "Managed Network & Cloud Support Services",
-    link: "network-cloud",
+    link: "managed-network-support-services",
   },
   {
     img: serviceIcon2,
@@ -23,22 +23,22 @@ const WEPROVIDE_DATA = [
   {
     img: serviceIcon3,
     title: "Managed Security Services",
-    link: "security-services",
+    link: "SECaaS",
   },
   {
     img: serviceIcon4,
     title: "BCP/DR Planning",
-    link: "planning-disaster",
+    link: "business-continuity",
   },
   {
     img: serviceIcon5,
     title: "Managed EDR",
-    link: "managed-edr",
+    link: "managed-EDR",
   },
   {
     img: serviceIcon6,
     title: "Industrial Control & IoT Assessments",
-    link: "industrial-control",
+    link: "industrial-control-IoT-security-assessments",
   },
 ];
 

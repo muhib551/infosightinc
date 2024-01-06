@@ -1,17 +1,13 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
-import videoIcon from "../../../public/homepage/video-icon.svg";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import ManagedEDRHero from "./Sub/ManagedRDRHero";
 import ManagedEDRFeatures from "./Sub/ManagedEDRFeatures";
+import PageLayout from "../PageLayout";
 
 const MANAGED_EDR_DATA = [
   {
@@ -40,8 +36,7 @@ const ManagedEDR = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <ManagedEDRHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Managed Services / Managed EDR
@@ -98,12 +93,7 @@ const ManagedEDR = () => {
         })}
       </div>
       <ManagedEDRFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

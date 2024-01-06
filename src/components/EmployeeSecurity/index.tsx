@@ -1,17 +1,13 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
-import documentIcon from "../../../public/homepage/document-icon.svg";
 import videoIcon from "../../../public/homepage/video-icon.svg";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import EmpSecurityHero from "./Sub/EmplSecurityHero";
 import EmpSecurityFeatures from "./Sub/EmpSecurityFeatures";
+import PageLayout from "../PageLayout";
 
 const EMPLOYEE_SECURITY_DATA = [
   {
@@ -101,8 +97,7 @@ const EmployeeSecurityAwareness = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <EmpSecurityHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Training & Education / Employee Security
@@ -153,12 +148,7 @@ const EmployeeSecurityAwareness = () => {
         })}
       </div>
       <EmpSecurityFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

@@ -83,7 +83,7 @@ const AllCaseStudies = () => {
   const [selected, setSelected] = React.useState(0);
 
   return (
-    <div className="p-5 lg:px-20">
+    <div className="p-5 lg:py-10 lg:px-20">
       <div className="flex items-center justify-between gap-2 mb-8">
         <h1 className="text-xl lg:text-4xl font-extrabold ">
           All Case Studies

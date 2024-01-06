@@ -12,6 +12,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import SocialEngineeringHero from "./Sub/SocialEnggHero";
 import SocialEngineeringFeatures from "./Sub/SocialEnggFeatures";
+import PageLayout from "../PageLayout";
 
 const SOCIAL_ENGG_DATA = [
   {
@@ -40,8 +41,7 @@ const SocialEngineering = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <SocialEngineeringHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Security / Social
@@ -99,12 +99,7 @@ const SocialEngineering = () => {
         })}
       </div>
       <SocialEngineeringFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

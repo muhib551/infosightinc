@@ -1,18 +1,14 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import InfoSight from "../CaseStudy/Sub/InfoSight";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import Image from "next/image";
 import documentIcon from "../../../public/homepage/document-icon.svg";
-import videoIcon from "../../../public/homepage/video-icon.svg";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import TeamAssessmentHero from "./Sub/TeamAssessmentHero";
 import TeamAssessmentFeatures from "./Sub/TeamAssessmentFeatures";
 import Link from "next/link";
+import PageLayout from "../PageLayout";
 
 const TEAM_ASSESSMENT_DATA = [
   {
@@ -41,8 +37,7 @@ const TeamAssessment = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <TeamAssessmentHero />
       <p className="p-5 lg:px-20">
         Home / Services & Solutions / Advisory Services / Security / Red, Blue &
@@ -104,12 +99,7 @@ const TeamAssessment = () => {
         })}
       </div>
       <TeamAssessmentFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

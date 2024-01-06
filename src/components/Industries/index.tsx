@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import NavBar from "../Elements/NavBar";
-import Footer from "../Elements/Footer";
-import FutureBlackButtons from "../Elements/FutureBlackButtons";
 import IndustriesHero from "./Sub/IndustriesHero";
 import OurServices from "../HomePage/sub/OurServices";
 import FinancialCard from "./Sub/FinancialCard";
@@ -13,6 +10,7 @@ import Manufacturing from "./Sub/Manufacturing";
 import Water from "./Sub/Water";
 import Entertainment from "./Sub/Entertainment";
 import Healthcare from "./Sub/HealthCare";
+import PageLayout from "../PageLayout";
 
 const BTNS_TEXTS = [
   "Financial",
@@ -48,8 +46,7 @@ const Industries = () => {
   const SelectedComponent = COMPS[selected];
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideWhyInfoSight hideOurServices>
       <IndustriesHero />
       <p className="p-5 lg:px-20">Home / Industries</p>
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
@@ -75,9 +72,7 @@ const Industries = () => {
       </div>
       <SelectedComponent />
       <OurServices heading="What We also Provide" />
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

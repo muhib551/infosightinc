@@ -14,7 +14,7 @@ const OURSERVICES_DATA = [
     title: "Managed Security Services",
     description:
       "InfoSight's Security Operations Center (SOC) leverages sound and repeatable processes to mitigate threats in a systematic approach delivering superior outcomes with no alert fatigue ever.",
-    link: "security-services",
+    link: "SECaaS",
   },
   {
     img: serviceIcon2,
@@ -28,28 +28,28 @@ const OURSERVICES_DATA = [
     title: "Managed Network & Cloud Support Services",
     description:
       "InfoSight's Managed Network and Support Services provide the appropriate skillsets to achieve the ideal level of network management required for your specific environment.",
-    link: "network-cloud",
+    link: "managed-network-support-services",
   },
   {
     img: serviceIcon4,
     title: "BCP/DR Planning",
     description:
       "InfoSight's Certified Business Continuity Planners (CBCP's) utilize years of experience in Business Continuity Planning and Disaster Recovery experience to develop a specific plan for your organization.",
-    link: "planning-disaster",
+    link: "business-continuity",
   },
   {
     img: serviceIcon5,
     title: "Managed EDR",
     description:
       "InfoSight's Endpoint Detection & Response (EDR) provides you with real time incident response, enterprise remediation and threat containment 24x7x365. Coupled with our Security Operations Center (SOC).",
-    link: "managed-edr",
+    link: "managed-EDR",
   },
   {
     img: serviceIcon6,
     title: "Industrial Control & IoT Assessments",
     description:
       "InfoSight performs Industrial Control & OT Security Assessments to provide a complete evaluation and holistic view of your organization's security posture.",
-    link: "industrial-control",
+    link: "industrial-control-IoT-security-assessments",
   },
 ];
 

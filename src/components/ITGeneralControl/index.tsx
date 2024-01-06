@@ -10,6 +10,7 @@ import generalinfoImg1 from "../../../public/audit/IT-General-Control-Review-img
 import generalinfoImg2 from "../../../public/audit/IT-General-Control-Review-img2.png";
 import ITGeneralControlHero from "./Sub/ITGeneralControlHero";
 import ITGeneralControlFeatures from "./Sub/ITGeneralControlFeatures";
+import PageLayout from "../PageLayout";
 
 const IT_GENERAL_CONTROL_DATA = [
   {
@@ -32,8 +33,7 @@ const ITGeneralControl = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <ITGeneralControlHero />
       <p className="p-5 lg:px-20">
         Home / Advisory Services / Audit & Assurance / IT General Control Review
@@ -80,12 +80,7 @@ const ITGeneralControl = () => {
         })}
       </div>
       <ITGeneralControlFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

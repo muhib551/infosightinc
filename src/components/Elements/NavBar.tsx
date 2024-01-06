@@ -6,7 +6,6 @@ import chevronRightIcon from "../../../public/Chevron-right-Icon.svg";
 import menuIcon from "../../../public/menuIcon.svg";
 import backIcon from "../../../public/backIcon.svg";
 import "@/Styles/NavDropdown.css";
-import { Span } from "next/dist/trace";
 
 const SERVICE_SOLUTION_DATA = [
   {
@@ -15,7 +14,7 @@ const SERVICE_SOLUTION_DATA = [
   },
   {
     title: "24x7 Managed Detection & Response",
-    link: "partners",
+    link: "24x7-managed-detection-&-response",
   },
   {
     title: "SOCaaS",
@@ -128,7 +127,7 @@ const ADV_SERVICE_SECURITY_DATA_1 = [
 const ADV_SERVICE_SECURITY_DATA_2 = [
   {
     title: "Industrial Control & IoT Security Assessments",
-    link: "#industrial-control-IoT-security-assessments",
+    link: "industrial-control-IoT-security-assessments",
   },
 
   {
@@ -159,7 +158,7 @@ const NavBar = () => {
               <Image src={logoImg} alt="" className="w-16" />
             </a>
             <li>
-              <a href="#" className="">
+              <a href="home-page" className="">
                 Home
               </a>
             </li>
@@ -194,13 +193,7 @@ const NavBar = () => {
                             alt=""
                             className="cursor-pointer"
                           />
-                          <div
-                            className="DD__submenu absolute top-0 left-full bg-white z-50 w-max"
-                            // style={{
-                            //   left: "calc(100% + 40px)",
-                            //   top: "-15px",
-                            // }}
-                          >
+                          <div className="DD__submenu absolute top-0 left-full bg-white z-50 w-max">
                             <div className="flex justify-between">
                               <ul className="flex flex-col gap-3 px-5 py-3">
                                 {[
@@ -217,20 +210,6 @@ const NavBar = () => {
                                   );
                                 })}
                               </ul>
-                              {/* <ul className="flex flex-col gap-3">
-                              {ADV_SERVICE_SECURITY_DATA_2.map(
-                                ({ title, link }, i) => {
-                                  return (
-                                    <li
-                                      key={"ADV_SERVICE_SECURITY_DATA_2__" + i}
-                                      className="w-11/12 mx-auto"
-                                    >
-                                      <a href={link}>{title}</a>
-                                    </li>
-                                  );
-                                }
-                              )}
-                            </ul> */}
                             </div>
                           </div>
                         </li>
@@ -307,13 +286,15 @@ const NavBar = () => {
                     </div>
                   </li>
                   <li className="px-5">
-                    <a href="">24x7 Managed Detection & Response</a>
+                    <a href="24x7-managed-detection-&-response">
+                      24x7 Managed Detection & Response
+                    </a>
                   </li>
                   <li className="px-5">
-                    <a href="">SOCaaS</a>
+                    <a href="SOCaaS">SOCaaS</a>
                   </li>
                   <li className="px-5">
-                    <a href="">SECaaS</a>
+                    <a href="SECaaS">SECaaS</a>
                   </li>
                   <li className="flex items-center justify-between px-5">
                     <a href="">Managed Services</a>
@@ -325,22 +306,26 @@ const NavBar = () => {
                     <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-max">
                       <ul className="flex flex-col gap-3 px-5 py-3">
                         <li>
-                          <a href="">Managed XDR</a>
+                          <a href="managed-xdr">Managed XDR</a>
                         </li>
                         <li>
-                          <a href="">Managed Network & Cloud Services</a>
+                          <a href="managed-network-support-services">
+                            Managed Network & Cloud Services
+                          </a>
                         </li>
                         <li>
-                          <a href="">
+                          <a href="managed-communications">
                             Managed Communications, Collaboration & Connect
                             Services
                           </a>
                         </li>
                         <li>
-                          <a href="">Managed EDR</a>
+                          <a href="managed-EDR">Managed EDR</a>
                         </li>
                         <li>
-                          <a href="">Patch & Vulnerability Management</a>
+                          <a href="patch-vulnerability-management">
+                            Patch & Vulnerability Management
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -355,33 +340,26 @@ const NavBar = () => {
                     <div className="dropdown__submenu absolute top-0  left-full bg-white z-50 w-max">
                       <ul className="flex flex-col gap-3 px-5 py-3">
                         <li>
-                          <a href="">
+                          <a href="bank-security-awareness-training">
                             Security Awareness Training for Online Banking
                           </a>
                         </li>
                         <li>
-                          <a href="">Employee Security Awareness Training</a>
+                          <a href="employee-security-awareness-training">
+                            Employee Security Awareness Training
+                          </a>
                         </li>
                         <li>
-                          <a href="">LearnCloud LMS</a>
+                          <a href="learn-about-the-cloud">Learn Cloud LMS</a>
                         </li>
                       </ul>
                     </div>
                   </li>
-                  {/* {SERVICE_SOLUTION_DATA.map(({ title, link }, i) => {
-                  return (
-                    <li key={"SERVICE_SOLUTION_DATA__" + i} className="">
-                      <a href={link}  className="">
-                        {title}
-                      </a>
-                    </li>
-                  );
-                })} */}
                 </ul>
               </div>
             </li>
             <li className="flex items-center gap-2 ">
-              <a href="#" className="">
+              <a href="industries" className="">
                 Industries
               </a>
               <Image src={DDIcon} alt="" className="cursor-pointer" />
@@ -432,7 +410,7 @@ const NavBar = () => {
               </div>
             </li>
             <li className="flex items-center gap-2">
-              <a href="#" className="">
+              <a href="about-us" className="">
                 About Us
               </a>
               <Image src={DDIcon} alt="" className="cursor-pointer" />
@@ -457,12 +435,12 @@ const NavBar = () => {
               </div>
             </li>
             <li>
-              <a href="#" className="">
+              <a href="case-studies" className="">
                 Case Studies
               </a>
             </li>
             <li>
-              <a href="#" className="">
+              <a href="contact" className="">
                 Contact Us
               </a>
             </li>

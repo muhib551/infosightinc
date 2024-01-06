@@ -13,6 +13,7 @@ import SecurityOperFeatures from "./Sub/SecurityOperFeatures";
 import infoImg1 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img1.png";
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
+import PageLayout from "../PageLayout";
 
 const SECURITY_OPERATIONS_DATA = [
   {
@@ -78,8 +79,7 @@ const SecurityOperations = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout hideWeProvide hideOurServices>
       <SecurityOperHero />
       <p className="p-5 lg:px-20">Home / Services & Solutions / SOCaaS</p>
       <h1 className="p-5 lg:px-20 text-2xl lg:text-4xl font-semibold">
@@ -138,12 +138,7 @@ const SecurityOperations = () => {
         })}
       </div>
       <SecurityOperFeatures />
-      <div className="py-5">
-        <InfoSight />
-      </div>
-      <FutureBlackButtons />
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 

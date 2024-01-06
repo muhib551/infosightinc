@@ -7,6 +7,7 @@ import Image from "next/image";
 import locationIcon from "../../../public/location.svg";
 import callingIcon from "../../../public/call-calling.svg";
 import smsddIcon from "../../../public/sms-dd.svg";
+import PageLayout from "../PageLayout";
 
 const Query = () => {
   React.useEffect(() => {
@@ -14,8 +15,12 @@ const Query = () => {
   }, []);
 
   return (
-    <div>
-      <NavBar />
+    <PageLayout
+      hideWeProvide
+      hideOurServices
+      hideWhyInfoSight
+      hideFooterFutureBtns
+    >
       <p className="p-5 lg:px-20">Home / Contact Us</p>
       <div className="p-5 lg:px-20 flex flex-col gap-5 lg:gap-10 lg:flex-row lg:items-start w-full">
         <div className="w-full">
@@ -123,8 +128,7 @@ const Query = () => {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </PageLayout>
   );
 };
 
