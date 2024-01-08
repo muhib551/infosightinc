@@ -8,6 +8,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import CloudLMSHero from "./Sub/CloudLMSHero";
 import CloudLMSFeatures from "./Sub/CloudLMSFeatures";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const CLOUDMS_DATA = [
   {
@@ -108,12 +109,19 @@ const CloudLMS = () => {
               catalog.
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">
-                  View Course Catalog
-                </p>
-              </div>
+              <Link
+                href={
+                  "https://www.infosightinc.com/pdf/LearnCloud-Course-Catalog-InfoSight.pdf"
+                }
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    View Course Catalog
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

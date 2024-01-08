@@ -8,6 +8,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import SCADAFeatures from "./Sub/SCADAFeatures";
 import SCADAHero from "./Sub/SCADAHero";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const SCADA_DATA = [
   {
@@ -59,12 +60,19 @@ const SocialEngineering = () => {
               important to perform security assessments regularly.
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">
-                  Download Overview
-                </p>
-              </div>
+              <Link
+                href={
+                  "https://www.infosightinc.com/pdf/InfoSight-SCADA-ICS-Risk-Vulnerability-Assessments.pdf"
+                }
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Download Overview
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import tickImg from "../../../../public/industries/industries-tick-circle-icon.svg";
+import Link from "next/link";
 
 const IT_GC_FEATURES_DATA = [
   "Review risk reviews for control requirements",
@@ -31,7 +32,12 @@ const ITGeneralControlFeatures = () => {
         </div>
         <p className="text-white lg:text-xl lg:w-10/12 px-2 lg:px-0">
           <span className="text-[#EC6A30] hover:text-[#9e4c26] font-bold">
-            <a href="#">CLICK HERE</a>
+            <Link
+              href="https://www.infosightinc.com/pdf/InfoSight-IT-General-Controls-Overview.pdf"
+              target="_blank"
+            >
+              CLICK HERE
+            </Link>
           </span>{" "}
           For more information on our objectives for IT Management, Outsourcing
           Technologies, Information Security and BCP/DRP.

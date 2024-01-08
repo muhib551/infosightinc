@@ -9,6 +9,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import PenetrationTestingHero from "./Sub/PenetrationTestingHero";
 import PenetrationTestingFeatures from "./Sub/PenetrationTestingFeatures";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const PENETRATION_DATA = [
   {
@@ -48,8 +49,8 @@ const PenetrationTesting = () => {
       </h1>
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
-          <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
-            <p className=" text-justify text-[#444444]">
+          <div className="lg:p-10 p-5 bg-gray-100 flex w-full flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
+            <p className=" text-[#444444]">
               InfoSight&apos;s Penetration Testing services reduce the risk of a
               successful attacks before they occur. With over two decades of
               experience in security, compliance and risk management, our
@@ -58,17 +59,27 @@ const PenetrationTesting = () => {
               cyberattacks continue to rise everyday it is important to perform
               penetration tests regularly.
             </p>
-            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">
-                  Download Overview
-                </p>
-              </div>
-              <div className="flex gap-5 items-center">
-                <Image src={videoIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">Learn More</p>
-              </div>
+            <div className="flex gap-5 flex-col w-11/12 lg:flex-row lg:items-center cursor-pointer">
+              <Link
+                href="https://www.infosightinc.com/pdf/InfoSight-Penetration-Testing.pdf"
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Download Overview
+                  </p>
+                </div>
+              </Link>
+              <Link
+                href="https://www.infosightinc.com/penetration-testing.html#video"
+                target="_blank"
+              >
+                <div className="flex gap-5  items-center">
+                  <Image src={videoIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

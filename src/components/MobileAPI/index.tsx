@@ -9,6 +9,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import MobileAPIHero from "./Sub/MobileAPIHero";
 import MobileAPIFeatures from "./Sub/MobileAPIFeatures";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const MOBILE_API_DATA = [
   {
@@ -59,16 +60,30 @@ const MobileAPI = () => {
               security.
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">
-                  Download Overview
-                </p>
-              </div>
-              <div className="flex gap-5 items-center">
-                <Image src={videoIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">Learn More</p>
-              </div>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.infosightinc.com/pdf/InfoSight%20-%20Mobile,%20API%20&%20Code%20Review.pdf"
+                }
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Download Overview
+                  </p>
+                </div>
+              </Link>
+              <Link
+                target="_blank"
+                href={
+                  "https://www.infosightinc.com/code-review-api-mobile-testing.html#video"
+                }
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={videoIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

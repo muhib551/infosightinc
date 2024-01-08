@@ -8,6 +8,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import ManagedXDRHero from "./Sub/ManagedXDRHero";
 import ManagedXDRFeatures from "./Sub/ManagedXDRFeatures";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const MANAGED_XDR_DATA = [
   {
@@ -68,12 +69,19 @@ const ManagedXDR = () => {
               </span>
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">
-                  View Managed XDR Brief
-                </p>
-              </div>
+              <Link
+                href={
+                  "https://www.infosightinc.com/pdf/InfoSight-Managed-Extended-Detection-Response.pdf"
+                }
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    View Managed XDR Brief
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

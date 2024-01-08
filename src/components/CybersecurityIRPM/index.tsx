@@ -55,14 +55,14 @@ const CybersecurityIRPM = () => {
               and your organization&apos;s data is secure as well as make sure
               you are up to date on industry compliance.
             </p>
-            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-6/12 cursor-pointer">
+            {/* <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-6/12 cursor-pointer">
               <Link href="#">
                 <div className="flex gap-5 items-center">
                   <Image src={videoIcon} alt="" />
                   <p className=" text-[#8C340D] font-semibold">Learn More</p>
                 </div>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

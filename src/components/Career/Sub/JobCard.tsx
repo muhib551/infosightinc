@@ -1,4 +1,5 @@
 import Button from "@/components/Elements/Button";
+import Link from "next/link";
 import React from "react";
 
 interface Prop {
@@ -29,15 +30,17 @@ const JobCard = ({ title, description, tag }: Prop) => {
               borderRadius: "10px",
             }}
           />
-          <Button
-            text="Contact Us"
-            style={{
-              color: "white",
-              backgroundColor: "black",
-              padding: "10px 25px",
-              borderRadius: "10px",
-            }}
-          />
+          <Link href={"contact"} target="_blank">
+            <Button
+              text="Contact Us"
+              style={{
+                color: "white",
+                backgroundColor: "black",
+                padding: "10px 25px",
+                borderRadius: "10px",
+              }}
+            />
+          </Link>
         </div>
       </div>
     </div>

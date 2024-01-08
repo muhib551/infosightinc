@@ -8,6 +8,7 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const PLANNING_DISASTER_DATA = [
   {
@@ -55,9 +56,19 @@ const BusinessContinuity = () => {
               plan for your organization that ensures you can continue
               operations before, during and after adverse events.
             </p>
-            <div className="flex gap-5 items-center lg:w-1/2 cursor-pointer">
-              <Image src={documentIcon} alt="" />
-              <p className=" text-[#8C340D] font-semibold">Download Overview</p>
+            <div className="flex gap-5 items-center lg:w-5/12 cursor-pointer">
+              <Link
+                className=" inline-flex items-center gap-3"
+                href={
+                  "https://www.infosightinc.com/pdf/InfoSight-Business-Continuity-Planning.pdf"
+                }
+                target="_blank"
+              >
+                <Image src={documentIcon} alt="" />
+                <p className=" text-[#8C340D] font-semibold">
+                  Download Overview
+                </p>
+              </Link>
             </div>
           </div>
         </div>

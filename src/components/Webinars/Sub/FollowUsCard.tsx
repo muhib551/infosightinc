@@ -12,25 +12,25 @@ const FOLLOW_US_DATA = [
     icon: youtubeIcon,
     title: "Youtube",
     chevron: chevronRight,
-    link: "https://www.youtube.com/",
+    link: "https://www.youtube.com/c/Infosightinc/featured",
   },
   {
     icon: instagramIcon,
     title: "Instagram",
     chevron: chevronRight,
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/infosightinc/",
   },
   {
     icon: xIcon,
     title: "X",
     chevron: chevronRight,
-    link: "https://www.twitter.com/",
+    link: "https://twitter.com/InfoSight",
   },
   {
     icon: linkedinIcon,
     title: "Linkedin",
     chevron: chevronRight,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/company/infosight-inc-",
   },
 ];
 
@@ -44,7 +44,7 @@ const FollowUsCard = () => {
         <div className="py-5 grid lg:grid-cols-4 grid-cols-1 gap-5">
           {FOLLOW_US_DATA.map(({ icon, title, chevron, link }, i) => {
             return (
-              <Link href={link} key={i}>
+              <Link href={link} key={i} target="_blank">
                 <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
                   <Image src={icon} alt="" className="" />
                   <p className="text-white font-semibold flex items-center lg:gap-1">

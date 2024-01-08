@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import docIcon from "../../../../public/homepage/document-icon.svg";
 import videoIcon from "../../../../public/homepage/video-icon.svg";
+import Link from "next/link";
 
 const Latest = () => {
   return (
@@ -23,14 +24,26 @@ const Latest = () => {
             </p>
           </div>
           <div className="flex items-start lg:flex-row flex-col lg:gap-10 gap-4 mb-6 lg:w-8/12">
-            <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={docIcon} alt="" className="w-8" />
-              <p className="text-orange-500 font-semibold">Download Overview</p>
-            </div>
-            <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={videoIcon} alt="" className="w-8" />
-              <p className="text-orange-500 font-semibold">Watch Video</p>
-            </div>
+            <Link
+              href="https://www.infosightinc.com/pdf/InfoSight-Penetration-Testing.pdf"
+              target="_blank"
+            >
+              <div className="flex items-center gap-3 cursor-pointer">
+                <Image src={docIcon} alt="" className="w-8" />
+                <p className="text-orange-500 font-semibold">
+                  Download Overview
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.infosightinc.com/penetration-testing.html#video"
+              target="_blank"
+            >
+              <div className="flex items-center gap-3 cursor-pointer">
+                <Image src={videoIcon} alt="" className="w-8" />
+                <p className="text-orange-500 font-semibold">Watch Video</p>
+              </div>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center lg:gap-28">
@@ -44,14 +57,26 @@ const Latest = () => {
             </p>
           </div>
           <div className="flex items-start lg:flex-row flex-col lg:gap-10 gap-4 mt-6 lg:w-8/12">
-            <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={docIcon} alt="" className="" />
-              <p className="text-orange-500 font-semibold">Download Overview</p>
-            </div>
-            <div className="flex items-center gap-3 cursor-pointer">
-              <Image src={videoIcon} alt="" className="" />
-              <p className="text-orange-500 font-semibold">Watch Video</p>
-            </div>
+            <Link
+              href="https://www.infosightinc.com/pdf/InfoSight-SOCaaS.pdf"
+              target="_blank"
+            >
+              <div className="flex items-center gap-3 cursor-pointer">
+                <Image src={docIcon} alt="" className="" />
+                <p className="text-orange-500 font-semibold">
+                  Download Overview
+                </p>
+              </div>
+            </Link>
+            <Link
+              href="https://www.infosightinc.com/SOCaaS.html#video"
+              target="_blank"
+            >
+              <div className="flex items-center gap-3 cursor-pointer">
+                <Image src={videoIcon} alt="" className="" />
+                <p className="text-orange-500 font-semibold">Watch Video</p>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

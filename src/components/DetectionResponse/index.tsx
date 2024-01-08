@@ -8,6 +8,7 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const DETECTION_RESPONSE_DATA = [
   {
@@ -84,7 +85,7 @@ const DetectionResponse = () => {
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
           <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-60 justify-between">
-            <p className=" text-justify">
+            <p className="w-full">
               InfoSight&apos;s Security Operations Center (SOC) serves as your
               own trusted cybersecurity team providing you with real time
               incident response, enterprise remediation and threat confinement
@@ -95,9 +96,18 @@ const DetectionResponse = () => {
               a systematic approach delivering superior outcomes with no alert
               fatigue ever!
             </p>
-            <div className="flex gap-5 items-center lg:w-1/2 cursor-pointer">
-              <Image src={documentIcon} alt="" />
-              <p className=" text-[#8C340D] font-semibold">Download Overview</p>
+            <div className="flex gap-5 items-center lg:w-5/12 cursor-pointer">
+              <Link
+                href="https://www.infosightinc.com/pdf/InfoSight-24x7-IT-Managed-Detection-Response.pdf"
+                target="_blank"
+              >
+                <div className="flex gap-3 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Download Overview
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

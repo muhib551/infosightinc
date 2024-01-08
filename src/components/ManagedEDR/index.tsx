@@ -8,6 +8,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import ManagedEDRHero from "./Sub/ManagedRDRHero";
 import ManagedEDRFeatures from "./Sub/ManagedEDRFeatures";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const MANAGED_EDR_DATA = [
   {
@@ -61,12 +62,19 @@ const ManagedEDR = () => {
               Center (SOC), we serve as your own trusted cybersecurity team.
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={documentIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">
-                  Download Overview
-                </p>
-              </div>
+              <Link
+                href={
+                  "https://www.infosightinc.com/pdf/InfoSight-Endpoint-Detection-Response.pdf"
+                }
+                target="_blank"
+              >
+                <div className="flex gap-5 items-center">
+                  <Image src={documentIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Download Overview
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

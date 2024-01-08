@@ -8,6 +8,7 @@ import infoImg3 from "../../../public/services-solutions/Business-Planning-Disas
 import EmpSecurityHero from "./Sub/EmplSecurityHero";
 import EmpSecurityFeatures from "./Sub/EmpSecurityFeatures";
 import PageLayout from "../PageLayout";
+import Link from "next/link";
 
 const EMPLOYEE_SECURITY_DATA = [
   {
@@ -118,10 +119,14 @@ const EmployeeSecurityAwareness = () => {
               related costs and fines.
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <div className="flex gap-5 items-center">
-                <Image src={videoIcon} alt="" />
-                <p className=" text-[#8C340D] font-semibold">Book a Demo Now</p>
-              </div>
+              <Link href={"contact"} target="_blank">
+                <div className="flex gap-5 items-center">
+                  <Image src={videoIcon} alt="" />
+                  <p className=" text-[#8C340D] font-semibold">
+                    Book a Demo Now
+                  </p>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

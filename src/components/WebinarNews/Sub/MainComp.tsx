@@ -1,5 +1,5 @@
 // MainComponent.js
-import React, { useState } from "react";
+import React, { CSSProperties, useState } from "react";
 import PopupModal from "./Popup";
 import Image from "next/image";
 import profileImg from "../../../../public/webinars/webinar-profile-img.png";
@@ -34,7 +34,7 @@ const MainComponent = () => {
       >
         Read Full Article
         <span>
-          <Image src={chevronIcon} alt="" />
+          <Image src={chevronIcon} alt="Chevron Icon" />
         </span>
       </button>
       {NEWS_POPUP_DATA.map(({ img, title, description }, i) => {
@@ -44,7 +44,7 @@ const MainComponent = () => {
               key={i}
               className="rounded-lg border border-gray-300 flex flex-col lg:flex-row items-start lg:p-5 p-4"
             >
-              <Image src={img} alt="" className="" />
+              <Image src={img} alt="Webinar news profile image" className="" />
               <div className="">
                 <h1 className="text-[#2F5A7E] lg:px-4 text-xl lg:mt-0 mt-2">
                   {title}

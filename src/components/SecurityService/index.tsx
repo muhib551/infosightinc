@@ -55,7 +55,6 @@ const SecurityService = () => {
                 <p className=" text-[#8C340D] font-semibold">
                   Download Overview
                 </p>
-                s
               </div>
             </Link>
           </div>

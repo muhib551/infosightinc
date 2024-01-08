@@ -12,7 +12,7 @@ const GOVT_CARDS_DATA: CardProps[] = [
     title: "South Georgia Bank",
     description: "Client success story",
     tag: "Government",
-    link: "#",
+    link: "https://www.infosightinc.com/pdf/InfoSight%20-%20South%20GA%20Bank%20Client%20Success%20Story.pdf",
   },
 ];
 
