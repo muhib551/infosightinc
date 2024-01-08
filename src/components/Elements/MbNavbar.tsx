@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import logoImg from "../../../public/logo.svg";
 import Link from "next/link";
-import "@/Styles/mbnav.css";
+import "@/styles/mbnav.css";
 
 interface RootObject {
   title: string;

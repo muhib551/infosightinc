@@ -3,7 +3,7 @@ import Image from "next/image";
 import logoImg from "../../../public/logo.svg";
 import DDIcon from "../../../public/DDIcon.svg";
 import chevronRightIcon from "../../../public/Chevron-right-Icon.svg";
-import "@/Styles/NavDropdown.css";
+import "@/styles/NavDropdown.css";
 import MbNavbar from "./MbNavbar";
 import Link from "next/link";
 
