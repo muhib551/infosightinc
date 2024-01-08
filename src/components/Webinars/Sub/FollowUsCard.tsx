@@ -46,12 +46,12 @@ const FollowUsCard = () => {
             return (
               <Link href={link} key={i} target="_blank">
                 <div className="flex lg:flex-col gap-3 bg-[#1E3A52] p-10 rounded-lg">
-                  <Image src={icon} alt="" className="" />
+                  <Image src={icon} alt=""  />
                   <p className="text-white font-semibold flex items-center lg:gap-1">
                     {title}{" "}
                     <span>
                       {" "}
-                      <Image src={chevron} alt="" className="" />
+                      <Image src={chevron} alt=""  />
                     </span>
                   </p>
                 </div>

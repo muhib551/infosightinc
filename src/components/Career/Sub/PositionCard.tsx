@@ -24,7 +24,7 @@ const PositionCard = () => {
           Part-time Jobs
         </button>
       </div>
-      <div className="">
+      <div >
         <div className="flex flex-col gap-1 py-5">
           <label htmlFor="" className="text-gray-700 text-sm">
             Search Job or Keyword

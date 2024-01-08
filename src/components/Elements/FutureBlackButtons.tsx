@@ -21,7 +21,7 @@ const FutureBlackButtons: React.FC<Props> = ({ hideFutureBtns = false }) => {
         </div>
         {!hideFutureBtns && (
           <div className="flex justify-between gap-5 mt-8 lg:mt-0 items-center lg:justify-end w-full">
-            <Link href="#" target="_blank">
+            <Link href="#">
               <Button
                 text="Get Details"
                 style={{
@@ -32,7 +32,7 @@ const FutureBlackButtons: React.FC<Props> = ({ hideFutureBtns = false }) => {
                 }}
               />
             </Link>
-            <Link href="contact" target="_blank">
+            <Link href="contact">
               <Button
                 text="Contact Us"
                 style={{

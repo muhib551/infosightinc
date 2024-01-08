@@ -39,7 +39,7 @@ const SecurityService = () => {
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
           <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-60 justify-between">
-            <p className="">
+            <p >
               InfoSight&apos;s Security as a Service (SECaaS) detects cyber
               threats quickly and simplifies incident response 24x7x365. Our
               SECaaS offering streamlines your cybersecurity defenses into one

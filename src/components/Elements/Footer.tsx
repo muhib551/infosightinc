@@ -75,7 +75,7 @@ const Footer = () => {
             <h1 className="text-xl text-gray-900 font-semibold">Contact us</h1>
             <p>info@infosightinc.com</p>
             <p>305-828-1003</p>
-            <p className="">
+            <p >
               14100 Palmetto Frontage <br /> Rd Suite 310 Miami Lakes, <br /> FL
               33016{" "}
             </p>

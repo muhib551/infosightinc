@@ -63,7 +63,7 @@ const InfoSight = () => {
               className="flex items-start flex-col gap-2 px-8 py-5 bg-[#E9F0F7] rounded-md shadow-md shadow-gray-300"
               key={"WHYINFOSIGHT_DATA__" + i}
             >
-              <Image src={img} alt="" className="" />
+              <Image src={img} alt=""  />
               <h1 className=" lg:text-xl mt-5 font-semibold text-[#274A68]">
                 {title}
               </h1>

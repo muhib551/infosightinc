@@ -46,9 +46,9 @@ const TesimonialsComp = () => {
               className="bg-white shadow-md shadow-gray-300 p-5 rounded-xl"
             >
               <p className="pb-6">{description}</p>
-              <Image src={ratingImg} alt="" className="" />
+              <Image src={ratingImg} alt=""  />
               <p className="mt-2">- {user}</p>
-              {/* <p className="">{designation}</p> */}
+              {/* <p >{designation}</p> */}
             </div>
           );
         })}

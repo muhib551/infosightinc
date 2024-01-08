@@ -35,7 +35,7 @@ const RiskManagementFeatures = () => {
                 key={i}
                 className="flex items-center bg-[#1E3A52] gap-5 h-[130px] p-6 rounded-md"
               >
-                <Image src={tickImg} alt="" className="" />
+                <Image src={tickImg} alt=""  />
                 <p className="text-white font-semibold">{el}</p>
               </div>
             );

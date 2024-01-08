@@ -112,17 +112,17 @@ const Query = () => {
           <h1 className="text-xl text-gray-900">Our Contact Detail</h1>
           <div className="flex flex-col gap-5 mt-5">
             <span className="flex items-center gap-4">
-              <Image src={locationIcon} alt="" className="" />
+              <Image src={locationIcon} alt=""  />
               <p className="text-gray-500">
                 14100, Palmetto Frontage Road, Suite 310, Miami Lakes, FL 33016
               </p>
             </span>
             <span className="flex items-center gap-4">
-              <Image src={callingIcon} alt="" className="" />
+              <Image src={callingIcon} alt=""  />
               <p className="text-gray-500">305.828.1003</p>
             </span>
             <span className="flex items-center gap-4">
-              <Image src={smsddIcon} alt="" className="" />
+              <Image src={smsddIcon} alt=""  />
               <p className="text-gray-500">info@infosightinc.com</p>
             </span>
           </div>

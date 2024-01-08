@@ -139,7 +139,7 @@ const PartnersCard = () => {
         {PARTNERS_DATA.map(({ img, link }, i) => {
           return (
             <Link href={link} key={i}>
-              <Image src={img} alt="" className="" />
+              <Image src={img} alt=""  />
             </Link>
           );
         })}

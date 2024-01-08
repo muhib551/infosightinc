@@ -55,7 +55,7 @@ const WeProvide = () => {
               className="flex items-start flex-col gap-4 px-8 py-5 bg-white rounded-md cursor-pointer hover:bg-gray-200"
               key={title + i}
             >
-              <Link href={link} target="_blank">
+              <Link href={link}>
                 <Image src={img} alt="" className="w-14 " />
                 <h1 className="mb-2 font-semibold">{title}</h1>
               </Link>

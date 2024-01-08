@@ -30,7 +30,7 @@ const JobCard = ({ title, description, tag }: Prop) => {
               borderRadius: "10px",
             }}
           />
-          <Link href={"contact"} target="_blank">
+          <Link href={"contact"}>
             <Button
               text="Contact Us"
               style={{

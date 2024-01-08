@@ -119,7 +119,7 @@ const EmployeeSecurityAwareness = () => {
               related costs and fines.
             </p>
             <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
-              <Link href={"contact"} target="_blank">
+              <Link href={"contact"}>
                 <div className="flex gap-5 items-center">
                   <Image src={videoIcon} alt="" />
                   <p className=" text-[#8C340D] font-semibold">

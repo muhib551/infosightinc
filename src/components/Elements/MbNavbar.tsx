@@ -260,7 +260,7 @@ const MbNavbar = () => {
       </button>
       <div className="mb-nav-container-logo">
         <Link href={"/"}>
-          <Image src={logoImg} alt="" role="button" />
+          <Image src={logoImg} alt="" role="button" height={33} />
         </Link>
       </div>
       <div

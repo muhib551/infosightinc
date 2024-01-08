@@ -122,20 +122,20 @@ const ADV_SERVICE_SECURITY_DATA_2 = [
 
 const NavBar = () => {
   return (
-    <div className="">
-      <nav className="py-2 md:py-6 px-4 hidden md:block bg-white lg:flex lg:items-center lg:justify-center ">
+    <div>
+      <nav className=" px-4 hidden bg-white md:flex items-center justify-center h-[80px]">
         <div className="container flex items-center justify-center w-full">
           <ul className=" flex items-center gap-8 ">
             <Link href="home-page">
-              <Image src={logoImg} alt="" className="w-16" />
+              <Image src={logoImg} alt="" height={33} />
             </Link>
             <li>
-              <Link href="home-page" className="">
+              <Link href="home-page">
                 Home
               </Link>
             </li>
             <li className="flex items-center gap-2">
-              <Link href="#" className="">
+              <Link href="#">
                 Services & Solutions
               </Link>
               <Image src={DDIcon} alt="" className="cursor-pointer" />
@@ -175,7 +175,7 @@ const NavBar = () => {
                                   return (
                                     <li
                                       key={"ADV_SERVICE_SECURITY_DATA_1__" + i}
-                                      className=""
+                                     
                                     >
                                       <Link href={link}>{title}</Link>
                                     </li>
@@ -335,7 +335,7 @@ const NavBar = () => {
               </div>
             </li>
             <li className="flex items-center gap-2 ">
-              <Link href="industries" className="">
+              <Link href="industries">
                 Industries
               </Link>
               <Image src={DDIcon} alt="" className="cursor-pointer" />
@@ -350,8 +350,8 @@ const NavBar = () => {
                 <ul className="flex flex-col gap-3 px-5 pb-3">
                   {INDUSTRIES_DATA.map(({ title, link }, i) => {
                     return (
-                      <li key={"INDUSTRIES_DATA__" + i} className="">
-                        <Link href={link} className="">
+                      <li key={"INDUSTRIES_DATA__" + i}>
+                        <Link href={link}>
                           {title}
                         </Link>
                       </li>
@@ -361,7 +361,7 @@ const NavBar = () => {
               </div>
             </li>
             <li className="flex items-center gap-2">
-              <Link href="#" className="">
+              <Link href="#">
                 Insights
               </Link>
               <Image src={DDIcon} alt="" className="cursor-pointer" />
@@ -375,8 +375,8 @@ const NavBar = () => {
                 <ul className="flex flex-col gap-3 px-5 py-3">
                   {WEBINARS_DATA.map(({ title, link }, i) => {
                     return (
-                      <li key={"WEBINARS_DATA__" + i} className="">
-                        <Link href={link} className="">
+                      <li key={"WEBINARS_DATA__" + i}>
+                        <Link href={link}>
                           {title}
                         </Link>
                       </li>
@@ -386,7 +386,7 @@ const NavBar = () => {
               </div>
             </li>
             <li className="flex items-center gap-2">
-              <Link href="about-us" className="">
+              <Link href="about-us">
                 About Us
               </Link>
               <Image src={DDIcon} alt="" className="cursor-pointer" />
@@ -401,7 +401,7 @@ const NavBar = () => {
                   {ABOUT_US_DATA.map(({ title, link }, i) => {
                     return (
                       <li key={"ABOUT_US_DATA__" + i} className=" px-5">
-                        <Link href={link} className="">
+                        <Link href={link}>
                           {title}
                         </Link>
                       </li>
@@ -411,12 +411,12 @@ const NavBar = () => {
               </div>
             </li>
             <li>
-              <Link href="case-studies" className="">
+              <Link href="case-studies">
                 Case Studies
               </Link>
             </li>
             <li>
-              <Link href="contact" className="">
+              <Link href="contact">
                 Contact Us
               </Link>
             </li>

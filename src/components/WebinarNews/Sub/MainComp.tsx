@@ -44,8 +44,8 @@ const MainComponent = () => {
               key={i}
               className="rounded-lg border border-gray-300 flex flex-col lg:flex-row items-start lg:p-5 p-4"
             >
-              <Image src={img} alt="Webinar news profile image" className="" />
-              <div className="">
+              <Image src={img} alt="Webinar news profile image"  />
+              <div >
                 <h1 className="text-[#2F5A7E] lg:px-4 text-xl lg:mt-0 mt-2">
                   {title}
                 </h1>

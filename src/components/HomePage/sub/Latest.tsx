@@ -62,7 +62,7 @@ const Latest = () => {
               target="_blank"
             >
               <div className="flex items-center gap-3 cursor-pointer">
-                <Image src={docIcon} alt="" className="" />
+                <Image src={docIcon} alt=""  />
                 <p className="text-orange-500 font-semibold">
                   Download Overview
                 </p>
@@ -73,7 +73,7 @@ const Latest = () => {
               target="_blank"
             >
               <div className="flex items-center gap-3 cursor-pointer">
-                <Image src={videoIcon} alt="" className="" />
+                <Image src={videoIcon} alt=""  />
                 <p className="text-orange-500 font-semibold">Watch Video</p>
               </div>
             </Link>

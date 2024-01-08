@@ -22,7 +22,7 @@ const WeAre = () => {
             available.
           </p>
         </div>
-        <Image src={aboutImg} alt="" className="" />
+        <Image src={aboutImg} alt=""  />
       </div>
     </div>
   );

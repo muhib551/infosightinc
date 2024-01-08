@@ -61,13 +61,13 @@ const OurServices = ({ heading }: { heading?: string }) => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 mt-8">
           {OURSERVICES_DATA.map(({ img, title, description, link }, i) => {
             return (
-              <Link href={link} target="_blank">
+              <Link href={link}>
                 <div
                   className="flex items-start gap-4 p-3 border border-gray-300 rounded-md hover:bg-gray-50 h-[100%]"
                   key={title + i}
                 >
                   <Image src={img} alt="" className="w-10 lg:w-20" />
-                  <div className="">
+                  <div >
                     <h1 className="lg:text-xl mb-2 font-semibold">{title}</h1>
                     <p className="text-sm lg:text-base">{description}</p>
                   </div>

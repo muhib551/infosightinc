@@ -26,7 +26,7 @@ const NewsCard = () => {
         return (
           <div className="rounded-lg border border-gray-300 flex flex-col lg:flex-row items-start p-5">
             <Image src={img} alt="" className="h-[177px]" />
-            <div className="">
+            <div >
               <h1 className="text-[#2F5A7E] lg:px-4 text-xl lg:mt-0 mt-2">
                 {title}
               </h1>

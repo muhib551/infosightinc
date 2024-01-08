@@ -6,6 +6,11 @@ import Button from "../../Elements/Button";
 import NavBar from "../../Elements/NavBar";
 import Link from "next/link";
 import PopupModal from "@/components/WebinarNews/Sub/Popup";
+import {
+  btnStyles,
+  wrapperStyles,
+  containerStyles,
+} from "@/components/utlis/constants";
 
 const HeroSection = () => {
   const [isModalOpen, setModalOpen] = React.useState(false);
@@ -20,7 +25,7 @@ const HeroSection = () => {
 
   return (
     <div className="relative">
-      <div className="">
+      <div>
         <Image src={heroImg} alt="" className="w-full md:block hidden" />
         <div className="absolute lg:top-[24%] md:top-[6%] md:left-5 lg:left-32 text-white hidden md:block">
           <div>
@@ -34,41 +39,24 @@ const HeroSection = () => {
           </div>
           <div className="mt-10">
             <Button text="Watch Video" onClick={handleOpenModal} />
-            <PopupModal
+            {/* <PopupModal
               isOpen={isModalOpen}
               onClose={handleCloseModal}
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyItems: "center",
-                top: "-10px",
-                right: "-5px",
-                backgroundColor: "transparent",
-                fontSize: "18px",
-                fontWeight: "500",
-                padding: "0",
-              }}
+              style={videoPopupStyles}
             >
-              <div className="">
-                <video
-                  width="600"
-                  className="video_player"
-                  autoPlay={true}
-                  muted={true}
-                  // playsinline={}
-                  controls={true}
-                >
-                  <source
-                    src="https://www.infosightinc.com/Videos/infosight-video.mp4"
-                    type="video/mp4"
-                  ></source>
-                </video>
-              </div>
-            </PopupModal>
+              <video autoPlay={false} muted={false} controls={true}>
+                <source
+                  src="https://www.infosightinc.com/Videos/infosight-video.mp4"
+                  type="video/mp4"
+                ></source>
+              </video>
+            </PopupModal> */}
+            <PopupVideo isModalOpen={isModalOpen} setModalOpen={setModalOpen} />
           </div>
         </div>
       </div>
-      <div className="">
+
+      <div>
         <div className="bg-[#3B719F] w-full px-5 py-8 ">
           <div className=" md:hidden block text-white ">
             <h1 className="text-[36px] font-semibold">
@@ -80,18 +68,10 @@ const HeroSection = () => {
             </p>
             <div className="mt-4">
               <Button text="Watch Video" onClick={handleOpenModal} />
-              <PopupModal
+              {/* <PopupModal
                 isOpen={isModalOpen}
                 onClose={handleCloseModal}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyItems: "center",
-                  top: "-10px",
-                  right: "-5px",
-                  backgroundColor: "transparent",
-                  fontWeight: "500",
-                }}
+                style={videoPopupStyles}
               >
                 <video
                   width="600"
@@ -105,7 +85,11 @@ const HeroSection = () => {
                     type="video/mp4"
                   ></source>
                 </video>
-              </PopupModal>
+              </PopupModal> */}
+              <PopupVideo
+                isModalOpen={isModalOpen}
+                setModalOpen={setModalOpen}
+              />
             </div>
           </div>
         </div>
@@ -116,3 +100,35 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
+function PopupVideo({
+  isModalOpen,
+  setModalOpen,
+}: {
+  isModalOpen: boolean;
+  setModalOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) {
+  return (
+    <PopupModal
+      isOpen={isModalOpen}
+      onClose={() => {
+        setModalOpen(false);
+      }}
+      buttonStyles={btnStyles}
+      wrapperStyles={wrapperStyles}
+      containerStyles={containerStyles}
+    >
+      <video
+        autoPlay={false}
+        muted={false}
+        controls={true}
+        className="md:w-[60vw] w-[90vw]"
+      >
+        <source
+          src="https://www.infosightinc.com/Videos/infosight-video.mp4"
+          type="video/mp4"
+        ></source>
+      </video>
+    </PopupModal>
+  );
+}

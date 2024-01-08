@@ -16,7 +16,7 @@ const FutureOrangeButtons = () => {
           </p>
         </div>
         <div className="flex justify-between gap-5 mt-8 lg:mt-0 items-center lg:justify-end w-full">
-          <Link href="#" target="_blank">
+          <Link href="#">
             <Button
               text="Get Details"
               style={{
@@ -27,7 +27,7 @@ const FutureOrangeButtons = () => {
               }}
             />
           </Link>
-          <Link href="contact" target="_blank">
+          <Link href="contact">
             <Button
               text="Contact Us"
               style={{
