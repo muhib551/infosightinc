@@ -10,6 +10,7 @@ import MobileAPIHero from "./Sub/MobileAPIHero";
 import MobileAPIFeatures from "./Sub/MobileAPIFeatures";
 import PageLayout from "../PageLayout";
 import Link from "next/link";
+import VideoPopup from "../Elements/VideoPopup";
 
 const MOBILE_API_DATA = [
   {
@@ -33,6 +34,8 @@ const MOBILE_API_DATA = [
 ];
 
 const MobileAPI = () => {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
   React.useEffect(() => {
     document.title = "Code Review, API & Mobile Testing - Infosight";
   }, []);
@@ -50,7 +53,7 @@ const MobileAPI = () => {
       <div className="p-5 lg:px-20 ">
         <div className="border-b-2 border-gray-300 pb-10">
           <div className="lg:p-10 p-5 bg-gray-100 flex flex-col lg:flex-row gap-5 lg:gap-20 justify-between">
-            <p className=" text-justify text-[#444444]">
+            <p className=" text-[#444444] lg:w-8/12">
               InfoSight&apos;s Code Review, API & Mobile Testing provides your
               organization the assurance it needs to demonstrate your
               applications are secure with no exploitable vulnerabilities. Our
@@ -59,7 +62,7 @@ const MobileAPI = () => {
               report that can be shared to validate your applications&apos;
               security.
             </p>
-            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-8/12 cursor-pointer">
+            <div className="flex gap-5 flex-col lg:flex-row lg:items-center lg:w-4/12 cursor-pointer">
               <Link
                 target="_blank"
                 href={
@@ -73,17 +76,16 @@ const MobileAPI = () => {
                   </p>
                 </div>
               </Link>
-              <Link
-                target="_blank"
-                href={
-                  "https://www.infosightinc.com/code-review-api-mobile-testing.html#video"
-                }
+
+              <div
+                className="flex gap-5 items-center"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
               >
-                <div className="flex gap-5 items-center">
-                  <Image src={videoIcon} alt="" />
-                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
-                </div>
-              </Link>
+                <Image src={videoIcon} alt="" />
+                <p className=" text-[#8C340D] font-semibold">Learn More</p>
+              </div>
             </div>
           </div>
         </div>
@@ -110,6 +112,11 @@ const MobileAPI = () => {
         })}
       </div>
       <MobileAPIFeatures />
+      <VideoPopup
+        isModalOpen={isModalOpen}
+        setModalOpen={setIsModalOpen}
+        videoLink="https://www.infosightinc.com/Videos/InfoSight-Mobile-APITesting.mp4"
+      />
     </PageLayout>
   );
 };

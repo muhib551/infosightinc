@@ -15,6 +15,7 @@ import infoImg2 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 import PageLayout from "../PageLayout";
 import Link from "next/link";
+import VideoPopup from "../Elements/VideoPopup";
 
 const SECURITY_OPERATIONS_DATA = [
   {
@@ -75,6 +76,7 @@ const SECURITY_OPERATIONS_DATA = [
 ];
 
 const SecurityOperations = () => {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
   React.useEffect(() => {
     document.title = "Security Operations Center as a Service | InfoSight";
   }, []);
@@ -114,15 +116,16 @@ const SecurityOperations = () => {
                   </p>
                 </div>
               </Link>
-              <Link
-                href="https://www.infosightinc.com/SOCaaS.html#video"
-                target="_blank"
+
+              <div
+                className="flex gap-5 items-center"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
               >
-                <div className="flex gap-5 items-center">
-                  <Image src={videoIcon} alt="" />
-                  <p className=" text-[#8C340D] font-semibold">Watch Video</p>
-                </div>
-              </Link>
+                <Image src={videoIcon} alt="" />
+                <p className=" text-[#8C340D] font-semibold">Watch Video</p>
+              </div>
             </div>
           </div>
         </div>
@@ -149,6 +152,11 @@ const SecurityOperations = () => {
         })}
       </div>
       <SecurityOperFeatures />
+      <VideoPopup
+        isModalOpen={isModalOpen}
+        setModalOpen={setIsModalOpen}
+        videoLink="https://www.infosightinc.com/Videos/InfoSight-SOCaaS.mp4"
+      />
     </PageLayout>
   );
 };

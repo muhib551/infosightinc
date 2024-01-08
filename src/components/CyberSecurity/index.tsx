@@ -10,6 +10,7 @@ import CyberSecurityyHero from "./Sub/CyberSecurityHero";
 import CyberSecurityFeatures from "./Sub/CyberSecurityFeatures";
 import Link from "next/link";
 import PageLayout from "../PageLayout";
+import VideoPopup from "../Elements/VideoPopup";
 
 const CYBERSECURITY_DATA = [
   {
@@ -33,6 +34,7 @@ const CYBERSECURITY_DATA = [
 ];
 
 const CyberSecurity = () => {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
   React.useEffect(() => {
     document.title = "Vulnerability & CybersSecurity Solution | Infosight";
   }, []);
@@ -71,15 +73,16 @@ const CyberSecurity = () => {
                   </p>
                 </div>
               </Link>
-              <Link
-                href="https://www.infosightinc.com/vulnerability-cyber-security.html#video"
-                target="_blank"
+
+              <div
+                className="flex gap-5 items-center"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
               >
-                <div className="flex gap-5 items-center">
-                  <Image src={videoIcon} alt="" />
-                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
-                </div>
-              </Link>
+                <Image src={videoIcon} alt="" />
+                <p className=" text-[#8C340D] font-semibold">Learn More</p>
+              </div>
             </div>
           </div>
         </div>
@@ -106,6 +109,11 @@ const CyberSecurity = () => {
         })}
       </div>
       <CyberSecurityFeatures />
+      <VideoPopup
+        isModalOpen={isModalOpen}
+        setModalOpen={setIsModalOpen}
+        videoLink="https://www.infosightinc.com/Videos/infosight-video.mp4"
+      />
     </PageLayout>
   );
 };

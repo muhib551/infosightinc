@@ -9,6 +9,7 @@ import VirtualInformationHero from "./Sub/VirtualInformationHero";
 import VirtualInformationFeatures from "./Sub/VirtualInformationFeatures";
 import Link from "next/link";
 import PageLayout from "../PageLayout";
+import VideoPopup from "../Elements/VideoPopup";
 
 const VIRTUAL_INFO_DATA = [
   {
@@ -26,6 +27,7 @@ const VIRTUAL_INFO_DATA = [
 ];
 
 const VirtualInformation = () => {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
   React.useEffect(() => {
     document.title = "Virtual ISO | InfoSight";
   }, []);
@@ -64,15 +66,16 @@ const VirtualInformation = () => {
                   </p>
                 </div>
               </Link>
-              <Link
-                href="https://www.infosightinc.com/viso.html#video"
-                target="_blank"
+
+              <div
+                className="flex gap-5 items-center"
+                onClick={() => {
+                  setIsModalOpen(true);
+                }}
               >
-                <div className="flex gap-5 items-center">
-                  <Image src={videoIcon} alt="" />
-                  <p className=" text-[#8C340D] font-semibold">Learn More</p>
-                </div>
-              </Link>
+                <Image src={videoIcon} alt="" />
+                <p className=" text-[#8C340D] font-semibold">Learn More</p>
+              </div>
             </div>
           </div>
         </div>
@@ -99,6 +102,11 @@ const VirtualInformation = () => {
         })}
       </div>
       <VirtualInformationFeatures />
+      <VideoPopup
+        isModalOpen={isModalOpen}
+        setModalOpen={setIsModalOpen}
+        videoLink="https://www.infosightinc.com/Videos/InfoSight-VISO.mp4"
+      />
     </PageLayout>
   );
 };
