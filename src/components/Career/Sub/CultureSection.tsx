@@ -13,7 +13,7 @@ const CultureSection = () => {
         career go as well as their personal aspirations. Our staff has unmatched
         experience acquired while working in all aspects of security, risk
         management and regulatory compliance within organizations and with
-        third-party vendors. InfoSight's training continuum is the most complete
+        third-party vendors. InfoSight&apos;s training continuum is the most complete
         in our industry - providing the most skilled technical support.
         InfoSight has been improving security and network performance for
         federally regulated organizations since 1998.

@@ -56,7 +56,7 @@ const TeamAssessment = () => {
               threat scenarios and facilitating the creation of new techniques
               designed to prevent and detect new types of threats. Each testing
               is unique to your organization and takes a strategic approach to
-              establish the effectiveness of your systems and network's security
+              establish the effectiveness of your systems and network&apos;s security
               posture.
               <br />
               <br />

@@ -275,11 +275,17 @@ const MbNavbar = () => {
             setSelectedMenus([...newMenus]);
           }}
         />
-        {(selectedMenu ? selectedMenu.children : ALL_MENUS)?.map((menuItem) => {
-          return (
-            <MenuItem menuItem={menuItem} setSelectedMenus={setSelectedMenus} />
-          );
-        })}
+        {(selectedMenu ? selectedMenu.children : ALL_MENUS)?.map(
+          (menuItem, i) => {
+            return (
+              <MenuItem
+                menuItem={menuItem}
+                setSelectedMenus={setSelectedMenus}
+                key={"mbnavbar_menuItem" + i}
+              />
+            );
+          }
+        )}
       </div>
     </div>
   );

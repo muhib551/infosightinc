@@ -4,11 +4,7 @@ import infoImg1 from "../../../public/services-solutions/Business-Planning-Disas
 import infoImg2 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img2.png";
 import infoImg3 from "../../../public/services-solutions/Business-Planning-Disaster-Recovery-info-img3.png";
 
-interface Props {
-  text?: string;
-}
-
-const TextPictorialCard = ({ text }: Props) => {
+const TextPictorialCard = () => {
   return (
     <div className="p-5 lg:px-20">
       <div className="py-5 lg:py-10 flex flex-col lg:flex-row justify-between gap-5">
@@ -17,8 +13,8 @@ const TextPictorialCard = ({ text }: Props) => {
             The Challenge
           </h1>
           <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-            In today's world we have both a war against cybercrime and the need
-            for systems services to be available 24x7x365., To further
+            In today&apos;s world we have both a war against cybercrime and the
+            need for systems services to be available 24x7x365., To further
             exasperate this challenge is a tighter budget and fewer resources.
             Additionally, having a plan that addresses all risk, even Pandemics
             is critical to success!
@@ -37,7 +33,7 @@ const TextPictorialCard = ({ text }: Props) => {
             How We Solve It
           </h1>
           <p className="text-gray-900 text-sm lg:text-base py-1 text-justify">
-            We recognize that BCP & DR planning isn't just about natural
+            We recognize that BCP & DR planning isn&apos;t just about natural
             disaster, but also man-made events and pandemic circumstances never
             taken seriously in the past. Additionally, all BCP & DR plans should
             be cyber-resilient to protect against attacks by bad actors and even

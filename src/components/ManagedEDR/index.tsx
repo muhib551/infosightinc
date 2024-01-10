@@ -52,7 +52,7 @@ const ManagedEDR = () => {
               Early detection of attacks targeting endpoints is critical to
               protecting networks from all types of attacks including
               ransomware. However, without a team of security experts working
-              24x7x365 to proactively hunt for threats, it's unlikely to achieve
+              24x7x365 to proactively hunt for threats, it&apos;s unlikely to achieve
               the outcome in threat prevention everyone is looking to achieve.
               <br />
               <br />

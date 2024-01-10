@@ -24,9 +24,12 @@ const NewsCard = () => {
     <div className="grid lg:grid-cols-2 gap-7 py-10">
       {NEWS_PROFILE_DATA.map(({ img, title, description }, i) => {
         return (
-          <div className="rounded-lg border border-gray-300 flex flex-col lg:flex-row items-start p-5">
+          <div
+            key={`NEWS_PROFILE_DATA__${i + 1}`}
+            className="rounded-lg border border-gray-300 flex flex-col lg:flex-row items-start p-5"
+          >
             <Image src={img} alt="" className="h-[177px]" />
-            <div >
+            <div>
               <h1 className="text-[#2F5A7E] lg:px-4 text-xl lg:mt-0 mt-2">
                 {title}
               </h1>

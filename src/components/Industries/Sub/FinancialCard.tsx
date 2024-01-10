@@ -53,7 +53,7 @@ const FinancialCard = () => {
               <span className="font-semibold">
                 24x7x365 Managed Security and Advisory Services
               </span>{" "}
-              that test and monitor your network's infrastructure; keeping you{" "}
+              that test and monitor your network&apos;s infrastructure; keeping you{" "}
               <span className="font-semibold">secure</span> from any breaches
               that could occur.
             </p>

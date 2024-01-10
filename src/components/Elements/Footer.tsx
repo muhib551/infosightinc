@@ -61,9 +61,13 @@ const Footer = () => {
             return (
               <div className="flex flex-col gap-2" key={"FOOTER__" + i}>
                 <h1 className="text-xl text-gray-900 font-semibold">{title}</h1>
-                {items.map(({ text, link }, i) => {
+                {items.map(({ text, link }, j) => {
                   return (
-                    <a href={link} className="hover:text-gray-500">
+                    <a
+                      href={link}
+                      key={"FOOTER__" + i + "__" + j}
+                      className="hover:text-gray-500"
+                    >
                       {text}
                     </a>
                   );
@@ -75,7 +79,7 @@ const Footer = () => {
             <h1 className="text-xl text-gray-900 font-semibold">Contact us</h1>
             <p>info@infosightinc.com</p>
             <p>305-828-1003</p>
-            <p >
+            <p>
               14100 Palmetto Frontage <br /> Rd Suite 310 Miami Lakes, <br /> FL
               33016{" "}
             </p>
